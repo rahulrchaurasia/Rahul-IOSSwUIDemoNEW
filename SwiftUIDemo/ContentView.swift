@@ -7,15 +7,21 @@
 
 import SwiftUI
 
+// Not in USED
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        
+        NavigationView{
+            
+            List(posts) { post in
+                
+                Text(post.name)
+                
+            }
+            
+            .navigationBarTitle("HX4News")
         }
-        .padding()
+        
     }
 }
 
@@ -24,3 +30,19 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+struct Post: Identifiable  {
+    
+    let id : String
+    let name : String
+    
+    
+}
+
+let posts = [
+    
+    Post(id: "1", name: "Hello"),
+    Post(id: "2", name: "Bro"),
+    Post(id: "3", name: "Technology"),
+    Post(id: "4", name: "Determinatant")
+]

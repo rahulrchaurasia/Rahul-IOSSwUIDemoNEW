@@ -11,6 +11,29 @@
 		CD88650F29AA2E2A00BA97DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88650E29AA2E2A00BA97DD /* ContentView.swift */; };
 		CD88651129AA2E2B00BA97DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD88651029AA2E2B00BA97DD /* Assets.xcassets */; };
 		CD88651429AA2E2B00BA97DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD88651329AA2E2B00BA97DD /* Preview Assets.xcassets */; };
+		CD9CF42E29ADF6690043624D /* basic1UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9CF42D29ADF6690043624D /* basic1UIView.swift */; };
+		CD9D047429DFF7BE00AE6AA9 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CD9D047329DFF7BE00AE6AA9 /* FirebaseAnalytics */; };
+		CD9D047629DFF7BE00AE6AA9 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = CD9D047529DFF7BE00AE6AA9 /* FirebaseCrashlytics */; };
+		CD9D047829DFF7BE00AE6AA9 /* FirebaseDynamicLinks in Frameworks */ = {isa = PBXBuildFile; productRef = CD9D047729DFF7BE00AE6AA9 /* FirebaseDynamicLinks */; };
+		CD9D047A29DFF7BE00AE6AA9 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CD9D047929DFF7BE00AE6AA9 /* FirebaseFirestore */; };
+		CD9D047C29DFF7BE00AE6AA9 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = CD9D047B29DFF7BE00AE6AA9 /* FirebaseMessaging */; };
+		CD9E45BE29D42CBE004D54D5 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9E45BD29D42CBE004D54D5 /* Constant.swift */; };
+		CD9E45C029D451AD004D54D5 /* NoItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9E45BF29D451AD004D54D5 /* NoItemsView.swift */; };
+		CD9E45C229D46E83004D54D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD9E45C129D46E83004D54D5 /* LaunchScreen.storyboard */; };
+		CDC9920C29DAC3A40061AB6C /* StickyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC9920B29DAC3A40061AB6C /* StickyHeaderView.swift */; };
+		CDC9920E29DACAD50061AB6C /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC9920D29DACAD50061AB6C /* Tab.swift */; };
+		CDC9921029DAF0B50061AB6C /* StickyMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC9920F29DAF0B50061AB6C /* StickyMainViewModel.swift */; };
+		CDCE885829D2EFE900B87BF9 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE885729D2EFE900B87BF9 /* ListView.swift */; };
+		CDCE885A29D2F4B600B87BF9 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE885929D2F4B600B87BF9 /* ListRowView.swift */; };
+		CDCE885C29D2FDF400B87BF9 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE885B29D2FDF400B87BF9 /* AddView.swift */; };
+		CDCE886029D3111900B87BF9 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE885F29D3111900B87BF9 /* ItemModel.swift */; };
+		CDCE886329D3250500B87BF9 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE886229D3250500B87BF9 /* ListViewModel.swift */; };
+		CDE8491429D84F8F0087381A /* StickyMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE8491329D84F8F0087381A /* StickyMainView.swift */; };
+		CDE8491629D857670087381A /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE8491529D857670087381A /* Food.swift */; };
+		CDE8491A29D85B1A0087381A /* StickyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE8491929D85B1A0087381A /* StickyCardView.swift */; };
+		CDFEBB4C29D1BACB00A92BF5 /* CustomTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFEBB4B29D1BACB00A92BF5 /* CustomTextFieldView.swift */; };
+		CDFEBB4F29D1BF6D00A92BF5 /* TextFieldDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFEBB4E29D1BF6D00A92BF5 /* TextFieldDemo.swift */; };
+		CDFEBB5129D1D06D00A92BF5 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFEBB5029D1D06D00A92BF5 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +42,24 @@
 		CD88650E29AA2E2A00BA97DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CD88651029AA2E2B00BA97DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD88651329AA2E2B00BA97DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CD9CF42D29ADF6690043624D /* basic1UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = basic1UIView.swift; sourceTree = "<group>"; };
+		CD9E45BD29D42CBE004D54D5 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		CD9E45BF29D451AD004D54D5 /* NoItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoItemsView.swift; sourceTree = "<group>"; };
+		CD9E45C129D46E83004D54D5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CDC9920B29DAC3A40061AB6C /* StickyHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeaderView.swift; sourceTree = "<group>"; };
+		CDC9920D29DACAD50061AB6C /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		CDC9920F29DAF0B50061AB6C /* StickyMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyMainViewModel.swift; sourceTree = "<group>"; };
+		CDCE885729D2EFE900B87BF9 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		CDCE885929D2F4B600B87BF9 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
+		CDCE885B29D2FDF400B87BF9 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		CDCE885F29D3111900B87BF9 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		CDCE886229D3250500B87BF9 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		CDE8491329D84F8F0087381A /* StickyMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyMainView.swift; sourceTree = "<group>"; };
+		CDE8491529D857670087381A /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		CDE8491929D85B1A0087381A /* StickyCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyCardView.swift; sourceTree = "<group>"; };
+		CDFEBB4B29D1BACB00A92BF5 /* CustomTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldView.swift; sourceTree = "<group>"; };
+		CDFEBB4E29D1BF6D00A92BF5 /* TextFieldDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDemo.swift; sourceTree = "<group>"; };
+		CDFEBB5029D1D06D00A92BF5 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +67,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD9D047429DFF7BE00AE6AA9 /* FirebaseAnalytics in Frameworks */,
+				CD9D047A29DFF7BE00AE6AA9 /* FirebaseFirestore in Frameworks */,
+				CD9D047C29DFF7BE00AE6AA9 /* FirebaseMessaging in Frameworks */,
+				CD9D047629DFF7BE00AE6AA9 /* FirebaseCrashlytics in Frameworks */,
+				CD9D047829DFF7BE00AE6AA9 /* FirebaseDynamicLinks in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +97,11 @@
 		CD88650B29AA2E2A00BA97DD /* SwiftUIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CDE8490F29D846F60087381A /* SrickyHeaderDemo */,
+				CDCE885D29D310EE00B87BF9 /* MVVMDemo */,
+				CDFEBB4D29D1BF4300A92BF5 /* DemoUI */,
+				CDFEBB4A29D1BAA800A92BF5 /* utility */,
+				CD9CF42C29ADF6490043624D /* Basic */,
 				CD88650C29AA2E2A00BA97DD /* SwiftUIDemoApp.swift */,
 				CD88650E29AA2E2A00BA97DD /* ContentView.swift */,
 				CD88651029AA2E2B00BA97DD /* Assets.xcassets */,
@@ -65,6 +116,107 @@
 				CD88651329AA2E2B00BA97DD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CD9CF42C29ADF6490043624D /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				CD9CF42D29ADF6690043624D /* basic1UIView.swift */,
+			);
+			path = Basic;
+			sourceTree = "<group>";
+		};
+		CDCE885629D2EFC500B87BF9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD9E45C129D46E83004D54D5 /* LaunchScreen.storyboard */,
+				CDCE885729D2EFE900B87BF9 /* ListView.swift */,
+				CDCE885929D2F4B600B87BF9 /* ListRowView.swift */,
+				CDCE885B29D2FDF400B87BF9 /* AddView.swift */,
+				CD9E45BF29D451AD004D54D5 /* NoItemsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CDCE885D29D310EE00B87BF9 /* MVVMDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CDCE886129D324BB00B87BF9 /* ViewNodel */,
+				CDCE885E29D3110100B87BF9 /* Model */,
+				CDCE885629D2EFC500B87BF9 /* View */,
+			);
+			path = MVVMDemo;
+			sourceTree = "<group>";
+		};
+		CDCE885E29D3110100B87BF9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CDCE885F29D3111900B87BF9 /* ItemModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CDCE886129D324BB00B87BF9 /* ViewNodel */ = {
+			isa = PBXGroup;
+			children = (
+				CDCE886229D3250500B87BF9 /* ListViewModel.swift */,
+			);
+			path = ViewNodel;
+			sourceTree = "<group>";
+		};
+		CDE8490F29D846F60087381A /* SrickyHeaderDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CDE8491229D847240087381A /* View */,
+				CDE8491129D8471C0087381A /* Model */,
+				CDE8491029D847100087381A /* ViewModel */,
+			);
+			path = SrickyHeaderDemo;
+			sourceTree = "<group>";
+		};
+		CDE8491029D847100087381A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CDC9920F29DAF0B50061AB6C /* StickyMainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CDE8491129D8471C0087381A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CDE8491529D857670087381A /* Food.swift */,
+				CDC9920D29DACAD50061AB6C /* Tab.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CDE8491229D847240087381A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CDE8491329D84F8F0087381A /* StickyMainView.swift */,
+				CDE8491929D85B1A0087381A /* StickyCardView.swift */,
+				CDC9920B29DAC3A40061AB6C /* StickyHeaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CDFEBB4A29D1BAA800A92BF5 /* utility */ = {
+			isa = PBXGroup;
+			children = (
+				CDFEBB4B29D1BACB00A92BF5 /* CustomTextFieldView.swift */,
+				CDFEBB5029D1D06D00A92BF5 /* Color.swift */,
+				CD9E45BD29D42CBE004D54D5 /* Constant.swift */,
+			);
+			path = utility;
+			sourceTree = "<group>";
+		};
+		CDFEBB4D29D1BF4300A92BF5 /* DemoUI */ = {
+			isa = PBXGroup;
+			children = (
+				CDFEBB4E29D1BF6D00A92BF5 /* TextFieldDemo.swift */,
+			);
+			path = DemoUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +235,13 @@
 			dependencies = (
 			);
 			name = SwiftUIDemo;
+			packageProductDependencies = (
+				CD9D047329DFF7BE00AE6AA9 /* FirebaseAnalytics */,
+				CD9D047529DFF7BE00AE6AA9 /* FirebaseCrashlytics */,
+				CD9D047729DFF7BE00AE6AA9 /* FirebaseDynamicLinks */,
+				CD9D047929DFF7BE00AE6AA9 /* FirebaseFirestore */,
+				CD9D047B29DFF7BE00AE6AA9 /* FirebaseMessaging */,
+			);
 			productName = SwiftUIDemo;
 			productReference = CD88650929AA2E2A00BA97DD /* SwiftUIDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +270,9 @@
 				Base,
 			);
 			mainGroup = CD88650029AA2E2A00BA97DD;
+			packageReferences = (
+				CD9D047229DFF7BD00AE6AA9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = CD88650A29AA2E2A00BA97DD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +287,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD9E45C229D46E83004D54D5 /* LaunchScreen.storyboard in Resources */,
 				CD88651429AA2E2B00BA97DD /* Preview Assets.xcassets in Resources */,
 				CD88651129AA2E2B00BA97DD /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +300,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDE8491429D84F8F0087381A /* StickyMainView.swift in Sources */,
+				CDCE886029D3111900B87BF9 /* ItemModel.swift in Sources */,
+				CDE8491629D857670087381A /* Food.swift in Sources */,
+				CDFEBB4F29D1BF6D00A92BF5 /* TextFieldDemo.swift in Sources */,
+				CD9CF42E29ADF6690043624D /* basic1UIView.swift in Sources */,
+				CDCE885C29D2FDF400B87BF9 /* AddView.swift in Sources */,
 				CD88650F29AA2E2A00BA97DD /* ContentView.swift in Sources */,
+				CDCE885A29D2F4B600B87BF9 /* ListRowView.swift in Sources */,
+				CDC9920C29DAC3A40061AB6C /* StickyHeaderView.swift in Sources */,
+				CDCE885829D2EFE900B87BF9 /* ListView.swift in Sources */,
+				CDC9921029DAF0B50061AB6C /* StickyMainViewModel.swift in Sources */,
 				CD88650D29AA2E2A00BA97DD /* SwiftUIDemoApp.swift in Sources */,
+				CDFEBB4C29D1BACB00A92BF5 /* CustomTextFieldView.swift in Sources */,
+				CDE8491A29D85B1A0087381A /* StickyCardView.swift in Sources */,
+				CD9E45C029D451AD004D54D5 /* NoItemsView.swift in Sources */,
+				CDFEBB5129D1D06D00A92BF5 /* Color.swift in Sources */,
+				CDC9920E29DACAD50061AB6C /* Tab.swift in Sources */,
+				CDCE886329D3250500B87BF9 /* ListViewModel.swift in Sources */,
+				CD9E45BE29D42CBE004D54D5 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +453,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -302,6 +483,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -339,6 +521,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CD9D047229DFF7BD00AE6AA9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CD9D047329DFF7BE00AE6AA9 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD9D047229DFF7BD00AE6AA9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		CD9D047529DFF7BE00AE6AA9 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD9D047229DFF7BD00AE6AA9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		CD9D047729DFF7BE00AE6AA9 /* FirebaseDynamicLinks */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD9D047229DFF7BD00AE6AA9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDynamicLinks;
+		};
+		CD9D047929DFF7BE00AE6AA9 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD9D047229DFF7BD00AE6AA9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		CD9D047B29DFF7BE00AE6AA9 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD9D047229DFF7BD00AE6AA9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CD88650129AA2E2A00BA97DD /* Project object */;
 }
