@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "F1405D3D-0D9B-41F0-A700-044C323BFDB9"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D3F2E284-A466-4F98-AE34-6B2C60F375AD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUIDemo/SrickyHeaderDemo/View/StickyMainView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "D3F2E284-A466-4F98-AE34-6B2C60F375AD - 9ac4e852251f4700"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.background&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, ignoresSafeAreaEdges: SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.background&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, ignoresSafeAreaEdges: SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.background&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, ignoresSafeAreaEdges: SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0, SwiftUI.Section&lt;SwiftUIDemo.StickyHeaderView, SwiftUI.ForEach&lt;Swift.Array&lt;SwiftUIDemo.Tab&gt;, Swift.String, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.ForEach&lt;Swift.Array&lt;SwiftUIDemo.Food&gt;, Swift.String, SwiftUIDemo.StickyCardView&gt;, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0)&gt;&gt;&gt;, SwiftUI.EmptyView&gt;)&gt; in closure #1 () -&gt; SwiftUI.LazyVStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.background&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, ignoresSafeAreaEdges: SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.background&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, ignoresSafeAreaEdges: SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.background&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, ignoresSafeAreaEdges: SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0, SwiftUI.Section&lt;SwiftUIDemo.StickyHeaderView, SwiftUI.ForEach&lt;Swift.Array&lt;SwiftUIDemo.Tab&gt;, Swift.String, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.ForEach&lt;Swift.Array&lt;SwiftUIDemo.Food&gt;, Swift.String, SwiftUIDemo.StickyCardView&gt;, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0)&gt;&gt;&gt;, SwiftUI.EmptyView&gt;)&gt;&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.edgesIgnoringSafeArea(SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.navigationBarHidden(Swift.Bool) -&gt; some&gt;&gt;.0)&gt; in SwiftUIDemo.StickyMainView.body.getter : some"
+                  moduleName = "SwiftUIDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rahulchaurasia/Downloads/Destop/practiceProject/Ios/IosSwiftUI/SwiftUIDemo/SwiftUIDemo/SrickyHeaderDemo/View/StickyMainView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "2108">
+               </Location>
+               <Location
+                  uuid = "D3F2E284-A466-4F98-AE34-6B2C60F375AD - 48570fed46a0828f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.background&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, ignoresSafeAreaEdges: SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0, Swift.Optional&lt;&lt;&lt;opaque return type of SwiftUI.View.frame(minWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, minHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt;, &lt;&lt;opaque return type of SwiftUI.View.background&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, ignoresSafeAreaEdges: SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.background&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, ignoresSafeAreaEdges: SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0, SwiftUI.Section&lt;SwiftUIDemo.StickyHeaderView, SwiftUI.ForEach&lt;Swift.Array&lt;SwiftUIDemo.Tab&gt;, Swift.String, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.ForEach&lt;Swift.Array&lt;SwiftUIDemo.Food&gt;, Swift.String, SwiftUIDemo.StickyCardView&gt;, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0)&gt;&gt;&gt;, SwiftUI.EmptyView&gt;)&gt; in closure #1 () -&gt; SwiftUI.LazyVStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.background&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, ignoresSafeAreaEdges: SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0, Swift.Optional&lt;&lt;&lt;opaque return type of SwiftUI.View.frame(minWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, minHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt;, &lt;&lt;opaque return type of SwiftUI.View.background&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, ignoresSafeAreaEdges: SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.background&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, ignoresSafeAreaEdges: SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0, SwiftUI.Section&lt;SwiftUIDemo.StickyHeaderView, SwiftUI.ForEach&lt;Swift.Array&lt;SwiftUIDemo.Tab&gt;, Swift.String, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.ForEach&lt;Swift.Array&lt;SwiftUIDemo.Food&gt;, Swift.String, SwiftUIDemo.StickyCardView&gt;, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0)&gt;&gt;&gt;, SwiftUI.EmptyView&gt;)&gt;&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.edgesIgnoringSafeArea(SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.navigationBarHidden(Swift.Bool) -&gt; some&gt;&gt;.0)&gt; in SwiftUIDemo.StickyMainView.body.getter : some"
+                  moduleName = "SwiftUIDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rahulchaurasia/Downloads/Destop/practiceProject/Ios/IosSwiftUI/SwiftUIDemo/SwiftUIDemo/SrickyHeaderDemo/View/StickyMainView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "32766CC4-5A83-4655-A4DE-8D9F5BF92131"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUIDemo/SrickyHeaderDemo/View/StickyMainView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "162"
+            endingLineNumber = "162"
+            landmarkName = "saveAction()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "32766CC4-5A83-4655-A4DE-8D9F5BF92131 - 6c7149c22ecc40b3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUIDemo.StickyMainView.getData() -&gt; ()"
+                  moduleName = "SwiftUIDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rahulchaurasia/Downloads/Destop/practiceProject/Ios/IosSwiftUI/SwiftUIDemo/SwiftUIDemo/SrickyHeaderDemo/View/StickyMainView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "162"
+                  endingLineNumber = "162"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "32766CC4-5A83-4655-A4DE-8D9F5BF92131 - 4fff53e9339baf4d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUIDemo.StickyMainView.saveAction() -&gt; ()"
+                  moduleName = "SwiftUIDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rahulchaurasia/Downloads/Destop/practiceProject/Ios/IosSwiftUI/SwiftUIDemo/SwiftUIDemo/SrickyHeaderDemo/View/StickyMainView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "162"
+                  endingLineNumber = "162"
+                  offsetFromSymbolStart = "76">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "13E77A8D-8111-49A5-821D-8B29758AB02E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUIDemo/SrickyHeaderDemo/View/StickyMainView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "171"
+            endingLineNumber = "171"
+            landmarkName = "getData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "13E77A8D-8111-49A5-821D-8B29758AB02E - 6c7149c22ecc4e49"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUIDemo.StickyMainView.getData() -&gt; ()"
+                  moduleName = "SwiftUIDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rahulchaurasia/Downloads/Destop/practiceProject/Ios/IosSwiftUI/SwiftUIDemo/SwiftUIDemo/SrickyHeaderDemo/View/StickyMainView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "172"
+                  endingLineNumber = "172"
+                  offsetFromSymbolStart = "1420">
+               </Location>
+               <Location
+                  uuid = "13E77A8D-8111-49A5-821D-8B29758AB02E - 6c7149c22ecc4e6a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUIDemo.StickyMainView.getData() -&gt; ()"
+                  moduleName = "SwiftUIDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rahulchaurasia/Downloads/Destop/practiceProject/Ios/IosSwiftUI/SwiftUIDemo/SwiftUIDemo/SrickyHeaderDemo/View/StickyMainView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "171"
+                  endingLineNumber = "171"
+                  offsetFromSymbolStart = "124">
+               </Location>
+               <Location
+                  uuid = "13E77A8D-8111-49A5-821D-8B29758AB02E - 6c7149c22ecc4e6a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUIDemo.StickyMainView.getData() -&gt; ()"
+                  moduleName = "SwiftUIDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rahulchaurasia/Downloads/Destop/practiceProject/Ios/IosSwiftUI/SwiftUIDemo/SwiftUIDemo/SrickyHeaderDemo/View/StickyMainView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "171"
+                  endingLineNumber = "171"
+                  offsetFromSymbolStart = "104">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
