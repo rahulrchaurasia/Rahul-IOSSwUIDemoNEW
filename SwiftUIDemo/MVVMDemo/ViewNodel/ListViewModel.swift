@@ -22,7 +22,13 @@
 import Foundation
 class ListViewModel : ObservableObject {
     
-    @Published var items : [ItemModel] = []
+    @Published var items : [ItemModel] = []{
+        
+        didSet {
+            
+            saveItems()
+        }
+    }
     
     init(){
         getItems()
@@ -39,6 +45,8 @@ class ListViewModel : ObservableObject {
 //         ]
 //
 //        items.append(contentsOf: newItems)
+        
+        
         
         guard
             let data = UserDefaults.standard.data(forKey: UserDefaultKEY.ItemKey),

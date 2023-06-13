@@ -15,10 +15,16 @@ Image(systemName: "folder")
 /********** *Sticky Header View********************* */
 
 import SwiftUI
-
+import KeychainAccess
 struct StickyMainView: View {
     
     @StateObject var mainViewData = StickymainViewModel()
+    
+   // @Environment(\.dismiss) private var dismiss
+    @Environment(\.presentationMode) var presentationMode
+   
+    @State var keyChainData : String?
+    
     var body: some View {
         
         let scenes = UIApplication.shared.connectedScenes
@@ -50,11 +56,34 @@ struct StickyMainView: View {
 //
 //                    }.frame(height: 200)
                     
+                   
+
                     Image("citrus")
                         .resizable()
                         .aspectRatio( contentMode: .fit)
                         .frame(width: UIScreen.main.bounds.width,height:  200)
                         .background(Color.purple.opacity(0.7))
+                    
+                    if let mydata =  keyChainData {
+                        
+                        Text(mydata)
+                            .foregroundColor(.brown)
+                            .font(.title2)
+                            .padding(.horizontal,10)
+                            .frame(maxWidth: .infinity)
+                    }
+                    
+                    Button {
+                        saveAction()
+                    } label: {
+                        Text("Save")
+                    }.frame(width: 300,height: 40)
+                        .background(Color.red)
+                    
+                    Button("Get Data") {
+                        getData()
+                    }.frame(width: 300,height: 40)
+                        .background(Color.green)
                     
                    //Mark: Section :---
                     Section {
@@ -90,11 +119,17 @@ struct StickyMainView: View {
                         }
                     } header: {
                      
-                        StickyHeaderView()
+                        StickyHeaderView(closeAction: {
+                            
+                           // self.dismiss()
+                            presentationMode.wrappedValue.dismiss()
+                        })
 
                     }
 
                 }
+                
+               
      
             }
             
@@ -114,14 +149,42 @@ struct StickyMainView: View {
             )
            
             .navigationBarHidden(true)          //.navigationBarBackButtonHidden(true)
+            
+           
+          
 
         }
       
     }
+    
+  func  saveAction(){
+        
+      let highScore = "High score : 100 "
+      let keychain = Keychain(service: "demo.KeyChain")
+      keychain["HighScore"] = highScore
+      print("KeyStore Data Stored")
+    }
+    
+    func  getData(){
+        
+        
+        let keychain  = Keychain(service: "demo.KeyChain")
+        
+        keyChainData = keychain["HighScore"] ?? "No Data"
+        
+        print("KeyStore Data",keychain["HighScore"] ?? "No Data")
+        
+        
+        
+    }
+           
+        
+    
+   
 }
 
 struct StickyMainView_Previews: PreviewProvider {
     static var previews: some View {
-        StickyMainView()
+        StickyMainView( keyChainData: "")
     }
 }

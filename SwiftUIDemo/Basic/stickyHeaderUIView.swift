@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-struct basic1UIView: View {
+// Home Page
+struct stickyHeaderUIView: View {
     var body: some View {
         ZStack{
            
@@ -24,7 +25,7 @@ struct basic1UIView: View {
                         .padding(12)
                         .font(.title2)
                         .foregroundColor(.white)
-                        .fontWeight(.semibold)
+//                        .fontWeight(.semibold)
                         .background(.red)
                         .cornerRadius(15)
                         
@@ -37,7 +38,7 @@ struct basic1UIView: View {
                         .padding(12)
                         .font(.title2)
                         .foregroundColor(.white)
-                        .fontWeight(.semibold)
+//                        .fontWeight(.semibold)
                         .background(.purple).opacity(0.9)
                         .cornerRadius(15)
                         
@@ -53,8 +54,8 @@ struct basic1UIView: View {
     }
 }
 
-struct basic1UIView_Previews: PreviewProvider {
+struct stickyHeaderUIView_Previews: PreviewProvider {
     static var previews: some View {
-        basic1UIView()
+        stickyHeaderUIView()
     }
 }

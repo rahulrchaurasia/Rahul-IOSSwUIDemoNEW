@@ -7,11 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD6D3BBF2A189B89007589E3 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = CD6D3BBE2A189B89007589E3 /* KeychainAccess */; };
 		CD88650D29AA2E2A00BA97DD /* SwiftUIDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88650C29AA2E2A00BA97DD /* SwiftUIDemoApp.swift */; };
-		CD88650F29AA2E2A00BA97DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88650E29AA2E2A00BA97DD /* ContentView.swift */; };
+		CD88650F29AA2E2A00BA97DD /* ListDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88650E29AA2E2A00BA97DD /* ListDemoView.swift */; };
 		CD88651129AA2E2B00BA97DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD88651029AA2E2B00BA97DD /* Assets.xcassets */; };
 		CD88651429AA2E2B00BA97DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD88651329AA2E2B00BA97DD /* Preview Assets.xcassets */; };
-		CD9CF42E29ADF6690043624D /* basic1UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9CF42D29ADF6690043624D /* basic1UIView.swift */; };
+		CD917FB52A3835A9007BB770 /* LoaderDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD917FB42A3835A9007BB770 /* LoaderDemoView.swift */; };
+		CD917FB72A3837F9007BB770 /* CustomLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD917FB62A3837F9007BB770 /* CustomLoaderView.swift */; };
+		CD917FB92A3839B0007BB770 /* CustomDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD917FB82A3839B0007BB770 /* CustomDemoView.swift */; };
+		CD995C7E2A20D63600E85A91 /* CustomFieldText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD995C7D2A20D63600E85A91 /* CustomFieldText.swift */; };
+		CD995C802A20DCC200E85A91 /* HomeUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD995C7F2A20DCC200E85A91 /* HomeUIView.swift */; };
+		CD9CF42E29ADF6690043624D /* stickyHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9CF42D29ADF6690043624D /* stickyHeaderUIView.swift */; };
 		CD9D047429DFF7BE00AE6AA9 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CD9D047329DFF7BE00AE6AA9 /* FirebaseAnalytics */; };
 		CD9D047629DFF7BE00AE6AA9 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = CD9D047529DFF7BE00AE6AA9 /* FirebaseCrashlytics */; };
 		CD9D047829DFF7BE00AE6AA9 /* FirebaseDynamicLinks in Frameworks */ = {isa = PBXBuildFile; productRef = CD9D047729DFF7BE00AE6AA9 /* FirebaseDynamicLinks */; };
@@ -39,10 +45,15 @@
 /* Begin PBXFileReference section */
 		CD88650929AA2E2A00BA97DD /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD88650C29AA2E2A00BA97DD /* SwiftUIDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemoApp.swift; sourceTree = "<group>"; };
-		CD88650E29AA2E2A00BA97DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CD88650E29AA2E2A00BA97DD /* ListDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDemoView.swift; sourceTree = "<group>"; };
 		CD88651029AA2E2B00BA97DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD88651329AA2E2B00BA97DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		CD9CF42D29ADF6690043624D /* basic1UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = basic1UIView.swift; sourceTree = "<group>"; };
+		CD917FB42A3835A9007BB770 /* LoaderDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderDemoView.swift; sourceTree = "<group>"; };
+		CD917FB62A3837F9007BB770 /* CustomLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoaderView.swift; sourceTree = "<group>"; };
+		CD917FB82A3839B0007BB770 /* CustomDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDemoView.swift; sourceTree = "<group>"; };
+		CD995C7D2A20D63600E85A91 /* CustomFieldText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFieldText.swift; sourceTree = "<group>"; };
+		CD995C7F2A20DCC200E85A91 /* HomeUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUIView.swift; sourceTree = "<group>"; };
+		CD9CF42D29ADF6690043624D /* stickyHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stickyHeaderUIView.swift; sourceTree = "<group>"; };
 		CD9E45BD29D42CBE004D54D5 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		CD9E45BF29D451AD004D54D5 /* NoItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoItemsView.swift; sourceTree = "<group>"; };
 		CD9E45C129D46E83004D54D5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -69,6 +80,7 @@
 			files = (
 				CD9D047429DFF7BE00AE6AA9 /* FirebaseAnalytics in Frameworks */,
 				CD9D047A29DFF7BE00AE6AA9 /* FirebaseFirestore in Frameworks */,
+				CD6D3BBF2A189B89007589E3 /* KeychainAccess in Frameworks */,
 				CD9D047C29DFF7BE00AE6AA9 /* FirebaseMessaging in Frameworks */,
 				CD9D047629DFF7BE00AE6AA9 /* FirebaseCrashlytics in Frameworks */,
 				CD9D047829DFF7BE00AE6AA9 /* FirebaseDynamicLinks in Frameworks */,
@@ -97,13 +109,15 @@
 		CD88650B29AA2E2A00BA97DD /* SwiftUIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CD917FB32A383592007BB770 /* LoaderDemo */,
+				CD995C812A20DE1800E85A91 /* launchScreen */,
 				CDE8490F29D846F60087381A /* SrickyHeaderDemo */,
 				CDCE885D29D310EE00B87BF9 /* MVVMDemo */,
 				CDFEBB4D29D1BF4300A92BF5 /* DemoUI */,
 				CDFEBB4A29D1BAA800A92BF5 /* utility */,
 				CD9CF42C29ADF6490043624D /* Basic */,
 				CD88650C29AA2E2A00BA97DD /* SwiftUIDemoApp.swift */,
-				CD88650E29AA2E2A00BA97DD /* ContentView.swift */,
+				CD995C7F2A20DCC200E85A91 /* HomeUIView.swift */,
 				CD88651029AA2E2B00BA97DD /* Assets.xcassets */,
 				CD88651229AA2E2B00BA97DD /* Preview Content */,
 			);
@@ -118,10 +132,29 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		CD917FB32A383592007BB770 /* LoaderDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CD917FB42A3835A9007BB770 /* LoaderDemoView.swift */,
+				CD917FB62A3837F9007BB770 /* CustomLoaderView.swift */,
+				CD917FB82A3839B0007BB770 /* CustomDemoView.swift */,
+			);
+			path = LoaderDemo;
+			sourceTree = "<group>";
+		};
+		CD995C812A20DE1800E85A91 /* launchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CD9E45C129D46E83004D54D5 /* LaunchScreen.storyboard */,
+			);
+			path = launchScreen;
+			sourceTree = "<group>";
+		};
 		CD9CF42C29ADF6490043624D /* Basic */ = {
 			isa = PBXGroup;
 			children = (
-				CD9CF42D29ADF6690043624D /* basic1UIView.swift */,
+				CD88650E29AA2E2A00BA97DD /* ListDemoView.swift */,
+				CD9CF42D29ADF6690043624D /* stickyHeaderUIView.swift */,
 			);
 			path = Basic;
 			sourceTree = "<group>";
@@ -129,7 +162,6 @@
 		CDCE885629D2EFC500B87BF9 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CD9E45C129D46E83004D54D5 /* LaunchScreen.storyboard */,
 				CDCE885729D2EFE900B87BF9 /* ListView.swift */,
 				CDCE885929D2F4B600B87BF9 /* ListRowView.swift */,
 				CDCE885B29D2FDF400B87BF9 /* AddView.swift */,
@@ -207,6 +239,7 @@
 				CDFEBB4B29D1BACB00A92BF5 /* CustomTextFieldView.swift */,
 				CDFEBB5029D1D06D00A92BF5 /* Color.swift */,
 				CD9E45BD29D42CBE004D54D5 /* Constant.swift */,
+				CD995C7D2A20D63600E85A91 /* CustomFieldText.swift */,
 			);
 			path = utility;
 			sourceTree = "<group>";
@@ -241,6 +274,7 @@
 				CD9D047729DFF7BE00AE6AA9 /* FirebaseDynamicLinks */,
 				CD9D047929DFF7BE00AE6AA9 /* FirebaseFirestore */,
 				CD9D047B29DFF7BE00AE6AA9 /* FirebaseMessaging */,
+				CD6D3BBE2A189B89007589E3 /* KeychainAccess */,
 			);
 			productName = SwiftUIDemo;
 			productReference = CD88650929AA2E2A00BA97DD /* SwiftUIDemo.app */;
@@ -272,6 +306,7 @@
 			mainGroup = CD88650029AA2E2A00BA97DD;
 			packageReferences = (
 				CD9D047229DFF7BD00AE6AA9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				CD6D3BBD2A189B88007589E3 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 			);
 			productRefGroup = CD88650A29AA2E2A00BA97DD /* Products */;
 			projectDirPath = "";
@@ -302,12 +337,17 @@
 			files = (
 				CDE8491429D84F8F0087381A /* StickyMainView.swift in Sources */,
 				CDCE886029D3111900B87BF9 /* ItemModel.swift in Sources */,
+				CD995C802A20DCC200E85A91 /* HomeUIView.swift in Sources */,
 				CDE8491629D857670087381A /* Food.swift in Sources */,
 				CDFEBB4F29D1BF6D00A92BF5 /* TextFieldDemo.swift in Sources */,
-				CD9CF42E29ADF6690043624D /* basic1UIView.swift in Sources */,
+				CD9CF42E29ADF6690043624D /* stickyHeaderUIView.swift in Sources */,
 				CDCE885C29D2FDF400B87BF9 /* AddView.swift in Sources */,
-				CD88650F29AA2E2A00BA97DD /* ContentView.swift in Sources */,
+				CD917FB72A3837F9007BB770 /* CustomLoaderView.swift in Sources */,
+				CD88650F29AA2E2A00BA97DD /* ListDemoView.swift in Sources */,
 				CDCE885A29D2F4B600B87BF9 /* ListRowView.swift in Sources */,
+				CD917FB92A3839B0007BB770 /* CustomDemoView.swift in Sources */,
+				CD995C7E2A20D63600E85A91 /* CustomFieldText.swift in Sources */,
+				CD917FB52A3835A9007BB770 /* LoaderDemoView.swift in Sources */,
 				CDC9920C29DAC3A40061AB6C /* StickyHeaderView.swift in Sources */,
 				CDCE885829D2EFE900B87BF9 /* ListView.swift in Sources */,
 				CDC9921029DAF0B50061AB6C /* StickyMainViewModel.swift in Sources */,
@@ -375,7 +415,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -429,7 +469,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -523,6 +563,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		CD6D3BBD2A189B88007589E3 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		CD9D047229DFF7BD00AE6AA9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -534,6 +582,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		CD6D3BBE2A189B89007589E3 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD6D3BBD2A189B88007589E3 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
 		CD9D047329DFF7BE00AE6AA9 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CD9D047229DFF7BD00AE6AA9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

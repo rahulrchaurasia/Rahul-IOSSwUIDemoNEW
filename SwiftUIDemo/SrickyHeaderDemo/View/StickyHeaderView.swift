@@ -7,9 +7,21 @@
 
 import SwiftUI
 
+/*
+  For child to parent call back we have used CLOSURE
+ 
+   var closeAction: () -> Void
+ */
+
 struct StickyHeaderView: View {
+    
+    var closeAction: () -> Void
+    
+    // with nil handling
+    //var closeAction: ( () -> Void)? = nil
+  
     var body: some View {
-      
+        
         
         VStack(alignment: .leading, spacing: 6){
             
@@ -19,6 +31,9 @@ struct StickyHeaderView: View {
                 
                 Button {
                     print("Data...")
+                    (closeAction )()
+                    
+                    
                 } label: {
                     Image(systemName: "arrow.left")
                         .font(.system(size: 20,weight: .bold))
@@ -58,11 +73,16 @@ struct StickyHeaderView: View {
         .background(Color.white) //Note : we use background color bec Header i.e stickyheader is over / above the list. if we not used bg color than at scroll header bg is transparent
         
     }
+    
+    
+    
 }
 
 struct StickyHeaderView_Previews: PreviewProvider {
     static var previews: some View {
-       // StickyHeaderView()
-        StickyMainView()
+        StickyHeaderView(closeAction: {
+            
+        })
+       // StickyMainView()
     }
 }

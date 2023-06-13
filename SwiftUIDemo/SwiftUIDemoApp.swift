@@ -15,7 +15,7 @@ struct SwiftUIDemoApp: App {
         WindowGroup {
           
             NavigationView {
-                basic1UIView()
+               HomeUIView()
                 
             }
             .navigationViewStyle(StackNavigationViewStyle())

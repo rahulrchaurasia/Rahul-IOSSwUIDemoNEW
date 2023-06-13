@@ -43,6 +43,8 @@ struct TextFieldDemo: View {
             ScrollView{
                 VStack{
                     
+                    
+                    
                     Text("TextField Demo")
                         .font(.largeTitle)
                         .bold()
@@ -51,6 +53,8 @@ struct TextFieldDemo: View {
                     
                     VStack(alignment: .leading, spacing: 16){
                         
+                        
+                        CustomFieldText(name: $firstname, label: "Enter Fname")
                       
                         VStack(alignment: .leading, spacing: 5) {
                             LabelView(labelValue: "Enter First Name:")
