@@ -15,6 +15,8 @@
 		CD917FB52A3835A9007BB770 /* LoaderDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD917FB42A3835A9007BB770 /* LoaderDemoView.swift */; };
 		CD917FB72A3837F9007BB770 /* CustomLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD917FB62A3837F9007BB770 /* CustomLoaderView.swift */; };
 		CD917FB92A3839B0007BB770 /* CustomDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD917FB82A3839B0007BB770 /* CustomDemoView.swift */; };
+		CD917FBB2A383F16007BB770 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD917FBA2A383F16007BB770 /* CircularProgressView.swift */; };
+		CD917FBD2A383FB5007BB770 /* CircularProgressDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD917FBC2A383FB5007BB770 /* CircularProgressDemo.swift */; };
 		CD995C7E2A20D63600E85A91 /* CustomFieldText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD995C7D2A20D63600E85A91 /* CustomFieldText.swift */; };
 		CD995C802A20DCC200E85A91 /* HomeUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD995C7F2A20DCC200E85A91 /* HomeUIView.swift */; };
 		CD9CF42E29ADF6690043624D /* stickyHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9CF42D29ADF6690043624D /* stickyHeaderUIView.swift */; };
@@ -34,6 +36,10 @@
 		CDCE885C29D2FDF400B87BF9 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE885B29D2FDF400B87BF9 /* AddView.swift */; };
 		CDCE886029D3111900B87BF9 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE885F29D3111900B87BF9 /* ItemModel.swift */; };
 		CDCE886329D3250500B87BF9 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE886229D3250500B87BF9 /* ListViewModel.swift */; };
+		CDCED16A2A39917400A9EB76 /* CircularText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCED1692A39917400A9EB76 /* CircularText.swift */; };
+		CDCED16D2A3991C800A9EB76 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCED16C2A3991C800A9EB76 /* View+Extension.swift */; };
+		CDCED1702A39C94500A9EB76 /* ViewBulder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCED16F2A39C94500A9EB76 /* ViewBulder.swift */; };
+		CDCED1732A39C9BC00A9EB76 /* ViewBuilderDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCED1722A39C9BC00A9EB76 /* ViewBuilderDemo.swift */; };
 		CDE8491429D84F8F0087381A /* StickyMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE8491329D84F8F0087381A /* StickyMainView.swift */; };
 		CDE8491629D857670087381A /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE8491529D857670087381A /* Food.swift */; };
 		CDE8491A29D85B1A0087381A /* StickyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE8491929D85B1A0087381A /* StickyCardView.swift */; };
@@ -51,6 +57,8 @@
 		CD917FB42A3835A9007BB770 /* LoaderDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderDemoView.swift; sourceTree = "<group>"; };
 		CD917FB62A3837F9007BB770 /* CustomLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoaderView.swift; sourceTree = "<group>"; };
 		CD917FB82A3839B0007BB770 /* CustomDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDemoView.swift; sourceTree = "<group>"; };
+		CD917FBA2A383F16007BB770 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		CD917FBC2A383FB5007BB770 /* CircularProgressDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressDemo.swift; sourceTree = "<group>"; };
 		CD995C7D2A20D63600E85A91 /* CustomFieldText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFieldText.swift; sourceTree = "<group>"; };
 		CD995C7F2A20DCC200E85A91 /* HomeUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUIView.swift; sourceTree = "<group>"; };
 		CD9CF42D29ADF6690043624D /* stickyHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stickyHeaderUIView.swift; sourceTree = "<group>"; };
@@ -65,6 +73,10 @@
 		CDCE885B29D2FDF400B87BF9 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		CDCE885F29D3111900B87BF9 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		CDCE886229D3250500B87BF9 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		CDCED1692A39917400A9EB76 /* CircularText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularText.swift; sourceTree = "<group>"; };
+		CDCED16C2A3991C800A9EB76 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		CDCED16F2A39C94500A9EB76 /* ViewBulder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBulder.swift; sourceTree = "<group>"; };
+		CDCED1722A39C9BC00A9EB76 /* ViewBuilderDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilderDemo.swift; sourceTree = "<group>"; };
 		CDE8491329D84F8F0087381A /* StickyMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyMainView.swift; sourceTree = "<group>"; };
 		CDE8491529D857670087381A /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		CDE8491929D85B1A0087381A /* StickyCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyCardView.swift; sourceTree = "<group>"; };
@@ -109,6 +121,9 @@
 		CD88650B29AA2E2A00BA97DD /* SwiftUIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CDCED16B2A39919100A9EB76 /* Extension */,
+				CDCED16E2A39C91200A9EB76 /* ViewBuilder */,
+				CDCED1682A39915E00A9EB76 /* ViewModifier */,
 				CD917FB32A383592007BB770 /* LoaderDemo */,
 				CD995C812A20DE1800E85A91 /* launchScreen */,
 				CDE8490F29D846F60087381A /* SrickyHeaderDemo */,
@@ -138,6 +153,8 @@
 				CD917FB42A3835A9007BB770 /* LoaderDemoView.swift */,
 				CD917FB62A3837F9007BB770 /* CustomLoaderView.swift */,
 				CD917FB82A3839B0007BB770 /* CustomDemoView.swift */,
+				CD917FBA2A383F16007BB770 /* CircularProgressView.swift */,
+				CD917FBC2A383FB5007BB770 /* CircularProgressDemo.swift */,
 			);
 			path = LoaderDemo;
 			sourceTree = "<group>";
@@ -194,6 +211,39 @@
 				CDCE886229D3250500B87BF9 /* ListViewModel.swift */,
 			);
 			path = ViewNodel;
+			sourceTree = "<group>";
+		};
+		CDCED1682A39915E00A9EB76 /* ViewModifier */ = {
+			isa = PBXGroup;
+			children = (
+				CDCED1692A39917400A9EB76 /* CircularText.swift */,
+			);
+			path = ViewModifier;
+			sourceTree = "<group>";
+		};
+		CDCED16B2A39919100A9EB76 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CDCED16C2A3991C800A9EB76 /* View+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		CDCED16E2A39C91200A9EB76 /* ViewBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				CDCED1712A39C98100A9EB76 /* ViewBuilderDemo */,
+				CDCED16F2A39C94500A9EB76 /* ViewBulder.swift */,
+			);
+			path = ViewBuilder;
+			sourceTree = "<group>";
+		};
+		CDCED1712A39C98100A9EB76 /* ViewBuilderDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CDCED1722A39C9BC00A9EB76 /* ViewBuilderDemo.swift */,
+			);
+			path = ViewBuilderDemo;
 			sourceTree = "<group>";
 		};
 		CDE8490F29D846F60087381A /* SrickyHeaderDemo */ = {
@@ -344,11 +394,14 @@
 				CDCE885C29D2FDF400B87BF9 /* AddView.swift in Sources */,
 				CD917FB72A3837F9007BB770 /* CustomLoaderView.swift in Sources */,
 				CD88650F29AA2E2A00BA97DD /* ListDemoView.swift in Sources */,
+				CDCED16A2A39917400A9EB76 /* CircularText.swift in Sources */,
 				CDCE885A29D2F4B600B87BF9 /* ListRowView.swift in Sources */,
 				CD917FB92A3839B0007BB770 /* CustomDemoView.swift in Sources */,
 				CD995C7E2A20D63600E85A91 /* CustomFieldText.swift in Sources */,
 				CD917FB52A3835A9007BB770 /* LoaderDemoView.swift in Sources */,
 				CDC9920C29DAC3A40061AB6C /* StickyHeaderView.swift in Sources */,
+				CDCED1732A39C9BC00A9EB76 /* ViewBuilderDemo.swift in Sources */,
+				CDCED1702A39C94500A9EB76 /* ViewBulder.swift in Sources */,
 				CDCE885829D2EFE900B87BF9 /* ListView.swift in Sources */,
 				CDC9921029DAF0B50061AB6C /* StickyMainViewModel.swift in Sources */,
 				CD88650D29AA2E2A00BA97DD /* SwiftUIDemoApp.swift in Sources */,
@@ -358,6 +411,9 @@
 				CDFEBB5129D1D06D00A92BF5 /* Color.swift in Sources */,
 				CDC9920E29DACAD50061AB6C /* Tab.swift in Sources */,
 				CDCE886329D3250500B87BF9 /* ListViewModel.swift in Sources */,
+				CD917FBB2A383F16007BB770 /* CircularProgressView.swift in Sources */,
+				CD917FBD2A383FB5007BB770 /* CircularProgressDemo.swift in Sources */,
+				CDCED16D2A3991C800A9EB76 /* View+Extension.swift in Sources */,
 				CD9E45BE29D42CBE004D54D5 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

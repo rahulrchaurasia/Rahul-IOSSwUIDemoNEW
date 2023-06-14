@@ -14,38 +14,55 @@ struct HomeUIView: View {
             Color(.secondarySystemBackground)
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             
-            VStack {
-              
+            ScrollView(showsIndicators: false){
                 
-                NavigationLink {
-                    stickyHeaderUIView()
-                } label: {
-                    Text("List Basic & Advance Demo")
-                        .padding(12)
-                        .font(.title2)
-                        .foregroundColor(.white)
-//                        .fontWeight(.semibold)
-                        .background(.red)
-                        .cornerRadius(15)
-                        
-                }
+                VStack {
+                  
+                    
+                    NavigationLink {
+                        stickyHeaderUIView()
+                    } label: {
+                        Text("List Basic & Advance Demo")
+                            .padding(12)
+                            .font(.title2)
+                            .foregroundColor(.white)
+    //                        .fontWeight(.semibold)
+                            .background(.red)
+                            .cornerRadius(15)
+                            
+                    }
 
-                NavigationLink {
-                    TextFieldDemo()
-                } label: {
-                    Text("TextField Demo")
-                        .padding(12)
-                        .font(.title2)
-                        .foregroundColor(.white)
-//                        .fontWeight(.semibold)
-                        .background(.purple).opacity(0.9)
-                        .cornerRadius(15)
-                        
-                }
+                    NavigationLink {
+                        TextFieldDemo()
+                    } label: {
+                        Text("TextField Demo")
+                            .padding(12)
+                            .font(.title2)
+                            .foregroundColor(.white)
+    //                        .fontWeight(.semibold)
+                            .background(.purple).opacity(0.9)
+                            .cornerRadius(15)
+                            
+                    }
 
-                
-               Spacer()
-            }.padding(.top,10)
+                    NavigationLink {
+                        ViewBuilderDemo()
+                    } label: {
+                        Text("ViewBuilder Demo")
+                            .padding(12)
+                            .font(.title2)
+                            .font(.system(.subheadline))
+                            .foregroundColor(.white)
+
+                            .background(.purple).opacity(0.9)
+                            .cornerRadius(15)
+                            
+                    }
+                    
+                   Spacer()
+                }.padding(.top,10)
+            }
+           
            
            
             
