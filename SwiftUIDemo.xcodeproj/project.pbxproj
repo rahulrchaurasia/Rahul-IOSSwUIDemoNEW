@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD2A43A32A3B446200430C65 /* SwiftUINavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2A43A22A3B446200430C65 /* SwiftUINavigationView.swift */; };
+		CD2A43A52A3B483600430C65 /* NavigateBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2A43A42A3B483600430C65 /* NavigateBuilder.swift */; };
+		CD6186492A4EB40D006E1329 /* SubScriberDemo1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6186482A4EB40D006E1329 /* SubScriberDemo1.swift */; };
+		CD61864B2A4ED366006E1329 /* SubScriberMainDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD61864A2A4ED366006E1329 /* SubScriberMainDemo.swift */; };
 		CD6D3BBF2A189B89007589E3 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = CD6D3BBE2A189B89007589E3 /* KeychainAccess */; };
 		CD88650D29AA2E2A00BA97DD /* SwiftUIDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88650C29AA2E2A00BA97DD /* SwiftUIDemoApp.swift */; };
 		CD88650F29AA2E2A00BA97DD /* ListDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88650E29AA2E2A00BA97DD /* ListDemoView.swift */; };
 		CD88651129AA2E2B00BA97DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD88651029AA2E2B00BA97DD /* Assets.xcassets */; };
 		CD88651429AA2E2B00BA97DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD88651329AA2E2B00BA97DD /* Preview Assets.xcassets */; };
+		CD8C8D222A4C41A500BD0964 /* SubscriberDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8C8D212A4C41A400BD0964 /* SubscriberDemo.swift */; };
 		CD917FB52A3835A9007BB770 /* LoaderDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD917FB42A3835A9007BB770 /* LoaderDemoView.swift */; };
 		CD917FB72A3837F9007BB770 /* CustomLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD917FB62A3837F9007BB770 /* CustomLoaderView.swift */; };
 		CD917FB92A3839B0007BB770 /* CustomDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD917FB82A3839B0007BB770 /* CustomDemoView.swift */; };
@@ -49,11 +54,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD2A43A22A3B446200430C65 /* SwiftUINavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUINavigationView.swift; sourceTree = "<group>"; };
+		CD2A43A42A3B483600430C65 /* NavigateBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigateBuilder.swift; sourceTree = "<group>"; };
+		CD6186482A4EB40D006E1329 /* SubScriberDemo1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubScriberDemo1.swift; sourceTree = "<group>"; };
+		CD61864A2A4ED366006E1329 /* SubScriberMainDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubScriberMainDemo.swift; sourceTree = "<group>"; };
 		CD88650929AA2E2A00BA97DD /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD88650C29AA2E2A00BA97DD /* SwiftUIDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemoApp.swift; sourceTree = "<group>"; };
 		CD88650E29AA2E2A00BA97DD /* ListDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDemoView.swift; sourceTree = "<group>"; };
 		CD88651029AA2E2B00BA97DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD88651329AA2E2B00BA97DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CD8C8D212A4C41A400BD0964 /* SubscriberDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriberDemo.swift; sourceTree = "<group>"; };
 		CD917FB42A3835A9007BB770 /* LoaderDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderDemoView.swift; sourceTree = "<group>"; };
 		CD917FB62A3837F9007BB770 /* CustomLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoaderView.swift; sourceTree = "<group>"; };
 		CD917FB82A3839B0007BB770 /* CustomDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDemoView.swift; sourceTree = "<group>"; };
@@ -121,6 +131,7 @@
 		CD88650B29AA2E2A00BA97DD /* SwiftUIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CD8C8D202A4C418200BD0964 /* SubscriberDemo */,
 				CDCED16B2A39919100A9EB76 /* Extension */,
 				CDCED16E2A39C91200A9EB76 /* ViewBuilder */,
 				CDCED1682A39915E00A9EB76 /* ViewModifier */,
@@ -145,6 +156,16 @@
 				CD88651329AA2E2B00BA97DD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CD8C8D202A4C418200BD0964 /* SubscriberDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CD8C8D212A4C41A400BD0964 /* SubscriberDemo.swift */,
+				CD6186482A4EB40D006E1329 /* SubScriberDemo1.swift */,
+				CD61864A2A4ED366006E1329 /* SubScriberMainDemo.swift */,
+			);
+			path = SubscriberDemo;
 			sourceTree = "<group>";
 		};
 		CD917FB32A383592007BB770 /* LoaderDemo */ = {
@@ -234,6 +255,7 @@
 			children = (
 				CDCED1712A39C98100A9EB76 /* ViewBuilderDemo */,
 				CDCED16F2A39C94500A9EB76 /* ViewBulder.swift */,
+				CD2A43A42A3B483600430C65 /* NavigateBuilder.swift */,
 			);
 			path = ViewBuilder;
 			sourceTree = "<group>";
@@ -241,6 +263,7 @@
 		CDCED1712A39C98100A9EB76 /* ViewBuilderDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CD2A43A22A3B446200430C65 /* SwiftUINavigationView.swift */,
 				CDCED1722A39C9BC00A9EB76 /* ViewBuilderDemo.swift */,
 			);
 			path = ViewBuilderDemo;
@@ -387,15 +410,18 @@
 			files = (
 				CDE8491429D84F8F0087381A /* StickyMainView.swift in Sources */,
 				CDCE886029D3111900B87BF9 /* ItemModel.swift in Sources */,
+				CD61864B2A4ED366006E1329 /* SubScriberMainDemo.swift in Sources */,
 				CD995C802A20DCC200E85A91 /* HomeUIView.swift in Sources */,
 				CDE8491629D857670087381A /* Food.swift in Sources */,
 				CDFEBB4F29D1BF6D00A92BF5 /* TextFieldDemo.swift in Sources */,
 				CD9CF42E29ADF6690043624D /* stickyHeaderUIView.swift in Sources */,
+				CD2A43A52A3B483600430C65 /* NavigateBuilder.swift in Sources */,
 				CDCE885C29D2FDF400B87BF9 /* AddView.swift in Sources */,
 				CD917FB72A3837F9007BB770 /* CustomLoaderView.swift in Sources */,
 				CD88650F29AA2E2A00BA97DD /* ListDemoView.swift in Sources */,
 				CDCED16A2A39917400A9EB76 /* CircularText.swift in Sources */,
 				CDCE885A29D2F4B600B87BF9 /* ListRowView.swift in Sources */,
+				CD2A43A32A3B446200430C65 /* SwiftUINavigationView.swift in Sources */,
 				CD917FB92A3839B0007BB770 /* CustomDemoView.swift in Sources */,
 				CD995C7E2A20D63600E85A91 /* CustomFieldText.swift in Sources */,
 				CD917FB52A3835A9007BB770 /* LoaderDemoView.swift in Sources */,
@@ -413,8 +439,10 @@
 				CDCE886329D3250500B87BF9 /* ListViewModel.swift in Sources */,
 				CD917FBB2A383F16007BB770 /* CircularProgressView.swift in Sources */,
 				CD917FBD2A383FB5007BB770 /* CircularProgressDemo.swift in Sources */,
+				CD6186492A4EB40D006E1329 /* SubScriberDemo1.swift in Sources */,
 				CDCED16D2A3991C800A9EB76 /* View+Extension.swift in Sources */,
 				CD9E45BE29D42CBE004D54D5 /* Constant.swift in Sources */,
+				CD8C8D222A4C41A500BD0964 /* SubscriberDemo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

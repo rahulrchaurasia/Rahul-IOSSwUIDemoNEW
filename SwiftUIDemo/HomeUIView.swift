@@ -59,6 +59,21 @@ struct HomeUIView: View {
                             
                     }
                     
+                    
+                    NavigationLink {
+                        SubScriberMainDemo()
+                        
+                    } label: {
+                        Text("Publisher & SubScribers")
+                            .padding(12)
+                            .font(.title2)
+                            .foregroundColor(.white)
+    //                        .fontWeight(.semibold)
+                            .background(.red)
+                            .cornerRadius(15)
+                            
+                    }
+                    
                    Spacer()
                 }.padding(.top,10)
             }

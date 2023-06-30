@@ -56,3 +56,31 @@ struct CustomContainerView<Content: View>: View {
         .cornerRadius(10)
     }
 }
+
+struct HeaderViewGeneric<Content: View>: View {
+   
+    let title : String
+    let content: () -> Content  // diff 1
+    
+    init(title: String,@ViewBuilder content: @escaping ()-> Content) {
+        self.title = title
+        self.content = content   // this  diff 2
+    }
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text(title)
+                .font(.largeTitle)
+                .foregroundColor(.black)
+            
+            content()// diff 3
+           
+            Divider()
+        }.frame(maxWidth: .infinity)
+            .foregroundColor(Color("skyblue"))
+            .padding(.horizontal)
+      
+    }
+}
+
+
