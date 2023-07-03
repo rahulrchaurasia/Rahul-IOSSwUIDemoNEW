@@ -10,5 +10,6 @@ import SwiftUI
 
 struct CustomColor {
     static let bg = Color("bg")
+    static let skyblue = Color("skyblue")
     // Add more here...
 }

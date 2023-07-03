@@ -19,12 +19,16 @@ class SubscriberViewModel : ObservableObject {
     
     @Published var textIsValid : Bool = false
     
+    @Published var showButton : Bool = false
     
     
     init(){
          
-       // setUpTimer()    // For Count
+        setUpTimer()    // For Count
         addTextFieldSubsscriber() //For TextFiled Validation change Image
+        
+        addButtonSubscriber()
+        
     }
     
     func addTextFieldSubsscriber(){
@@ -43,6 +47,26 @@ class SubscriberViewModel : ObservableObject {
                 self?.textIsValid = isVlid
             })
             .store(in: &cancellables )
+    }
+    
+    func addButtonSubscriber(){
+        
+        $textIsValid
+            .combineLatest($count)
+            .sink {[weak self] (isValid, count ) in
+               
+                guard let self = self else {return}
+                
+                if isValid && count >= 10  {
+                    
+                    self.showButton = true
+                }else{
+                    
+                    self.showButton = false
+                }
+                
+            }
+            .store(in: &cancellables)
     }
     
     func setUpTimer(){
@@ -124,6 +148,24 @@ struct SubscriberDemo: View {
                     , alignment: .trailing
                     
                 )
+            
+            Button {
+              
+                print("action done")
+            } label: {
+               
+                Text("Submit".uppercased())
+                    .font(.headline)
+                    .foregroundColor(.white)
+                    .frame(height: 55)
+                    .frame(maxWidth: .infinity)
+                    .background(Color.blue)
+                    .cornerRadius(10)
+                    .opacity(vm.showButton ? 1.0 :0.55)
+                
+            }
+            .disabled(!vm.showButton)
+
                 
         }
         .padding()
