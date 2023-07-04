@@ -83,6 +83,8 @@ class  AsyncPublisherViewModel : ObservableObject {
          */
         
     }
+    
+    
     func start() async {
         
         await manger.addData()

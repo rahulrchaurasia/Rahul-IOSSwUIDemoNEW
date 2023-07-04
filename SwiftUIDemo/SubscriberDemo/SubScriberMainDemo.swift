@@ -45,6 +45,20 @@ struct SubScriberMainDemo: View {
                         
                 }
                 
+                NavigationLink {
+                    //SubscriberDemo()
+                    AsyncPublishereDemo()
+                } label: {
+                    Text("Publisher & SubScribers 2")
+                        .padding(12)
+                        .font(.title2)
+                        .foregroundColor(.white)
+
+                        .background(CustomColor.skyblue)
+                        .cornerRadius(15)
+                        
+                }
+ 
                Spacer()
             }.padding(.top,10)
         }

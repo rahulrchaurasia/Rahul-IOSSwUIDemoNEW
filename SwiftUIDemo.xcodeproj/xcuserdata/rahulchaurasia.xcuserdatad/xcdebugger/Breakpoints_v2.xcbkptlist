@@ -163,5 +163,84 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E5FAA26F-A76F-4024-B9EC-F7BF622F314B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUIDemo/SubscriberDemo/AsyncPublishereDemo.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "start()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E5FAA26F-A76F-4024-B9EC-F7BF622F314B - cb3454de2508005a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for SwiftUIDemo.AsyncPublisherViewModel.start() async -&gt; ()"
+                  moduleName = "SwiftUIDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rahulchaurasia/Downloads/Destop/practiceProject/Ios/IosSwiftUI/SwiftUIDemo/SwiftUIDemo/SubscriberDemo/AsyncPublishereDemo.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "E5FAA26F-A76F-4024-B9EC-F7BF622F314B - d5a81df55ef7d4f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for SwiftUIDemo.AsyncPublisherViewModel.start() async -&gt; ()"
+                  moduleName = "SwiftUIDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rahulchaurasia/Downloads/Destop/practiceProject/Ios/IosSwiftUI/SwiftUIDemo/SwiftUIDemo/SubscriberDemo/AsyncPublishereDemo.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "E5FAA26F-A76F-4024-B9EC-F7BF622F314B - de666be7c87cba5c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for SwiftUIDemo.AsyncPublisherViewModel.start() async -&gt; ()"
+                  moduleName = "SwiftUIDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rahulchaurasia/Downloads/Destop/practiceProject/Ios/IosSwiftUI/SwiftUIDemo/SwiftUIDemo/SubscriberDemo/AsyncPublishereDemo.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2AF44F52-9897-4E43-86C5-C54BEBFD1843"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUIDemo/SubscriberDemo/AsyncPublishereDemo.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "addData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
