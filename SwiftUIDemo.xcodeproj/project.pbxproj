@@ -15,6 +15,7 @@
 		CD74553D2A5295FD00717361 /* ActorDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD74553C2A5295FD00717361 /* ActorDemo.swift */; };
 		CD74553F2A52D5D000717361 /* ActorDemo2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD74553E2A52D5D000717361 /* ActorDemo2.swift */; };
 		CD7455412A52F98F00717361 /* AsyncPublishereDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7455402A52F98F00717361 /* AsyncPublishereDemo.swift */; };
+		CD7C2AD42A5EDB3B004F5950 /* GCDDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7C2AD32A5EDB3B004F5950 /* GCDDemo.swift */; };
 		CD88650D29AA2E2A00BA97DD /* SwiftUIDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88650C29AA2E2A00BA97DD /* SwiftUIDemoApp.swift */; };
 		CD88650F29AA2E2A00BA97DD /* ListDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88650E29AA2E2A00BA97DD /* ListDemoView.swift */; };
 		CD88651129AA2E2B00BA97DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD88651029AA2E2B00BA97DD /* Assets.xcassets */; };
@@ -36,6 +37,10 @@
 		CD9E45BE29D42CBE004D54D5 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9E45BD29D42CBE004D54D5 /* Constant.swift */; };
 		CD9E45C029D451AD004D54D5 /* NoItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9E45BF29D451AD004D54D5 /* NoItemsView.swift */; };
 		CD9E45C229D46E83004D54D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD9E45C129D46E83004D54D5 /* LaunchScreen.storyboard */; };
+		CDAE00722A5FD2E900F760A7 /* FloatingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAE00712A5FD2E900F760A7 /* FloatingTextField.swift */; };
+		CDAE00742A5FD48300F760A7 /* BorderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAE00732A5FD48300F760A7 /* BorderTextField.swift */; };
+		CDAE00762A5FD57100F760A7 /* TextFieldDemo2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAE00752A5FD57100F760A7 /* TextFieldDemo2.swift */; };
+		CDAE00782A60027D00F760A7 /* CustomTextViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAE00772A60027D00F760A7 /* CustomTextViewModifier.swift */; };
 		CDC9920C29DAC3A40061AB6C /* StickyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC9920B29DAC3A40061AB6C /* StickyHeaderView.swift */; };
 		CDC9920E29DACAD50061AB6C /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC9920D29DACAD50061AB6C /* Tab.swift */; };
 		CDC9921029DAF0B50061AB6C /* StickyMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC9920F29DAF0B50061AB6C /* StickyMainViewModel.swift */; };
@@ -65,6 +70,7 @@
 		CD74553C2A5295FD00717361 /* ActorDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorDemo.swift; sourceTree = "<group>"; };
 		CD74553E2A52D5D000717361 /* ActorDemo2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorDemo2.swift; sourceTree = "<group>"; };
 		CD7455402A52F98F00717361 /* AsyncPublishereDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncPublishereDemo.swift; sourceTree = "<group>"; };
+		CD7C2AD32A5EDB3B004F5950 /* GCDDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDDemo.swift; sourceTree = "<group>"; };
 		CD88650929AA2E2A00BA97DD /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD88650C29AA2E2A00BA97DD /* SwiftUIDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemoApp.swift; sourceTree = "<group>"; };
 		CD88650E29AA2E2A00BA97DD /* ListDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDemoView.swift; sourceTree = "<group>"; };
@@ -82,6 +88,10 @@
 		CD9E45BD29D42CBE004D54D5 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		CD9E45BF29D451AD004D54D5 /* NoItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoItemsView.swift; sourceTree = "<group>"; };
 		CD9E45C129D46E83004D54D5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CDAE00712A5FD2E900F760A7 /* FloatingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTextField.swift; sourceTree = "<group>"; };
+		CDAE00732A5FD48300F760A7 /* BorderTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderTextField.swift; sourceTree = "<group>"; };
+		CDAE00752A5FD57100F760A7 /* TextFieldDemo2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDemo2.swift; sourceTree = "<group>"; };
+		CDAE00772A60027D00F760A7 /* CustomTextViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextViewModifier.swift; sourceTree = "<group>"; };
 		CDC9920B29DAC3A40061AB6C /* StickyHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeaderView.swift; sourceTree = "<group>"; };
 		CDC9920D29DACAD50061AB6C /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		CDC9920F29DAF0B50061AB6C /* StickyMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyMainViewModel.swift; sourceTree = "<group>"; };
@@ -129,6 +139,14 @@
 			path = ActorDemo;
 			sourceTree = "<group>";
 		};
+		CD7C2AD02A5EDAF3004F5950 /* GCDDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CD7C2AD32A5EDB3B004F5950 /* GCDDemo.swift */,
+			);
+			path = GCDDemo;
+			sourceTree = "<group>";
+		};
 		CD88650029AA2E2A00BA97DD = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +166,7 @@
 		CD88650B29AA2E2A00BA97DD /* SwiftUIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CD7C2AD02A5EDAF3004F5950 /* GCDDemo */,
 				CD74553B2A5295D600717361 /* ActorDemo */,
 				CD8C8D202A4C418200BD0964 /* SubscriberDemo */,
 				CDCED16B2A39919100A9EB76 /* Extension */,
@@ -258,6 +277,7 @@
 			isa = PBXGroup;
 			children = (
 				CDCED1692A39917400A9EB76 /* CircularText.swift */,
+				CDAE00772A60027D00F760A7 /* CustomTextViewModifier.swift */,
 			);
 			path = ViewModifier;
 			sourceTree = "<group>";
@@ -333,6 +353,8 @@
 				CDFEBB5029D1D06D00A92BF5 /* Color.swift */,
 				CD9E45BD29D42CBE004D54D5 /* Constant.swift */,
 				CD995C7D2A20D63600E85A91 /* CustomFieldText.swift */,
+				CDAE00712A5FD2E900F760A7 /* FloatingTextField.swift */,
+				CDAE00732A5FD48300F760A7 /* BorderTextField.swift */,
 			);
 			path = utility;
 			sourceTree = "<group>";
@@ -341,6 +363,7 @@
 			isa = PBXGroup;
 			children = (
 				CDFEBB4E29D1BF6D00A92BF5 /* TextFieldDemo.swift */,
+				CDAE00752A5FD57100F760A7 /* TextFieldDemo2.swift */,
 			);
 			path = DemoUI;
 			sourceTree = "<group>";
@@ -431,6 +454,7 @@
 				CDE8491429D84F8F0087381A /* StickyMainView.swift in Sources */,
 				CDCE886029D3111900B87BF9 /* ItemModel.swift in Sources */,
 				CD61864B2A4ED366006E1329 /* SubScriberMainDemo.swift in Sources */,
+				CD7C2AD42A5EDB3B004F5950 /* GCDDemo.swift in Sources */,
 				CDF5028E2A502FA300D64A24 /* SubscriberDemo2.swift in Sources */,
 				CD995C802A20DCC200E85A91 /* HomeUIView.swift in Sources */,
 				CD74553F2A52D5D000717361 /* ActorDemo2.swift in Sources */,
@@ -444,23 +468,27 @@
 				CDCED16A2A39917400A9EB76 /* CircularText.swift in Sources */,
 				CDCE885A29D2F4B600B87BF9 /* ListRowView.swift in Sources */,
 				CD2A43A32A3B446200430C65 /* SwiftUINavigationView.swift in Sources */,
+				CDAE00782A60027D00F760A7 /* CustomTextViewModifier.swift in Sources */,
 				CD917FB92A3839B0007BB770 /* CustomDemoView.swift in Sources */,
 				CD995C7E2A20D63600E85A91 /* CustomFieldText.swift in Sources */,
 				CD917FB52A3835A9007BB770 /* LoaderDemoView.swift in Sources */,
 				CDC9920C29DAC3A40061AB6C /* StickyHeaderView.swift in Sources */,
 				CD74553D2A5295FD00717361 /* ActorDemo.swift in Sources */,
 				CDCED1732A39C9BC00A9EB76 /* ViewBuilderDemo.swift in Sources */,
+				CDAE00742A5FD48300F760A7 /* BorderTextField.swift in Sources */,
 				CDCED1702A39C94500A9EB76 /* ViewBulder.swift in Sources */,
 				CDCE885829D2EFE900B87BF9 /* ListView.swift in Sources */,
 				CD7455412A52F98F00717361 /* AsyncPublishereDemo.swift in Sources */,
 				CDC9921029DAF0B50061AB6C /* StickyMainViewModel.swift in Sources */,
 				CD88650D29AA2E2A00BA97DD /* SwiftUIDemoApp.swift in Sources */,
+				CDAE00762A5FD57100F760A7 /* TextFieldDemo2.swift in Sources */,
 				CDFEBB4C29D1BACB00A92BF5 /* CustomTextFieldView.swift in Sources */,
 				CDE8491A29D85B1A0087381A /* StickyCardView.swift in Sources */,
 				CD9E45C029D451AD004D54D5 /* NoItemsView.swift in Sources */,
 				CDFEBB5129D1D06D00A92BF5 /* Color.swift in Sources */,
 				CDC9920E29DACAD50061AB6C /* Tab.swift in Sources */,
 				CDCE886329D3250500B87BF9 /* ListViewModel.swift in Sources */,
+				CDAE00722A5FD2E900F760A7 /* FloatingTextField.swift in Sources */,
 				CD917FBB2A383F16007BB770 /* CircularProgressView.swift in Sources */,
 				CD917FBD2A383FB5007BB770 /* CircularProgressDemo.swift in Sources */,
 				CD6186492A4EB40D006E1329 /* SubScriberDemo1.swift in Sources */,

@@ -12,12 +12,14 @@ struct SwiftUINavigationView: View {
     var body: some View {
         NavigationView{
             
-            CustomNavigationBar(title: "Demo1") {
+            CustomNavigationBar2(title: "Demo1") {
                 print("Data")
             } content: {
                 Text("Hello, World!")
                        .padding()
             }
+            
+            
             
             
             Spacer()

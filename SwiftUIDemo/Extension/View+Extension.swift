@@ -13,4 +13,19 @@ extension View {
     func circularText() -> some View {
         self.modifier(CircularText())
     }
+    
+    func underlineTextField() -> some View {
+            self
+                .padding(.vertical, 10)
+                .overlay(Rectangle().frame(height: 2).padding(.top, 35).foregroundColor(Color.gray.opacity(0.5)))
+                .foregroundColor(Color.black)
+                
+                .padding(10)
+        }
+    
+    func customTextViewModifier( roundedCornes: CGFloat,
+     textColor: Color) -> some View {
+        
+        self.modifier(CustomTextViewModifier(roundedCornes: roundedCornes, textColor: textColor))
+    }
 }

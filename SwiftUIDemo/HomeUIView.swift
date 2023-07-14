@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct HomeUIView: View {
+    
+    @State private var showTextFielDemo1 = false
+    @State private var showTextFielDemo2 = false
     var body: some View {
         ZStack{
            
@@ -18,60 +21,99 @@ struct HomeUIView: View {
                 
                 VStack {
                   
-                    
-                    NavigationLink {
-                        stickyHeaderUIView()
-                    } label: {
-                        Text("List Basic & Advance Demo")
-                            .padding(12)
-                            .font(.title2)
-                            .foregroundColor(.white)
-    //                        .fontWeight(.semibold)
-                            .background(.red)
-                            .cornerRadius(15)
-                            
-                    }
-
-                    NavigationLink {
-                        TextFieldDemo()
-                    } label: {
-                        Text("TextField Demo")
-                            .padding(12)
-                            .font(.title2)
-                            .foregroundColor(.white)
-    //                        .fontWeight(.semibold)
-                            .background(.purple).opacity(0.9)
-                            .cornerRadius(15)
-                            
-                    }
-
-                    NavigationLink {
-                        ViewBuilderDemo()
-                    } label: {
-                        Text("ViewBuilder Demo")
-                            .padding(12)
-                            .font(.title2)
-                            .font(.system(.subheadline))
-                            .foregroundColor(.white)
-
-                            .background(.purple).opacity(0.9)
-                            .cornerRadius(15)
-                            
-                    }
-                    
-                    
-                    NavigationLink {
-                        SubScriberMainDemo()
+                    if(showTextFielDemo1){
                         
-                    } label: {
-                        Text("Publisher & SubScribers")
-                            .padding(12)
-                            .font(.title2)
-                            .foregroundColor(.white)
-    //                        .fontWeight(.semibold)
-                            .background(.red)
-                            .cornerRadius(15)
+                        TextFieldDemo()
+                    }else if(showTextFielDemo2){
+                        
+                        TextFieldDemo2()
+                    }
+                    else{
+                        
+                        NavigationLink {
+                            stickyHeaderUIView()
+                        } label: {
+                            Text("List Basic & Advance Demo")
+                                .padding(12)
+                                .font(.title2)
+                                .foregroundColor(.white)
+        //                        .fontWeight(.semibold)
+                                .background(.red)
+                                .cornerRadius(15)
+                                
+                        }
+
+            
+                        NavigationLink {
+                            TextFieldDemo()
+                        } label: {
+                            Text("Text demo1")
+                                .padding(12)
+                                .font(.title2)
+                                .foregroundColor(.white)
+        //                        .fontWeight(.semibold)
+                                .background(.red)
+                                .cornerRadius(15)
+                                
+                        }
+                        Menu {
+                            Button("Demo 1", action: placeOrder)
+                             Button("Demo 2", action: adjustOrder)
+                        } label: {
+                            Text("TextField Demo")
+                                .padding()
+                                .foregroundColor(.white)
+                                .background(Color.blue)
+                                .cornerRadius(10)
+                        }
+
+
+                        NavigationLink {
+                            ViewBuilderDemo()
+                        } label: {
+                            Text("ViewBuilder Demo")
+                                .padding(12)
+                                .font(.title2)
+                                .font(.system(.subheadline))
+                                .foregroundColor(.white)
+
+                                .background(.purple).opacity(0.9)
+                                .cornerRadius(15)
+                                
+                        }
+                        
+                        
+                        NavigationLink {
+                            SubScriberMainDemo()
                             
+                        } label: {
+                            Text("Publisher & SubScribers")
+                                .padding(12)
+                                .font(.title2)
+                                .foregroundColor(.white)
+        //                        .fontWeight(.semibold)
+                                .background(.red)
+                                .cornerRadius(15)
+                                
+                        }
+           
+                        NavigationLink {
+                            GCDDemo()
+                        } label: {
+                            Text("GCD Demo")
+                                .padding(12)
+                                .font(.title2)
+                                .font(.system(.subheadline))
+                                .foregroundColor(.white)
+
+                                .background(CustomColor.skyblue).opacity(0.9)
+                                .cornerRadius(15)
+                                
+                        }
+                       
+                        
+                        
+                       
                     }
                     
                    Spacer()
@@ -83,7 +125,20 @@ struct HomeUIView: View {
             
         }
     }
+    
+    func placeOrder() {
+     
+        showTextFielDemo1 = true
+    }
+    
+    func adjustOrder() {
+        
+        showTextFielDemo2 = true
+    }
+ 
 }
+
+
 
 struct HomeUIView_Previews: PreviewProvider {
     static var previews: some View {
