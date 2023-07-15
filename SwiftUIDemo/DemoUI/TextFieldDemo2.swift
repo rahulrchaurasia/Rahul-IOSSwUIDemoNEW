@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TextFieldDemo2: View {
     
-    @Environment(\.presentationMode) var presentationMode
+    @Environment(\.presentationMode) var presentationMode : Binding<PresentationMode>
     @State private var firstname = String()
     @State private var lname = String()
     @State private var mob = String()
@@ -27,12 +27,19 @@ struct TextFieldDemo2: View {
                
                 CustomNavigationBar(title: "Demo Text") {
                     
-                    presentationMode.wrappedValue.dismiss()
+                    self.presentationMode.wrappedValue.dismiss()
                 } content: {
-                    Text("kde")
+                    Text("Data")
+                        .padding(12)
+                    Button("CLose") {
+                        self.presentationMode.wrappedValue.dismiss()
+                    }
                
                 }
 
+                Button("new Close") {
+                    self.presentationMode.wrappedValue.dismiss()
+                }
                 Text("Text Field Demo")
                     .font(.largeTitle)
                     .foregroundColor(Color.accentColor)

@@ -9,8 +9,7 @@ import SwiftUI
 
 struct HomeUIView: View {
     
-    @State private var showTextFielDemo1 = false
-    @State private var showTextFielDemo2 = false
+    
     var body: some View {
         ZStack{
            
@@ -21,15 +20,7 @@ struct HomeUIView: View {
                 
                 VStack {
                   
-                    if(showTextFielDemo1){
-                        
-                        TextFieldDemo()
-                    }else if(showTextFielDemo2){
-                        
-                        TextFieldDemo2()
-                    }
-                    else{
-                        
+                
                         NavigationLink {
                             stickyHeaderUIView()
                         } label: {
@@ -45,27 +36,19 @@ struct HomeUIView: View {
 
             
                         NavigationLink {
-                            TextFieldDemo()
+                            TextFieldMain()
                         } label: {
-                            Text("Text demo1")
+                            Text("Text demo")
                                 .padding(12)
                                 .font(.title2)
                                 .foregroundColor(.white)
-        //                        .fontWeight(.semibold)
                                 .background(.red)
                                 .cornerRadius(15)
                                 
                         }
-                        Menu {
-                            Button("Demo 1", action: placeOrder)
-                             Button("Demo 2", action: adjustOrder)
-                        } label: {
-                            Text("TextField Demo")
-                                .padding()
-                                .foregroundColor(.white)
-                                .background(Color.blue)
-                                .cornerRadius(10)
-                        }
+                        
+                    
+                        
 
 
                         NavigationLink {
@@ -114,7 +97,7 @@ struct HomeUIView: View {
                         
                         
                        
-                    }
+                    
                     
                    Spacer()
                 }.padding(.top,10)
@@ -126,15 +109,7 @@ struct HomeUIView: View {
         }
     }
     
-    func placeOrder() {
-     
-        showTextFielDemo1 = true
-    }
     
-    func adjustOrder() {
-        
-        showTextFielDemo2 = true
-    }
  
 }
 

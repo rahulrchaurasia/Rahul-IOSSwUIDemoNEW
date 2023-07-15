@@ -19,6 +19,9 @@ struct SwiftUIDemoApp: App {
                 
             }
             .navigationViewStyle(StackNavigationViewStyle())
+            .navigationTitle("Main View")
+                        .navigationBarItems(trailing: EditButton())
+                        .navigationBarTitleDisplayMode(.inline)
             .environmentObject(listViewModel)
             
             /*************************environmentObject**********************************/

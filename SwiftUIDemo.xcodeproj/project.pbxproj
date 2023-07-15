@@ -11,11 +11,17 @@
 		CD2A43A52A3B483600430C65 /* NavigateBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2A43A42A3B483600430C65 /* NavigateBuilder.swift */; };
 		CD6186492A4EB40D006E1329 /* SubScriberDemo1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6186482A4EB40D006E1329 /* SubScriberDemo1.swift */; };
 		CD61864B2A4ED366006E1329 /* SubScriberMainDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD61864A2A4ED366006E1329 /* SubScriberMainDemo.swift */; };
+		CD6B348F2A6121300035C575 /* TextFieldMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6B348E2A6121300035C575 /* TextFieldMain.swift */; };
+		CD6B34912A6129590035C575 /* TextFieldDemo3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6B34902A6129590035C575 /* TextFieldDemo3.swift */; };
+		CD6B34942A614E5A0035C575 /* NewContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6B34932A614E5A0035C575 /* NewContact.swift */; };
+		CD6B34972A6158970035C575 /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6B34962A6158970035C575 /* ContactViewModel.swift */; };
 		CD6D3BBF2A189B89007589E3 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = CD6D3BBE2A189B89007589E3 /* KeychainAccess */; };
 		CD74553D2A5295FD00717361 /* ActorDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD74553C2A5295FD00717361 /* ActorDemo.swift */; };
 		CD74553F2A52D5D000717361 /* ActorDemo2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD74553E2A52D5D000717361 /* ActorDemo2.swift */; };
 		CD7455412A52F98F00717361 /* AsyncPublishereDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7455402A52F98F00717361 /* AsyncPublishereDemo.swift */; };
 		CD7C2AD42A5EDB3B004F5950 /* GCDDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7C2AD32A5EDB3B004F5950 /* GCDDemo.swift */; };
+		CD7EEFE72A62681B004915E3 /* ContactsDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7EEFE62A62681B004915E3 /* ContactsDetails.swift */; };
+		CD7EEFEA2A62757D004915E3 /* ContactsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7EEFE92A62757D004915E3 /* ContactsDetailView.swift */; };
 		CD88650D29AA2E2A00BA97DD /* SwiftUIDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88650C29AA2E2A00BA97DD /* SwiftUIDemoApp.swift */; };
 		CD88650F29AA2E2A00BA97DD /* ListDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88650E29AA2E2A00BA97DD /* ListDemoView.swift */; };
 		CD88651129AA2E2B00BA97DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD88651029AA2E2B00BA97DD /* Assets.xcassets */; };
@@ -67,10 +73,16 @@
 		CD2A43A42A3B483600430C65 /* NavigateBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigateBuilder.swift; sourceTree = "<group>"; };
 		CD6186482A4EB40D006E1329 /* SubScriberDemo1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubScriberDemo1.swift; sourceTree = "<group>"; };
 		CD61864A2A4ED366006E1329 /* SubScriberMainDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubScriberMainDemo.swift; sourceTree = "<group>"; };
+		CD6B348E2A6121300035C575 /* TextFieldMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldMain.swift; sourceTree = "<group>"; };
+		CD6B34902A6129590035C575 /* TextFieldDemo3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDemo3.swift; sourceTree = "<group>"; };
+		CD6B34932A614E5A0035C575 /* NewContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewContact.swift; sourceTree = "<group>"; };
+		CD6B34962A6158970035C575 /* ContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewModel.swift; sourceTree = "<group>"; };
 		CD74553C2A5295FD00717361 /* ActorDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorDemo.swift; sourceTree = "<group>"; };
 		CD74553E2A52D5D000717361 /* ActorDemo2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorDemo2.swift; sourceTree = "<group>"; };
 		CD7455402A52F98F00717361 /* AsyncPublishereDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncPublishereDemo.swift; sourceTree = "<group>"; };
 		CD7C2AD32A5EDB3B004F5950 /* GCDDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDDemo.swift; sourceTree = "<group>"; };
+		CD7EEFE62A62681B004915E3 /* ContactsDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsDetails.swift; sourceTree = "<group>"; };
+		CD7EEFE92A62757D004915E3 /* ContactsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsDetailView.swift; sourceTree = "<group>"; };
 		CD88650929AA2E2A00BA97DD /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD88650C29AA2E2A00BA97DD /* SwiftUIDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemoApp.swift; sourceTree = "<group>"; };
 		CD88650E29AA2E2A00BA97DD /* ListDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDemoView.swift; sourceTree = "<group>"; };
@@ -130,6 +142,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD6B34922A614E460035C575 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				CD6B34932A614E5A0035C575 /* NewContact.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		CD6B34952A6158790035C575 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CD6B34962A6158970035C575 /* ContactViewModel.swift */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
 		CD74553B2A5295D600717361 /* ActorDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +173,14 @@
 				CD7C2AD32A5EDB3B004F5950 /* GCDDemo.swift */,
 			);
 			path = GCDDemo;
+			sourceTree = "<group>";
+		};
+		CD7EEFE82A6272AC004915E3 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				CD7EEFE92A62757D004915E3 /* ContactsDetailView.swift */,
+			);
+			path = Contact;
 			sourceTree = "<group>";
 		};
 		CD88650029AA2E2A00BA97DD = {
@@ -362,8 +398,14 @@
 		CDFEBB4D29D1BF4300A92BF5 /* DemoUI */ = {
 			isa = PBXGroup;
 			children = (
+				CD7EEFE82A6272AC004915E3 /* Contact */,
+				CD6B34952A6158790035C575 /* viewModel */,
+				CD6B34922A614E460035C575 /* model */,
 				CDFEBB4E29D1BF6D00A92BF5 /* TextFieldDemo.swift */,
+				CD7EEFE62A62681B004915E3 /* ContactsDetails.swift */,
 				CDAE00752A5FD57100F760A7 /* TextFieldDemo2.swift */,
+				CD6B348E2A6121300035C575 /* TextFieldMain.swift */,
+				CD6B34902A6129590035C575 /* TextFieldDemo3.swift */,
 			);
 			path = DemoUI;
 			sourceTree = "<group>";
@@ -453,11 +495,14 @@
 			files = (
 				CDE8491429D84F8F0087381A /* StickyMainView.swift in Sources */,
 				CDCE886029D3111900B87BF9 /* ItemModel.swift in Sources */,
+				CD6B348F2A6121300035C575 /* TextFieldMain.swift in Sources */,
 				CD61864B2A4ED366006E1329 /* SubScriberMainDemo.swift in Sources */,
 				CD7C2AD42A5EDB3B004F5950 /* GCDDemo.swift in Sources */,
 				CDF5028E2A502FA300D64A24 /* SubscriberDemo2.swift in Sources */,
 				CD995C802A20DCC200E85A91 /* HomeUIView.swift in Sources */,
 				CD74553F2A52D5D000717361 /* ActorDemo2.swift in Sources */,
+				CD6B34912A6129590035C575 /* TextFieldDemo3.swift in Sources */,
+				CD7EEFE72A62681B004915E3 /* ContactsDetails.swift in Sources */,
 				CDE8491629D857670087381A /* Food.swift in Sources */,
 				CDFEBB4F29D1BF6D00A92BF5 /* TextFieldDemo.swift in Sources */,
 				CD9CF42E29ADF6690043624D /* stickyHeaderUIView.swift in Sources */,
@@ -473,6 +518,8 @@
 				CD995C7E2A20D63600E85A91 /* CustomFieldText.swift in Sources */,
 				CD917FB52A3835A9007BB770 /* LoaderDemoView.swift in Sources */,
 				CDC9920C29DAC3A40061AB6C /* StickyHeaderView.swift in Sources */,
+				CD6B34942A614E5A0035C575 /* NewContact.swift in Sources */,
+				CD6B34972A6158970035C575 /* ContactViewModel.swift in Sources */,
 				CD74553D2A5295FD00717361 /* ActorDemo.swift in Sources */,
 				CDCED1732A39C9BC00A9EB76 /* ViewBuilderDemo.swift in Sources */,
 				CDAE00742A5FD48300F760A7 /* BorderTextField.swift in Sources */,
@@ -492,6 +539,7 @@
 				CD917FBB2A383F16007BB770 /* CircularProgressView.swift in Sources */,
 				CD917FBD2A383FB5007BB770 /* CircularProgressDemo.swift in Sources */,
 				CD6186492A4EB40D006E1329 /* SubScriberDemo1.swift in Sources */,
+				CD7EEFEA2A62757D004915E3 /* ContactsDetailView.swift in Sources */,
 				CDCED16D2A3991C800A9EB76 /* View+Extension.swift in Sources */,
 				CD9E45BE29D42CBE004D54D5 /* Constant.swift in Sources */,
 				CD8C8D222A4C41A500BD0964 /* SubscriberDemo.swift in Sources */,
