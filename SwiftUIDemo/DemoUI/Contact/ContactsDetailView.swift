@@ -7,7 +7,10 @@
 
 import SwiftUI
 
-
+/*
+ Note : We Manually Add Title and
+ remove BackButton from toolbar using .navigationBarBackButtonHidden(true)
+ */
 struct ContactsDetailView: View {
     
     @StateObject private var vm = ContactViewModel()
@@ -21,19 +24,19 @@ struct ContactsDetailView: View {
                     Spacer()
                     
                     Button {
-                        shouldShowCreateContact.toggle()
+                        print("Done")
                     } label: {
-                      Image(systemName: "plus")
+                      Image(systemName: "person.fill.checkmark")
                             .padding()
                     }
                     .font(.title)
 
                 }
                 .frame(maxWidth: .infinity, alignment: .top)
-               
-        
-                ContactsDetails()
-              
+               /***************************/
+                    // View is Here
+                 ContactsDetails()
+                /***************************/
                
             }
             .padding(.horizontal)
@@ -49,7 +52,39 @@ struct ContactsDetailView: View {
                     
             }
         
-       
+            .navigationBarTitle("Contact DEmo")
+            .navigationBarBackButtonHidden(true)
+            .navigationBarItems(leading:
+                    Button(action: {
+                       
+                       print("Back press")
+                    }) {
+                        HStack {
+                            Image(systemName: "chevron.left")
+                                .resizable()
+                                .font(.title2)
+                           // Text("Custom Back")
+                        }
+                    }
+                )
+            .toolbar {
+                    ToolbarItem(placement: .confirmationAction) {
+                        Button {
+                           
+                            shouldShowCreateContact.toggle()
+                        } label: {
+                            Image(systemName: "plus")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 20)
+                        }
+                    }
+                
+                ToolbarItem(placement: .principal) {
+                                    Text("Contact")
+                                        .font(.headline)
+                                }
+                }
     }
 }
 

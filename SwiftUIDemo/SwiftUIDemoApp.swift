@@ -15,13 +15,30 @@ struct SwiftUIDemoApp: App {
         WindowGroup {
           
             NavigationView {
-               HomeUIView()
+                HomeUIView()
+                
+//                    .navigationTitle("Home")
+//                    .toolbar {
+//                        ToolbarItem(placement: .confirmationAction) {
+//                            Button {
+//                                print("Done")
+//                            } label: {
+//                                Image(systemName: "plus")
+//                                    .resizable()
+//                                    .scaledToFit()
+//                                    .frame(width: 20)
+//                            }
+//                        }
+//                    }
                 
             }
             .navigationViewStyle(StackNavigationViewStyle())
             .navigationTitle("Main View")
-                        .navigationBarItems(trailing: EditButton())
-                        .navigationBarTitleDisplayMode(.inline)
+            .navigationBarTitleDisplayMode(.inline)
+            
+        
+            
+            
             .environmentObject(listViewModel)
             
             /*************************environmentObject**********************************/
@@ -39,6 +56,7 @@ struct SwiftUIDemoApp: App {
 
 struct Previews_SwiftUIDemoApp_Previews: PreviewProvider {
     static var previews: some View {
-        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
+       // /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
+        ContactsDetailView()
     }
 }

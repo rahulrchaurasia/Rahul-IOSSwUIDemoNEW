@@ -49,7 +49,7 @@ struct TextFieldMain: View {
                         .padding(12)
                         .font(.title2)
                         .foregroundColor(.white)
-                        .background(.red)
+                        .background(.orange.opacity(0.7))
                         .cornerRadius(15)
                         
                 }
@@ -61,7 +61,19 @@ struct TextFieldMain: View {
                         .padding(12)
                         .font(.title2)
                         .foregroundColor(.white)
-                        .background(.red)
+                        .background(.pink.opacity(0.7))
+                        .cornerRadius(15)
+                        
+                }
+                
+                NavigationLink {
+                    TextFieldDemo4()
+                } label: {
+                    Text("Two Column at Proper Ratio")
+                        .padding(12)
+                        .font(.title2)
+                        .foregroundColor(.white)
+                        .background(.purple.opacity(0.7))
                         .cornerRadius(15)
                         
                 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD1336972A652F0800E5EA40 /* TextFieldDemo4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1336962A652F0800E5EA40 /* TextFieldDemo4.swift */; };
 		CD2A43A32A3B446200430C65 /* SwiftUINavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2A43A22A3B446200430C65 /* SwiftUINavigationView.swift */; };
 		CD2A43A52A3B483600430C65 /* NavigateBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2A43A42A3B483600430C65 /* NavigateBuilder.swift */; };
 		CD6186492A4EB40D006E1329 /* SubScriberDemo1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6186482A4EB40D006E1329 /* SubScriberDemo1.swift */; };
@@ -20,7 +21,7 @@
 		CD74553F2A52D5D000717361 /* ActorDemo2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD74553E2A52D5D000717361 /* ActorDemo2.swift */; };
 		CD7455412A52F98F00717361 /* AsyncPublishereDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7455402A52F98F00717361 /* AsyncPublishereDemo.swift */; };
 		CD7C2AD42A5EDB3B004F5950 /* GCDDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7C2AD32A5EDB3B004F5950 /* GCDDemo.swift */; };
-		CD7EEFE72A62681B004915E3 /* ContactsDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7EEFE62A62681B004915E3 /* ContactsDetails.swift */; };
+		CD7EEFE72A62681B004915E3 /* ContactsItemDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7EEFE62A62681B004915E3 /* ContactsItemDetails.swift */; };
 		CD7EEFEA2A62757D004915E3 /* ContactsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7EEFE92A62757D004915E3 /* ContactsDetailView.swift */; };
 		CD88650D29AA2E2A00BA97DD /* SwiftUIDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88650C29AA2E2A00BA97DD /* SwiftUIDemoApp.swift */; };
 		CD88650F29AA2E2A00BA97DD /* ListDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88650E29AA2E2A00BA97DD /* ListDemoView.swift */; };
@@ -69,6 +70,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD1336962A652F0800E5EA40 /* TextFieldDemo4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDemo4.swift; sourceTree = "<group>"; };
 		CD2A43A22A3B446200430C65 /* SwiftUINavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUINavigationView.swift; sourceTree = "<group>"; };
 		CD2A43A42A3B483600430C65 /* NavigateBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigateBuilder.swift; sourceTree = "<group>"; };
 		CD6186482A4EB40D006E1329 /* SubScriberDemo1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubScriberDemo1.swift; sourceTree = "<group>"; };
@@ -81,7 +83,7 @@
 		CD74553E2A52D5D000717361 /* ActorDemo2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorDemo2.swift; sourceTree = "<group>"; };
 		CD7455402A52F98F00717361 /* AsyncPublishereDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncPublishereDemo.swift; sourceTree = "<group>"; };
 		CD7C2AD32A5EDB3B004F5950 /* GCDDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDDemo.swift; sourceTree = "<group>"; };
-		CD7EEFE62A62681B004915E3 /* ContactsDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsDetails.swift; sourceTree = "<group>"; };
+		CD7EEFE62A62681B004915E3 /* ContactsItemDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsItemDetails.swift; sourceTree = "<group>"; };
 		CD7EEFE92A62757D004915E3 /* ContactsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsDetailView.swift; sourceTree = "<group>"; };
 		CD88650929AA2E2A00BA97DD /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD88650C29AA2E2A00BA97DD /* SwiftUIDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemoApp.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				CD7EEFE92A62757D004915E3 /* ContactsDetailView.swift */,
+				CD7EEFE62A62681B004915E3 /* ContactsItemDetails.swift */,
 			);
 			path = Contact;
 			sourceTree = "<group>";
@@ -402,10 +405,10 @@
 				CD6B34952A6158790035C575 /* viewModel */,
 				CD6B34922A614E460035C575 /* model */,
 				CDFEBB4E29D1BF6D00A92BF5 /* TextFieldDemo.swift */,
-				CD7EEFE62A62681B004915E3 /* ContactsDetails.swift */,
 				CDAE00752A5FD57100F760A7 /* TextFieldDemo2.swift */,
 				CD6B348E2A6121300035C575 /* TextFieldMain.swift */,
 				CD6B34902A6129590035C575 /* TextFieldDemo3.swift */,
+				CD1336962A652F0800E5EA40 /* TextFieldDemo4.swift */,
 			);
 			path = DemoUI;
 			sourceTree = "<group>";
@@ -502,7 +505,7 @@
 				CD995C802A20DCC200E85A91 /* HomeUIView.swift in Sources */,
 				CD74553F2A52D5D000717361 /* ActorDemo2.swift in Sources */,
 				CD6B34912A6129590035C575 /* TextFieldDemo3.swift in Sources */,
-				CD7EEFE72A62681B004915E3 /* ContactsDetails.swift in Sources */,
+				CD7EEFE72A62681B004915E3 /* ContactsItemDetails.swift in Sources */,
 				CDE8491629D857670087381A /* Food.swift in Sources */,
 				CDFEBB4F29D1BF6D00A92BF5 /* TextFieldDemo.swift in Sources */,
 				CD9CF42E29ADF6690043624D /* stickyHeaderUIView.swift in Sources */,
@@ -513,6 +516,7 @@
 				CDCED16A2A39917400A9EB76 /* CircularText.swift in Sources */,
 				CDCE885A29D2F4B600B87BF9 /* ListRowView.swift in Sources */,
 				CD2A43A32A3B446200430C65 /* SwiftUINavigationView.swift in Sources */,
+				CD1336972A652F0800E5EA40 /* TextFieldDemo4.swift in Sources */,
 				CDAE00782A60027D00F760A7 /* CustomTextViewModifier.swift in Sources */,
 				CD917FB92A3839B0007BB770 /* CustomDemoView.swift in Sources */,
 				CD995C7E2A20D63600E85A91 /* CustomFieldText.swift in Sources */,

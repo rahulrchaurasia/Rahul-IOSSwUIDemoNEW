@@ -23,6 +23,7 @@ struct HomeUIView: View {
                 
                         NavigationLink {
                             stickyHeaderUIView()
+                                .navigationBarTitle("First View")
                         } label: {
                             Text("List Basic & Advance Demo")
                                 .padding(12)
@@ -37,6 +38,7 @@ struct HomeUIView: View {
             
                         NavigationLink {
                             TextFieldMain()
+                                .navigationBarTitle("Text Demo")
                         } label: {
                             Text("Text demo")
                                 .padding(12)
@@ -46,6 +48,7 @@ struct HomeUIView: View {
                                 .cornerRadius(15)
                                 
                         }
+                    
                         
                     
                         
@@ -53,6 +56,7 @@ struct HomeUIView: View {
 
                         NavigationLink {
                             ViewBuilderDemo()
+                                .navigationBarTitle(" View Demo")
                         } label: {
                             Text("ViewBuilder Demo")
                                 .padding(12)
@@ -82,6 +86,7 @@ struct HomeUIView: View {
            
                         NavigationLink {
                             GCDDemo()
+                                .navigationBarTitle("GCD Demo")
                         } label: {
                             Text("GCD Demo")
                                 .padding(12)
@@ -93,11 +98,7 @@ struct HomeUIView: View {
                                 .cornerRadius(15)
                                 
                         }
-                       
-                        
-                        
-                       
-                    
+  
                     
                    Spacer()
                 }.padding(.top,10)
@@ -107,6 +108,20 @@ struct HomeUIView: View {
            
             
         }
+        .navigationTitle("Home")
+        .toolbar {
+            ToolbarItem(placement: .confirmationAction) {
+                Button {
+                    print("Done")
+                } label: {
+                    Image(systemName: "plus")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 20)
+                }
+            }
+        }
+        
     }
     
     
