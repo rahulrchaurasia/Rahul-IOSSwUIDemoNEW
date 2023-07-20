@@ -30,9 +30,6 @@ extension View {
     }
     
    
-        func dismissKeyboardOnTap() -> some View {
-            self.modifier(DismissKeyboardOnTap())
-        }
     
     
     func hideKeyboard() {

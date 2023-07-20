@@ -63,31 +63,52 @@ struct TextFieldDemo3: View {
                 }
                 
                 ToolbarItemGroup(placement: .keyboard) {
-                   
+
+                    if(focusedInput == .phoneNumber || focusedInput == .emergencyNotes ){
+                        Button("Done"){
+                            
+                            //self.hideKeyboard()  // its also working fine
+                            dismissKeyboard()
+                            print("Done Click")
+                        }.tint(.brown)
+                      
+                    }
+                  
+                    
                     Spacer()
                     Button {
                         print("Previous Click")
                       previous()
                     } label: {
                       Image(systemName: "chevron.up")
-                    }.padding(.trailing)
+                            .font(.system(size: 18, weight: .semibold))
+                            .foregroundColor(!hasReachedFirst ? .purple.opacity(0.6) : .gray.opacity(0.6))
+                    }.padding(.horizontal)
+                        .disabled(hasReachedFirst)
+                    
 
                     Button {
                         print("next Click")
                       next()
                     } label: {
                       Image(systemName: "chevron.down")
-                    }.padding(.trailing)
+                            .font(.system(size: 18, weight: .semibold))
+                            .foregroundColor(!hasReachedEnd ? .purple.opacity(0.6) : .gray.opacity(0.6))
+                    }.padding(.horizontal)
+                        .disabled(hasReachedEnd)
 
                 }
 
+            }
+            .onSubmit {
+                handleSubmitLabel()
             }
             
             .onAppear{
                 
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1){
 
-                   // self.focusedInput = .prefix
+                    self.focusedInput = .prefix
                 }
             }
         }
@@ -128,8 +149,60 @@ private extension TextFieldDemo3 {
 private extension TextFieldDemo3 {
     
     
+    func handleSubmitLabel(){
+        
+        switch focusedInput {
+            
+        case .prefix :
+            focusedInput = .firstName
+            
+        case .firstName :
+            focusedInput = .lastName
+            
+        case .lastName :
+            focusedInput = .company
+            
+        case .company :
+            focusedInput = .email
+            
+        case .email :
+            focusedInput = .phoneNumber
+            
+        case .phoneNumber :
+            focusedInput = .emergencyNotes
+            
+        case .emergencyNotes :
+            focusedInput = .address1
+            
+        case .address1 :
+            focusedInput = .address2
+            
+        case .address2 :
+            focusedInput = .address3
+            
+        default :
+            print("Done")
+            
+            
+        }
+        
+    }
     
  
+   var hasReachedEnd : Bool {
+        
+        focusedInput == Field.allCases.last
+    }
+    
+    var hasReachedFirst : Bool {
+        
+        focusedInput == Field.allCases.first
+    }
+    
+    func dismissKeyboard(){
+        focusedInput = nil
+    }
+    
     func next(){
         
         guard let currentInput = focusedInput,
@@ -199,18 +272,21 @@ private extension TextFieldDemo3 {
             TextField("Prefix", text: $vm.newConatct.general.prefix)
                 .textContentType(.namePrefix)
                 .focused($focusedInput, equals: .prefix)
-               // . dismissKeyboardOnTap()
+                .autocapitalization(.allCharacters)  // For Handling text Capitalization
+                .submitLabel(.next)
             
             TextField("First Name", text: $vm.newConatct.general.firstName)
                 .textContentType(.name)
                 .keyboardType(.namePhonePad)
                 .focused($focusedInput, equals: .firstName)
+                .submitLabel(.next)
                 
             
             TextField("Last Name", text: $vm.newConatct.general.lastName)
                 .textContentType(.familyName)
                 .keyboardType(.namePhonePad)
                 .focused($focusedInput,equals: .lastName)
+                .submitLabel(.next)
               
             
             // Picker : Gender.allCases defines all cases of enum ie male,female,none
@@ -228,7 +304,7 @@ private extension TextFieldDemo3 {
             TextField("(Optional) Company", text: $vm.newConatct.general.company)
                 .textContentType(.organizationName)
                 .focused($focusedInput, equals: .company)
-                
+                .submitLabel(.next)
     
             
         }header: {
@@ -292,12 +368,14 @@ private extension TextFieldDemo3 {
                 .textContentType(.emailAddress)
                 .keyboardType(.emailAddress)
                 .focused($focusedInput, equals: .email)
+                .submitLabel(.next)
             
             TextField("Phone Number", text: $vm.newConatct.contactInfo.phoneNumber)
                 .textContentType(.telephoneNumber)
                 .keyboardType(.phonePad)
                 .focused($focusedInput,equals: .phoneNumber)
-            
+                .submitLabel(.next)
+              
            
             
         }
@@ -312,6 +390,11 @@ private extension TextFieldDemo3 {
             
             TextEditor(text: $vm.newConatct.emergency.notes)
                 .focused($focusedInput, equals: .emergencyNotes)
+                .submitLabel(.next)
+            
+//            TextEditorWrapper(text: $vm.newConatct.emergency.notes)
+//                .keyboardType(.default).submitLabel(.next)
+                          
         }footer: {
             Text("Please enter information of emegency contact info")
                 
@@ -324,18 +407,20 @@ private extension TextFieldDemo3 {
             
             TextField("Address 1", text: $vm.newConatct.otherDetails.address1)
                 .textContentType(.addressCity)
-                .keyboardType(.phonePad)
                 .focused($focusedInput,equals: .address1)
+                .submitLabel(.next)
             
             TextField("Address 2 ", text: $vm.newConatct.otherDetails.address2)
                 .textContentType(.emailAddress)
-                .keyboardType(.emailAddress)
+                
                 .focused($focusedInput, equals: .address2)
+                .submitLabel(.next)
             
             TextField("Address 3 ", text: $vm.newConatct.otherDetails.address3)
                 .textContentType(.emailAddress)
-                .keyboardType(.emailAddress)
+               
                 .focused($focusedInput, equals: .address3)
+                .submitLabel(.done)
             
         }header: {
             Text("Other Details")
