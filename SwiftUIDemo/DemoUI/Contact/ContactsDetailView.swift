@@ -8,12 +8,31 @@
 import SwiftUI
 
 /*
+ 
+ https://stackoverflow.com/questions/59702997/can-a-modal-sheet-have-a-navigation-bar-in-swiftui
+ 
+ For Sheet : Navigation Bar does not appear in the modal sheet as you can see below.
+ wrap your modal view in a NavigationView like this
+ .sheet(isPresented: $isModalSheetShown) {
+         NavigationView {
+             VStack {
+                 Text("Modal")
+             }
+             .navigationBarItems(trailing: Button("Done",
+                                                  action: {}))
+         }
+     }
+ 
  Note : We Manually Add Title and
  remove BackButton from toolbar using .navigationBarBackButtonHidden(true)
+ 
  */
 struct ContactsDetailView: View {
     
-    @StateObject private var vm = ContactViewModel()
+    
+    @Environment(\.dismiss) private var dismiss
+    @Environment(\.presentationMode) private var presentationMode
+    @StateObject private var vm = ContactMainViewModel()
     @State private var shouldShowCreateContact : Bool = false
     var body: some View {
     
@@ -33,10 +52,31 @@ struct ContactsDetailView: View {
 
                 }
                 .frame(maxWidth: .infinity, alignment: .top)
-               /***************************/
-                    // View is Here
-                 ContactsDetails()
-                /***************************/
+               /******************************************/
+                    // Contact Data display Here
+                
+                if(vm.contacts.isEmpty){
+                    
+                    Text("No Contact Added...")
+                        .font(.headline)
+                        .padding(20)
+                        .foregroundColor(.blue)
+                        .background(.gray.opacity(0.3))
+                }else{
+                    ScrollView{
+                        LazyVStack {
+                            ForEach(vm.contacts) { item in
+                                ContactsDetails(item: item)
+                            }
+                            
+                        }
+                    }
+                    
+                   
+                }
+                   
+                    
+                /******************************************/
                
             }
             .padding(.horizontal)
@@ -48,7 +88,10 @@ struct ContactsDetailView: View {
                     print("New Contact")
                     dump(contact)
                     
+                    vm.addContact(contact)
+                    
                 }
+              
                     
             }
         
@@ -57,7 +100,7 @@ struct ContactsDetailView: View {
             .navigationBarItems(leading:
                     Button(action: {
                        
-                       print("Back press")
+                      handleDismissAll()
                     }) {
                         HStack {
                             Image(systemName: "chevron.left")
@@ -68,26 +111,74 @@ struct ContactsDetailView: View {
                     }
                 )
             .toolbar {
-                    ToolbarItem(placement: .confirmationAction) {
-                        Button {
-                           
-                            shouldShowCreateContact.toggle()
-                        } label: {
-                            Image(systemName: "plus")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 20)
-                        }
+                
+                
+                //                ToolbarItem(placement: .navigationBarTrailing) {
+                //
+                //                    Button {
+                //                        //moveToHome()
+                //                        print("Move To Home")
+                //                    } label: {
+                //
+                //                       Image(systemName: "house.fill")
+                //                    }
+                //
+                //                }
+                
+                
+            
+                ToolbarItemGroup(placement: .navigationBarTrailing) {
+                    
+                    Button {
+                        
+                        shouldShowCreateContact.toggle()
+                    } label: {
+                        Image(systemName: "plus")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 20)
                     }
+                    Button {
+                        moveToHome()
+                        print("Move To Home")
+                    } label: {
+                        
+                        Image(systemName: "house.fill")
+                    }
+                    
+                    
+                }
                 
                 ToolbarItem(placement: .principal) {
-                                    Text("Contact")
-                                        .font(.headline)
-                                }
+                    Text("Contact")
+                        .font(.headline)
                 }
+            }
     }
 }
 
+
+private extension ContactsDetailView {
+    
+    func handleDismissAll(){
+        
+        if #available(iOS 15, *){
+            
+            dismiss()
+        }else{
+            presentationMode.wrappedValue.dismiss()
+        }
+    }
+    
+    func moveToHome(){
+        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+                let windows = windowScene.windows
+                windows.forEach { window in
+                    window.rootViewController?.dismiss(animated: true, completion: nil)
+                }
+            }
+    }
+}
 struct ContactsDetailView_Previews: PreviewProvider {
     static var previews: some View {
         ContactsDetailView()

@@ -23,7 +23,7 @@ struct HomeUIView: View {
                 
                         NavigationLink {
                             stickyHeaderUIView()
-                                .navigationBarTitle("First View")
+                                .navigationTitle("First View")
                         } label: {
                             Text("List Basic & Advance Demo")
                                 .padding(12)
@@ -38,7 +38,7 @@ struct HomeUIView: View {
             
                         NavigationLink {
                             TextFieldMain()
-                                .navigationBarTitle("Text Demo")
+                                .navigationTitle("Text Demo")
                         } label: {
                             Text("Text demo")
                                 .padding(12)
@@ -56,7 +56,7 @@ struct HomeUIView: View {
 
                         NavigationLink {
                             ViewBuilderDemo()
-                                .navigationBarTitle(" View Demo")
+                                .navigationTitle(" View Demo")
                         } label: {
                             Text("ViewBuilder Demo")
                                 .padding(12)
@@ -86,7 +86,7 @@ struct HomeUIView: View {
            
                         NavigationLink {
                             GCDDemo()
-                                .navigationBarTitle("GCD Demo")
+                                .navigationTitle("GCD Demo")
                         } label: {
                             Text("GCD Demo")
                                 .padding(12)

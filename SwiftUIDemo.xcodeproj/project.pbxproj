@@ -33,6 +33,8 @@
 		CD917FB92A3839B0007BB770 /* CustomDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD917FB82A3839B0007BB770 /* CustomDemoView.swift */; };
 		CD917FBB2A383F16007BB770 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD917FBA2A383F16007BB770 /* CircularProgressView.swift */; };
 		CD917FBD2A383FB5007BB770 /* CircularProgressDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD917FBC2A383FB5007BB770 /* CircularProgressDemo.swift */; };
+		CD985E1D2A67BE2B00B23633 /* ListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD985E1C2A67BE2B00B23633 /* ListSection.swift */; };
+		CD985E1F2A67F99D00B23633 /* DismissKeyboardOnTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD985E1E2A67F99D00B23633 /* DismissKeyboardOnTap.swift */; };
 		CD995C7E2A20D63600E85A91 /* CustomFieldText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD995C7D2A20D63600E85A91 /* CustomFieldText.swift */; };
 		CD995C802A20DCC200E85A91 /* HomeUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD995C7F2A20DCC200E85A91 /* HomeUIView.swift */; };
 		CD9CF42E29ADF6690043624D /* stickyHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9CF42D29ADF6690043624D /* stickyHeaderUIView.swift */; };
@@ -48,6 +50,7 @@
 		CDAE00742A5FD48300F760A7 /* BorderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAE00732A5FD48300F760A7 /* BorderTextField.swift */; };
 		CDAE00762A5FD57100F760A7 /* TextFieldDemo2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAE00752A5FD57100F760A7 /* TextFieldDemo2.swift */; };
 		CDAE00782A60027D00F760A7 /* CustomTextViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAE00772A60027D00F760A7 /* CustomTextViewModifier.swift */; };
+		CDAE0CAF2A690BAB00DD643D /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAE0CAE2A690BAB00DD643D /* UIApplication+Extension.swift */; };
 		CDC9920C29DAC3A40061AB6C /* StickyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC9920B29DAC3A40061AB6C /* StickyHeaderView.swift */; };
 		CDC9920E29DACAD50061AB6C /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC9920D29DACAD50061AB6C /* Tab.swift */; };
 		CDC9921029DAF0B50061AB6C /* StickyMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC9920F29DAF0B50061AB6C /* StickyMainViewModel.swift */; };
@@ -63,6 +66,7 @@
 		CDE8491429D84F8F0087381A /* StickyMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE8491329D84F8F0087381A /* StickyMainView.swift */; };
 		CDE8491629D857670087381A /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE8491529D857670087381A /* Food.swift */; };
 		CDE8491A29D85B1A0087381A /* StickyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE8491929D85B1A0087381A /* StickyCardView.swift */; };
+		CDEF9A492A66B08600BA8294 /* ContactMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEF9A482A66B08600BA8294 /* ContactMainViewModel.swift */; };
 		CDF5028E2A502FA300D64A24 /* SubscriberDemo2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF5028D2A502FA300D64A24 /* SubscriberDemo2.swift */; };
 		CDFEBB4C29D1BACB00A92BF5 /* CustomTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFEBB4B29D1BACB00A92BF5 /* CustomTextFieldView.swift */; };
 		CDFEBB4F29D1BF6D00A92BF5 /* TextFieldDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFEBB4E29D1BF6D00A92BF5 /* TextFieldDemo.swift */; };
@@ -96,6 +100,8 @@
 		CD917FB82A3839B0007BB770 /* CustomDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDemoView.swift; sourceTree = "<group>"; };
 		CD917FBA2A383F16007BB770 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		CD917FBC2A383FB5007BB770 /* CircularProgressDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressDemo.swift; sourceTree = "<group>"; };
+		CD985E1C2A67BE2B00B23633 /* ListSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSection.swift; sourceTree = "<group>"; };
+		CD985E1E2A67F99D00B23633 /* DismissKeyboardOnTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissKeyboardOnTap.swift; sourceTree = "<group>"; };
 		CD995C7D2A20D63600E85A91 /* CustomFieldText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFieldText.swift; sourceTree = "<group>"; };
 		CD995C7F2A20DCC200E85A91 /* HomeUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUIView.swift; sourceTree = "<group>"; };
 		CD9CF42D29ADF6690043624D /* stickyHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stickyHeaderUIView.swift; sourceTree = "<group>"; };
@@ -106,6 +112,7 @@
 		CDAE00732A5FD48300F760A7 /* BorderTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderTextField.swift; sourceTree = "<group>"; };
 		CDAE00752A5FD57100F760A7 /* TextFieldDemo2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDemo2.swift; sourceTree = "<group>"; };
 		CDAE00772A60027D00F760A7 /* CustomTextViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextViewModifier.swift; sourceTree = "<group>"; };
+		CDAE0CAE2A690BAB00DD643D /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 		CDC9920B29DAC3A40061AB6C /* StickyHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeaderView.swift; sourceTree = "<group>"; };
 		CDC9920D29DACAD50061AB6C /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		CDC9920F29DAF0B50061AB6C /* StickyMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyMainViewModel.swift; sourceTree = "<group>"; };
@@ -121,6 +128,7 @@
 		CDE8491329D84F8F0087381A /* StickyMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyMainView.swift; sourceTree = "<group>"; };
 		CDE8491529D857670087381A /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		CDE8491929D85B1A0087381A /* StickyCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyCardView.swift; sourceTree = "<group>"; };
+		CDEF9A482A66B08600BA8294 /* ContactMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactMainViewModel.swift; sourceTree = "<group>"; };
 		CDF5028D2A502FA300D64A24 /* SubscriberDemo2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriberDemo2.swift; sourceTree = "<group>"; };
 		CDFEBB4B29D1BACB00A92BF5 /* CustomTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldView.swift; sourceTree = "<group>"; };
 		CDFEBB4E29D1BF6D00A92BF5 /* TextFieldDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDemo.swift; sourceTree = "<group>"; };
@@ -156,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				CD6B34962A6158970035C575 /* ContactViewModel.swift */,
+				CDEF9A482A66B08600BA8294 /* ContactMainViewModel.swift */,
 			);
 			path = viewModel;
 			sourceTree = "<group>";
@@ -205,6 +214,7 @@
 		CD88650B29AA2E2A00BA97DD /* SwiftUIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CD985E1B2A67BE0700B23633 /* ListDemo */,
 				CD7C2AD02A5EDAF3004F5950 /* GCDDemo */,
 				CD74553B2A5295D600717361 /* ActorDemo */,
 				CD8C8D202A4C418200BD0964 /* SubscriberDemo */,
@@ -256,6 +266,14 @@
 				CD917FBC2A383FB5007BB770 /* CircularProgressDemo.swift */,
 			);
 			path = LoaderDemo;
+			sourceTree = "<group>";
+		};
+		CD985E1B2A67BE0700B23633 /* ListDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CD985E1C2A67BE2B00B23633 /* ListSection.swift */,
+			);
+			path = ListDemo;
 			sourceTree = "<group>";
 		};
 		CD995C812A20DE1800E85A91 /* launchScreen */ = {
@@ -325,6 +343,7 @@
 			isa = PBXGroup;
 			children = (
 				CDCED16C2A3991C800A9EB76 /* View+Extension.swift */,
+				CDAE0CAE2A690BAB00DD643D /* UIApplication+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -394,6 +413,7 @@
 				CD995C7D2A20D63600E85A91 /* CustomFieldText.swift */,
 				CDAE00712A5FD2E900F760A7 /* FloatingTextField.swift */,
 				CDAE00732A5FD48300F760A7 /* BorderTextField.swift */,
+				CD985E1E2A67F99D00B23633 /* DismissKeyboardOnTap.swift */,
 			);
 			path = utility;
 			sourceTree = "<group>";
@@ -501,10 +521,13 @@
 				CD6B348F2A6121300035C575 /* TextFieldMain.swift in Sources */,
 				CD61864B2A4ED366006E1329 /* SubScriberMainDemo.swift in Sources */,
 				CD7C2AD42A5EDB3B004F5950 /* GCDDemo.swift in Sources */,
+				CD985E1D2A67BE2B00B23633 /* ListSection.swift in Sources */,
 				CDF5028E2A502FA300D64A24 /* SubscriberDemo2.swift in Sources */,
 				CD995C802A20DCC200E85A91 /* HomeUIView.swift in Sources */,
+				CDAE0CAF2A690BAB00DD643D /* UIApplication+Extension.swift in Sources */,
 				CD74553F2A52D5D000717361 /* ActorDemo2.swift in Sources */,
 				CD6B34912A6129590035C575 /* TextFieldDemo3.swift in Sources */,
+				CD985E1F2A67F99D00B23633 /* DismissKeyboardOnTap.swift in Sources */,
 				CD7EEFE72A62681B004915E3 /* ContactsItemDetails.swift in Sources */,
 				CDE8491629D857670087381A /* Food.swift in Sources */,
 				CDFEBB4F29D1BF6D00A92BF5 /* TextFieldDemo.swift in Sources */,
@@ -546,6 +569,7 @@
 				CD7EEFEA2A62757D004915E3 /* ContactsDetailView.swift in Sources */,
 				CDCED16D2A3991C800A9EB76 /* View+Extension.swift in Sources */,
 				CD9E45BE29D42CBE004D54D5 /* Constant.swift in Sources */,
+				CDEF9A492A66B08600BA8294 /* ContactMainViewModel.swift in Sources */,
 				CD8C8D222A4C41A500BD0964 /* SubscriberDemo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

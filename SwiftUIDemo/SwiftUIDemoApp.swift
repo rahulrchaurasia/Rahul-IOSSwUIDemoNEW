@@ -14,9 +14,10 @@ struct SwiftUIDemoApp: App {
     var body: some Scene {
         WindowGroup {
           
+  
             NavigationView {
                 HomeUIView()
-                
+               // or add directly in Home Root View
 //                    .navigationTitle("Home")
 //                    .toolbar {
 //                        ToolbarItem(placement: .confirmationAction) {
@@ -50,6 +51,7 @@ struct SwiftUIDemoApp: App {
              get all the ListViewModel data
             /**************************************************************************/ */
              
+            .onAppear(perform: UIApplication.shared.addTapGestureRecognizer)
         }
     }
 }

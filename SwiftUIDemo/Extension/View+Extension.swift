@@ -28,4 +28,15 @@ extension View {
         
         self.modifier(CustomTextViewModifier(roundedCornes: roundedCornes, textColor: textColor))
     }
+    
+   
+        func dismissKeyboardOnTap() -> some View {
+            self.modifier(DismissKeyboardOnTap())
+        }
+    
+    
+    func hideKeyboard() {
+           UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+       }
+
 }

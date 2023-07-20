@@ -11,7 +11,7 @@ import SwiftUI
 struct TextFieldDemo: View {
     
    
-    enum registerField : Hashable {
+    enum registerField  : Int, Hashable, CaseIterable {
         
 
         case firstname
@@ -140,13 +140,13 @@ struct TextFieldDemo: View {
                     .padding(.top,20)
                     
                    
-
+                     //Button
                     VStack (alignment: .center){
                         Button(action: {
                            
                             print("Done")
-                            
-                            validation()
+                            self.hideKeyboard()
+                            //validation()
                         }) {
                             Text("Submit")
                         }
@@ -164,6 +164,26 @@ struct TextFieldDemo: View {
                 }
             }
            
+        }
+        .toolbar {
+            ToolbarItemGroup(placement: .keyboard) {
+               
+                Spacer()
+                Button {
+                    print("Previous Click")
+                  previous()
+                } label: {
+                  Image(systemName: "chevron.up")
+                }.padding(.horizontal)
+
+                Button {
+                    print("next Click")
+                  next()
+                } label: {
+                  Image(systemName: "chevron.down")
+                }.padding(.horizontal)
+
+            }
         }
        
      
@@ -192,6 +212,33 @@ struct TextFieldDemo: View {
     }
 }
 
+private extension TextFieldDemo {
+    
+    
+    
+ 
+    func next(){
+        
+        guard let currentInput = fieldInFocus,
+              let lastIndex = registerField.allCases.last?.rawValue else{return}
+        
+        
+        let index = min(currentInput.rawValue + 1 , lastIndex )
+        
+        self.fieldInFocus = registerField(rawValue: index)
+    }
+    
+    func previous(){
+        
+        guard let currentInput = fieldInFocus,
+              let lastIndex = registerField.allCases.first?.rawValue else{return}
+        
+        //max(-1,0 ) give = 0 so it will not go out of range
+        let index = max(currentInput.rawValue - 1 , lastIndex )
+      
+        self.fieldInFocus = registerField(rawValue: index)
+    }
+}
 struct TextFieldDemo_Previews: PreviewProvider {
     static var previews: some View {
         TextFieldDemo()

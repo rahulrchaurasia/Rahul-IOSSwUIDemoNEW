@@ -17,25 +17,84 @@ struct TextFieldDemo3: View {
     @Environment(\.presentationMode)  var presentationMode
     @StateObject private var vm = ContactViewModel()
     
+    @FocusState private var focusedInput : Field?
     //Closure DEfine : for passing Contact Entity
     let action :   (_ contact : NewContact) -> Void
     var body: some View {
-        VStack{
+        
+        NavigationView {
+          
+            VStack{
+                
+                //contactToolBar
+                Form {
+                   
+                    general
+                    contact
+                    emergency
+                    otherDetails
+                    clearAll
+                }
+                
+            }
+           
+            .background(Color.orange.opacity(0.1))
             
-            contactToolBar
-            Form {
-               
-                general
-                contact
-                emergency
-                clearAll
+            .navigationTitle("Add Contact")
+            .toolbar {
+                ToolbarItem( placement: .confirmationAction) {
+                    
+                    Button("Done") {
+                        
+                        print("Done")
+                        action(vm.newConatct)
+                        handleDismissAll()
+                    }
+                   .disabled(!vm.isvalid)
+                    
+                }
+                
+                ToolbarItem(placement: .navigationBarLeading) {
+                    
+                    Button("Cancel") {
+                        print("Cancel")
+                        handleDismissAll()
+                    }
+                }
+                
+                ToolbarItemGroup(placement: .keyboard) {
+                   
+                    Spacer()
+                    Button {
+                        print("Previous Click")
+                      previous()
+                    } label: {
+                      Image(systemName: "chevron.up")
+                    }.padding(.trailing)
+
+                    Button {
+                        print("next Click")
+                      next()
+                    } label: {
+                      Image(systemName: "chevron.down")
+                    }.padding(.trailing)
+
+                }
+
             }
             
-            Spacer()
+            .onAppear{
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1){
+
+                   // self.focusedInput = .prefix
+                }
+            }
         }
+       
      
-        .background(Color.gray.opacity(0))
-        .navigationTitle("Add Contact")
+      
+        
             
     }
 }
@@ -44,6 +103,55 @@ struct TextFieldDemo3_Previews: PreviewProvider {
     static var previews: some View {
        // TextFieldDemo3()
         TextFieldDemo3{ _ in}
+    }
+}
+private extension TextFieldDemo3 {
+ 
+    enum Field : Int, Hashable, CaseIterable{
+        
+        case prefix
+        case firstName
+        case lastName
+        case company
+        case email
+        case phoneNumber
+       
+        case emergencyNotes
+        
+        case address1
+        case address2
+        case address3
+      
+    }
+}
+
+private extension TextFieldDemo3 {
+    
+    
+    
+ 
+    func next(){
+        
+        guard let currentInput = focusedInput,
+              let lastIndex = Field.allCases.last?.rawValue else{return}
+        
+        
+        let index = min(currentInput.rawValue + 1 , lastIndex )
+        //lastIndex = 6 our enum has emergencyNotes at 6 pos
+       // min(1,6) = give 1
+       //  but out of range ie(7,6) = give 6 so
+        self.focusedInput = Field(rawValue: index)
+    }
+    
+    func previous(){
+        
+        guard let currentInput = focusedInput,
+              let lastIndex = Field.allCases.first?.rawValue else{return}
+        
+        //max(-1,0 ) give = 0 so it will not go out of range
+        let index = max(currentInput.rawValue - 1 , lastIndex )
+      
+        self.focusedInput = Field(rawValue: index)
     }
 }
 
@@ -59,7 +167,7 @@ private extension TextFieldDemo3 {
             } label: {
                 Text("Cancel")
                     .padding()
-                    .background(Color.green)
+                    
 
             }
             
@@ -74,7 +182,7 @@ private extension TextFieldDemo3 {
             } label: {
                 Text("Done")
                     .padding()
-                    .background(Color.green)
+                  
                
             }
            
@@ -88,16 +196,22 @@ private extension TextFieldDemo3 {
         
         Section{
             
-            TextField("Prefix", text: $vm.newConatct.general.firstName)
+            TextField("Prefix", text: $vm.newConatct.general.prefix)
                 .textContentType(.namePrefix)
+                .focused($focusedInput, equals: .prefix)
+               // . dismissKeyboardOnTap()
             
             TextField("First Name", text: $vm.newConatct.general.firstName)
                 .textContentType(.name)
                 .keyboardType(.namePhonePad)
+                .focused($focusedInput, equals: .firstName)
+                
             
             TextField("Last Name", text: $vm.newConatct.general.lastName)
                 .textContentType(.familyName)
                 .keyboardType(.namePhonePad)
+                .focused($focusedInput,equals: .lastName)
+              
             
             // Picker : Gender.allCases defines all cases of enum ie male,female,none
             Picker("Gender", selection: $vm.newConatct.general.gender) {
@@ -113,7 +227,8 @@ private extension TextFieldDemo3 {
            
             TextField("(Optional) Company", text: $vm.newConatct.general.company)
                 .textContentType(.organizationName)
-            
+                .focused($focusedInput, equals: .company)
+                
     
             
         }header: {
@@ -122,7 +237,6 @@ private extension TextFieldDemo3 {
             Text("Please enter above info")
         }
     }
-    
     
     var pickerDemo : some View {
         
@@ -174,17 +288,21 @@ private extension TextFieldDemo3 {
         
         Section{
             
-            TextField("Phone Number", text: $vm.newConatct.contactInfo.phoneNumber)
-                .textContentType(.telephoneNumber)
-                .keyboardType(.phonePad)
-            
             TextField("(Optional) Email ", text: $vm.newConatct.contactInfo.Email)
                 .textContentType(.emailAddress)
                 .keyboardType(.emailAddress)
+                .focused($focusedInput, equals: .email)
+            
+            TextField("Phone Number", text: $vm.newConatct.contactInfo.phoneNumber)
+                .textContentType(.telephoneNumber)
+                .keyboardType(.phonePad)
+                .focused($focusedInput,equals: .phoneNumber)
+            
+           
+            
         }
       
     }
-    
     
     var emergency : some View {
         
@@ -193,10 +311,36 @@ private extension TextFieldDemo3 {
             Toggle("Emegency Contact", isOn: $vm.newConatct.emergency.isEmegency)
             
             TextEditor(text: $vm.newConatct.emergency.notes)
+                .focused($focusedInput, equals: .emergencyNotes)
         }footer: {
             Text("Please enter information of emegency contact info")
                 
         }
+    }
+    
+    var otherDetails : some View {
+        
+        Section{
+            
+            TextField("Address 1", text: $vm.newConatct.otherDetails.address1)
+                .textContentType(.addressCity)
+                .keyboardType(.phonePad)
+                .focused($focusedInput,equals: .address1)
+            
+            TextField("Address 2 ", text: $vm.newConatct.otherDetails.address2)
+                .textContentType(.emailAddress)
+                .keyboardType(.emailAddress)
+                .focused($focusedInput, equals: .address2)
+            
+            TextField("Address 3 ", text: $vm.newConatct.otherDetails.address3)
+                .textContentType(.emailAddress)
+                .keyboardType(.emailAddress)
+                .focused($focusedInput, equals: .address3)
+            
+        }header: {
+            Text("Other Details")
+        }
+      
     }
     
     var clearAll : some View {

@@ -43,7 +43,12 @@ struct TextFieldMain: View {
                 
                 
                 NavigationLink {
-                    TextFieldDemo2()
+                    TextFieldDemo3 { contact in
+                        
+                        print("New Contact")
+                        dump(contact)
+                        
+                    }
                 } label: {
                     Text("Text demo2")
                         .padding(12)
@@ -53,6 +58,7 @@ struct TextFieldMain: View {
                         .cornerRadius(15)
                         
                 }
+                
                 
                 NavigationLink {
                      ContactsDetailView()

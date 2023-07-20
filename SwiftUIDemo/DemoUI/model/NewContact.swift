@@ -9,11 +9,13 @@ import Foundation
 
 // Note : No need to create nested struct here
 // this is done because of increase read- ability.
-struct NewContact {
-    
+struct NewContact : Identifiable {
+    let id = UUID()
+
     var general : General
     var contactInfo : ContactInfo
     var emergency : Emergency
+    var otherDetails : OtherDetails
 }
 
 extension NewContact{
@@ -64,6 +66,17 @@ extension NewContact{
 }
 
 extension NewContact{
+    
+    struct OtherDetails {
+        
+        var address1 : String
+        var address2 : String
+        var address3 : String
+        
+    }
+}
+
+extension NewContact{
  
     static var empty : NewContact {
         
@@ -72,7 +85,9 @@ extension NewContact{
         let contactInfo  = NewContact.ContactInfo(phoneNumber: "", Email: "")
         
         let emergency = NewContact.Emergency(isEmegency: false, notes: "")
-        return NewContact(general: general, contactInfo: contactInfo, emergency: emergency)
+        
+        let otherDetails = NewContact.OtherDetails(address1: "", address2: "", address3: "")
+        return NewContact(general: general, contactInfo: contactInfo, emergency: emergency, otherDetails: otherDetails)
         
         
     }
