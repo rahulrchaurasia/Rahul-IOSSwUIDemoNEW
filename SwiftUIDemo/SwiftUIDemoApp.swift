@@ -33,9 +33,10 @@ struct SwiftUIDemoApp: App {
 //                    }
                 
             }
+            .tint(.orange)
             .navigationViewStyle(StackNavigationViewStyle())
             .navigationTitle("Main View")
-            .navigationBarTitleDisplayMode(.inline)
+           // .navigationBarTitleDisplayMode(.inline)
             
         
             

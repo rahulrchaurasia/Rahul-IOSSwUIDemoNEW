@@ -36,7 +36,7 @@ struct ContactsDetailView: View {
     @State private var shouldShowCreateContact : Bool = false
     var body: some View {
     
-            LazyVStack {
+           VStack {
                 
                 HStack(alignment: .top){
                     
@@ -63,7 +63,7 @@ struct ContactsDetailView: View {
                         .foregroundColor(.blue)
                         .background(.gray.opacity(0.3))
                 }else{
-                    ScrollView{
+                    ScrollView(.vertical, showsIndicators: false){
                         LazyVStack {
                             ForEach(vm.contacts) { item in
                                 ContactsDetails(item: item)
@@ -79,6 +79,7 @@ struct ContactsDetailView: View {
                 /******************************************/
                
             }
+            .background(.white)
             .padding(.horizontal)
         
             .sheet(isPresented: $shouldShowCreateContact) {
