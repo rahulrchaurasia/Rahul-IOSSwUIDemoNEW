@@ -11,6 +11,9 @@ import SwiftUI
 struct SwiftUIDemoApp: App {
     
    @StateObject   var listViewModel: ListViewModel = ListViewModel()
+    
+    @StateObject var router = Router(initial: AppRoute.Dashboard)
+      
     var body: some Scene {
         WindowGroup {
           
@@ -36,7 +39,7 @@ struct SwiftUIDemoApp: App {
             .tint(.orange)
             .navigationViewStyle(StackNavigationViewStyle())
             .navigationTitle("Main View")
-           // .navigationBarTitleDisplayMode(.inline)
+            .navigationBarTitleDisplayMode(.inline)
             
         
             

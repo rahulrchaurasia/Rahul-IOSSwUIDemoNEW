@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ListSection: View {
+    init(){
+         Theme.navigationBarColors(background: .purple, titleColor: .white)
+      }
     var body: some View {
         List {
                 Section(header: Text("Header")) {

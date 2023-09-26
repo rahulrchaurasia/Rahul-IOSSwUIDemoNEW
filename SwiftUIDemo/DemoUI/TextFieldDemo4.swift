@@ -19,7 +19,6 @@ struct TextFieldDemo4: View {
         ScrollView {
             VStack{
                 
-                
                 Text("For Handling Two Column at Proper Ratio")
                 Divider().background(.red.opacity(0.7)).padding(.top,20)
                     .padding(.bottom)
@@ -93,9 +92,94 @@ struct TextFieldDemo4: View {
                         
                     }
                 }
+                Spacer().frame(height: 100)
+               
             }
+//            .overlay(
+//                HStack {
+//
+//                    Button {
+//                        print("done")
+//                    } label: {
+//
+//                        Text("Submit")
+//                            .font(.title2)
+//                            .foregroundColor(Color.white)
+//                            .padding()
+//                            .padding(.horizontal,20)
+//                            .background(
+//                                CustomColor.skyblue
+//                                .cornerRadius(12)
+//
+//                            )
+//                    }
+//
+//                }
+//                ,alignment: .leading
+//            )
+            
+            .overlay(alignment: .topTrailing, content: {
+               
+                VStack{
+                  
+                    HStack {
+
+                        Button {
+                            print("done")
+                        } label: {
+                           
+                            Text("Submit")
+                                .font(.title2)
+                                .foregroundColor(Color.white)
+                                .padding()
+                                .padding(.horizontal,20)
+                                .background(
+                                    CustomColor.skyblue
+                                    .cornerRadius(12)
+                                    
+                                )
+                        }
+
+                    }
+                }.offset(y :60)
+               
+            })
+            
+          
            
             .padding()
+        }
+        .navigationTitle("")
+        .navigationBarBackButtonHidden(true)
+       // .navigationBarHidden(true)
+        .toolbar {
+            ToolbarItemGroup(placement: .keyboard) {
+               
+                Spacer()
+                Button {
+                    print("Previous Click")
+                 
+                } label: {
+                  Image(systemName: "chevron.up")
+                }.padding(.horizontal)
+
+                Button {
+                    print("next Click")
+                
+                } label: {
+                  Image(systemName: "chevron.down")
+                }.padding(.horizontal)
+
+            }
+            
+            ToolbarItem(placement: .navigationBarLeading) {
+                
+                Button("Cancel") {
+                    print("Cancel")
+                   // handleDismissAll()
+                }
+            }
+            
         }
     }
           

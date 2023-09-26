@@ -88,7 +88,9 @@ struct ContactsDetailView: View {
                     
                     print("New Contact")
                     dump(contact)
-                    
+                    /*
+                     dump function is used to print a detailed description of a value, including its structure and nested properties. 
+                     */
                     vm.addContact(contact)
                     
                 }
@@ -96,7 +98,7 @@ struct ContactsDetailView: View {
                     
             }
         
-            .navigationBarTitle("Contact DEmo")
+            .navigationTitle("Contact DEmo")
             .navigationBarBackButtonHidden(true)
             .navigationBarItems(leading:
                     Button(action: {

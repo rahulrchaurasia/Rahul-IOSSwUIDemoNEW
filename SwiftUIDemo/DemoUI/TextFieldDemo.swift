@@ -33,6 +33,8 @@ struct TextFieldDemo: View {
     @State private var isSecure = Bool()
     
     @FocusState private var fieldInFocus : registerField?
+    
+    
     var body: some View {
         
         //let bg = Color(#colorLiteral(red: 0.7764705882, green: 0.7764705882, blue: 0.7843137255, alpha: 0.2887779388))
@@ -165,6 +167,7 @@ struct TextFieldDemo: View {
             }
            
         }
+        .navigationTitle("TextField Demo1")
         .toolbar {
             ToolbarItemGroup(placement: .keyboard) {
                
@@ -184,6 +187,15 @@ struct TextFieldDemo: View {
                 }.padding(.horizontal)
 
             }
+            
+            ToolbarItem(placement: .bottomBar) {
+                
+                Button("Cancel") {
+                    print("Cancel")
+                   // handleDismissAll()
+                }
+            }
+            
         }
        
      

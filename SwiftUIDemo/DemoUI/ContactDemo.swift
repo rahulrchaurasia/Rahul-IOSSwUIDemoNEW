@@ -19,7 +19,12 @@ struct TextFieldDemo3: View {
     
     @FocusState private var focusedInput : Field?
     //Closure DEfine : for passing Contact Entity
+    
+    /**********************************************/
+    //Note : Closure For Calling Child to Parent
     let action :   (_ contact : NewContact) -> Void
+    
+    /**********************************************/
     var body: some View {
         
         NavigationView {
@@ -41,6 +46,7 @@ struct TextFieldDemo3: View {
             .background(Color.orange.opacity(0.1))
             
             .navigationTitle("Add Contact")
+            .navigationBarBackButtonHidden(true)
             .toolbar {
                 ToolbarItem( placement: .confirmationAction) {
                     

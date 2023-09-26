@@ -10,6 +10,7 @@ import SwiftUI
 struct HomeUIView: View {
     
     
+    
     var body: some View {
         ZStack{
            
@@ -20,7 +21,71 @@ struct HomeUIView: View {
                 
                 VStack {
                   
-                
+                    //TabViewDemo
+                    
+                    //SheetDemoView
+                    
+                    
+               
+                    NavigationLink {
+                        LoaderDemoView()
+                    
+                    } label: {
+                        Text("Loader Demo")
+                            .padding(12)
+                            .font(.title2)
+                            .font(.system(.subheadline))
+                            .foregroundColor(.white)
+
+                            .background(Color.purple)
+                            .cornerRadius(15)
+                            
+                    }
+                    NavigationLink {
+                        TabViewDemo()
+                    
+                    } label: {
+                        Text("TabView Demo")
+                            .padding(12)
+                            .font(.title2)
+                            .font(.system(.subheadline))
+                            .foregroundColor(.white)
+
+                            .background(Color.yellow)
+                            .cornerRadius(15)
+                            
+                    }
+                    
+                    NavigationLink {
+                      SheetDemoView()
+                    } label: {
+                        Text("Sheets Demo")
+                            .padding(12)
+                            .font(.title2)
+                            .font(.system(.subheadline))
+                            .foregroundColor(.white)
+
+                            .background(Color.yellow)
+                            .cornerRadius(15)
+                            
+                    }
+
+                    
+//                    NavigationLink {
+//                        SheetDe
+//
+//                    } label: {
+//                        Text("Sheet Demo")
+//                            .padding(12)
+//                            .font(.title2)
+//                            .font(.system(.subheadline))
+//                            .foregroundColor(.white)
+//
+//                            .background(Color.yellow)
+//                            .cornerRadius(15)
+//
+//                    }
+                    
                         NavigationLink {
                             stickyHeaderUIView()
                                 .navigationTitle("First View")
@@ -49,10 +114,22 @@ struct HomeUIView: View {
                                 
                         }
                     
+                    NavigationLink {
+                        ListDemoMenu()
+                          
+                    } label: {
+                        Text("List demo")
+                            .padding(12)
+                            .font(.title2)
+                            .foregroundColor(.white)
+                            .background(.red)
+                            .cornerRadius(15)
+                            
+                    }
+                   
+                    //ListDemoMain
                         
-                    
-                        
-
+                
 
                         NavigationLink {
                             ViewBuilderDemo()
@@ -100,7 +177,23 @@ struct HomeUIView: View {
                         }
   
                     
-                   Spacer()
+                    NavigationLink {
+                        PullToRefreshDemo()
+                            
+                    } label: {
+                        Text("Pull To Refresh Demo")
+                            .padding(12)
+                            .font(.title2)
+                            .font(.system(.subheadline))
+                            .foregroundColor(.white)
+
+                            .background(Color.yellow).opacity(0.9)
+                            .cornerRadius(15)
+                            
+                    }
+
+                    
+                  // Spacer()
                 }.padding(.top,10)
             }
            
@@ -124,7 +217,20 @@ struct HomeUIView: View {
         
     }
     
-    
+    func getOrder(baseURL : URL) -> Bool{
+        
+        guard let url = URL(string: EndPoints.allorders.path, relativeTo: baseURL )
+        else{
+            print("Error");
+            return true
+            
+        }
+        
+        print("URL \(url)")
+        
+        return true
+        
+    }
  
 }
 

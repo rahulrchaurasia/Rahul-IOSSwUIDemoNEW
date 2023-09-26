@@ -43,6 +43,8 @@ struct TextFieldMain: View {
                 
                 
                 NavigationLink {
+                    
+                    // callback using closure method...
                     TextFieldDemo3 { contact in
                         
                         print("New Contact")
@@ -58,7 +60,7 @@ struct TextFieldMain: View {
                         .cornerRadius(15)
                         
                 }
-                
+         
                 
                 NavigationLink {
                      ContactsDetailView()
