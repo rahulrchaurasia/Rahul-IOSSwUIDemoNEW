@@ -11,6 +11,7 @@
 		CD2A43A32A3B446200430C65 /* SwiftUINavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2A43A22A3B446200430C65 /* SwiftUINavigationView.swift */; };
 		CD2A43A52A3B483600430C65 /* NavigateBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2A43A42A3B483600430C65 /* NavigateBuilder.swift */; };
 		CD34DDB12A73EC9A0055791E /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD34DDB02A73EC9A0055791E /* String+Extension.swift */; };
+		CD380E2E2AC957F200799977 /* customAlertViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD380E2D2AC957F200799977 /* customAlertViewBuilder.swift */; };
 		CD6186492A4EB40D006E1329 /* SubScriberDemo1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6186482A4EB40D006E1329 /* SubScriberDemo1.swift */; };
 		CD61864B2A4ED366006E1329 /* SubScriberMainDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD61864A2A4ED366006E1329 /* SubScriberMainDemo.swift */; };
 		CD6ACBAC2A6E6D5200D8C680 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6ACBAB2A6E6D5200D8C680 /* AppEnvironment.swift */; };
@@ -33,6 +34,7 @@
 		CD7C53F02A70025600608BA5 /* FlowStacks in Frameworks */ = {isa = PBXBuildFile; productRef = CD7C53EF2A70025600608BA5 /* FlowStacks */; };
 		CD7EEFE72A62681B004915E3 /* ContactsItemDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7EEFE62A62681B004915E3 /* ContactsItemDetails.swift */; };
 		CD7EEFEA2A62757D004915E3 /* ContactsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7EEFE92A62757D004915E3 /* ContactsDetailView.swift */; };
+		CD830C092AC85980000FFA64 /* CommonNavigationBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD830C082AC85980000FFA64 /* CommonNavigationBarModifier.swift */; };
 		CD84596D2A727F5500E85AE6 /* TabViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84596C2A727F5500E85AE6 /* TabViewDemo.swift */; };
 		CD8459712A729F4400E85AE6 /* NavigatorRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8459702A729F4400E85AE6 /* NavigatorRouter.swift */; };
 		CD8459732A72A00A00E85AE6 /* AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8459722A72A00A00E85AE6 /* AppRoute.swift */; };
@@ -83,6 +85,7 @@
 		CDE8491429D84F8F0087381A /* StickyMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE8491329D84F8F0087381A /* StickyMainView.swift */; };
 		CDE8491629D857670087381A /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE8491529D857670087381A /* Food.swift */; };
 		CDE8491A29D85B1A0087381A /* StickyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE8491929D85B1A0087381A /* StickyCardView.swift */; };
+		CDEBAFCE2AC3FAD2009C793E /* PickerDEmo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEBAFCD2AC3FAD2009C793E /* PickerDEmo.swift */; };
 		CDEF9A492A66B08600BA8294 /* ContactMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEF9A482A66B08600BA8294 /* ContactMainViewModel.swift */; };
 		CDF5028E2A502FA300D64A24 /* SubscriberDemo2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF5028D2A502FA300D64A24 /* SubscriberDemo2.swift */; };
 		CDFEBB4C29D1BACB00A92BF5 /* CustomTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFEBB4B29D1BACB00A92BF5 /* CustomTextFieldView.swift */; };
@@ -95,6 +98,7 @@
 		CD2A43A22A3B446200430C65 /* SwiftUINavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUINavigationView.swift; sourceTree = "<group>"; };
 		CD2A43A42A3B483600430C65 /* NavigateBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigateBuilder.swift; sourceTree = "<group>"; };
 		CD34DDB02A73EC9A0055791E /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		CD380E2D2AC957F200799977 /* customAlertViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customAlertViewBuilder.swift; sourceTree = "<group>"; };
 		CD6186482A4EB40D006E1329 /* SubScriberDemo1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubScriberDemo1.swift; sourceTree = "<group>"; };
 		CD61864A2A4ED366006E1329 /* SubScriberMainDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubScriberMainDemo.swift; sourceTree = "<group>"; };
 		CD6ACBAB2A6E6D5200D8C680 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
@@ -115,6 +119,7 @@
 		CD7C2AD32A5EDB3B004F5950 /* GCDDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDDemo.swift; sourceTree = "<group>"; };
 		CD7EEFE62A62681B004915E3 /* ContactsItemDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsItemDetails.swift; sourceTree = "<group>"; };
 		CD7EEFE92A62757D004915E3 /* ContactsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsDetailView.swift; sourceTree = "<group>"; };
+		CD830C082AC85980000FFA64 /* CommonNavigationBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonNavigationBarModifier.swift; sourceTree = "<group>"; };
 		CD84596C2A727F5500E85AE6 /* TabViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewDemo.swift; sourceTree = "<group>"; };
 		CD8459702A729F4400E85AE6 /* NavigatorRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatorRouter.swift; sourceTree = "<group>"; };
 		CD8459722A72A00A00E85AE6 /* AppRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
@@ -161,6 +166,7 @@
 		CDE8491329D84F8F0087381A /* StickyMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyMainView.swift; sourceTree = "<group>"; };
 		CDE8491529D857670087381A /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		CDE8491929D85B1A0087381A /* StickyCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyCardView.swift; sourceTree = "<group>"; };
+		CDEBAFCD2AC3FAD2009C793E /* PickerDEmo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerDEmo.swift; sourceTree = "<group>"; };
 		CDEF9A482A66B08600BA8294 /* ContactMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactMainViewModel.swift; sourceTree = "<group>"; };
 		CDF5028D2A502FA300D64A24 /* SubscriberDemo2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriberDemo2.swift; sourceTree = "<group>"; };
 		CDFEBB4B29D1BACB00A92BF5 /* CustomTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldView.swift; sourceTree = "<group>"; };
@@ -308,6 +314,7 @@
 		CD88650B29AA2E2A00BA97DD /* SwiftUIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CDEBAFCC2AC3FAB9009C793E /* PickerDemo */,
 				CDA5372B2AC30B6C0055A08B /* sheetDemo */,
 				CD84596B2A727F3100E85AE6 /* TabViewDemo */,
 				CD6ACBAA2A6E6D2E00D8C680 /* Utils */,
@@ -447,7 +454,7 @@
 		CDCE885D29D310EE00B87BF9 /* MVVMDemo */ = {
 			isa = PBXGroup;
 			children = (
-				CDCE886129D324BB00B87BF9 /* ViewNodel */,
+				CDCE886129D324BB00B87BF9 /* ViewModel */,
 				CDCE885E29D3110100B87BF9 /* Model */,
 				CDCE885629D2EFC500B87BF9 /* View */,
 			);
@@ -462,12 +469,12 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		CDCE886129D324BB00B87BF9 /* ViewNodel */ = {
+		CDCE886129D324BB00B87BF9 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				CDCE886229D3250500B87BF9 /* ListViewModel.swift */,
 			);
-			path = ViewNodel;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		CDCED1682A39915E00A9EB76 /* ViewModifier */ = {
@@ -475,6 +482,7 @@
 			children = (
 				CDCED1692A39917400A9EB76 /* CircularText.swift */,
 				CDAE00772A60027D00F760A7 /* CustomTextViewModifier.swift */,
+				CD830C082AC85980000FFA64 /* CommonNavigationBarModifier.swift */,
 			);
 			path = ViewModifier;
 			sourceTree = "<group>";
@@ -496,6 +504,7 @@
 				CDCED1712A39C98100A9EB76 /* ViewBuilderDemo */,
 				CDCED16F2A39C94500A9EB76 /* ViewBulder.swift */,
 				CD2A43A42A3B483600430C65 /* NavigateBuilder.swift */,
+				CD380E2D2AC957F200799977 /* customAlertViewBuilder.swift */,
 			);
 			path = ViewBuilder;
 			sourceTree = "<group>";
@@ -551,6 +560,14 @@
 				CDC9920B29DAC3A40061AB6C /* StickyHeaderView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		CDEBAFCC2AC3FAB9009C793E /* PickerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CDEBAFCD2AC3FAD2009C793E /* PickerDEmo.swift */,
+			);
+			path = PickerDemo;
 			sourceTree = "<group>";
 		};
 		CDFEBB4A29D1BAA800A92BF5 /* utility */ = {
@@ -680,6 +697,7 @@
 				CD985E1D2A67BE2B00B23633 /* ListSection.swift in Sources */,
 				CDF5028E2A502FA300D64A24 /* SubscriberDemo2.swift in Sources */,
 				CD995C802A20DCC200E85A91 /* HomeUIView.swift in Sources */,
+				CD380E2E2AC957F200799977 /* customAlertViewBuilder.swift in Sources */,
 				CDAE0CAF2A690BAB00DD643D /* UIApplication+Extension.swift in Sources */,
 				CD725B202A7D0EA30031552A /* ScrollViewReaderDemo.swift in Sources */,
 				CD74553F2A52D5D000717361 /* ActorDemo2.swift in Sources */,
@@ -732,6 +750,7 @@
 				CDAE00722A5FD2E900F760A7 /* FloatingTextField.swift in Sources */,
 				CD917FBB2A383F16007BB770 /* CircularProgressView.swift in Sources */,
 				CD917FBD2A383FB5007BB770 /* CircularProgressDemo.swift in Sources */,
+				CD830C092AC85980000FFA64 /* CommonNavigationBarModifier.swift in Sources */,
 				CD6ED4CE2A6A586C0063409D /* ListDemoItem.swift in Sources */,
 				CD6ACBAC2A6E6D5200D8C680 /* AppEnvironment.swift in Sources */,
 				CDA5372D2AC30B900055A08B /* SheetDemoView.swift in Sources */,
@@ -742,6 +761,7 @@
 				CD9E45BE29D42CBE004D54D5 /* Constant.swift in Sources */,
 				CD6ED4D42A6AA0430063409D /* Theme.swift in Sources */,
 				CDEF9A492A66B08600BA8294 /* ContactMainViewModel.swift in Sources */,
+				CDEBAFCE2AC3FAD2009C793E /* PickerDEmo.swift in Sources */,
 				CD8C8D222A4C41A500BD0964 /* SubscriberDemo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

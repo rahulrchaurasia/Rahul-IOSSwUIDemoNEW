@@ -18,6 +18,8 @@ struct LoaderDemoView: View {
                           isLoading = true
                           simulateNetworkRequest()
                       }
+                      
+                     
                   }
                   
                   if isLoading {

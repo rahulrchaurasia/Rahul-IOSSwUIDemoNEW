@@ -148,6 +148,10 @@ struct TextFieldDemo: View {
                            
                             print("Done")
                             self.hideKeyboard()
+                            
+                            var person = Person(name: "Ed")
+                            person.makeAnonymous() // Call the mutating method
+                            print(person.name)
                             //validation()
                         }) {
                             Text("Submit")
@@ -198,7 +202,7 @@ struct TextFieldDemo: View {
             
         }
        
-     
+        
      
     }
     
@@ -254,6 +258,14 @@ private extension TextFieldDemo {
 struct TextFieldDemo_Previews: PreviewProvider {
     static var previews: some View {
         TextFieldDemo()
+    }
+}
+
+struct Person {
+    var name: String
+
+    mutating func makeAnonymous() {
+        name = "Anonymous"
     }
 }
 

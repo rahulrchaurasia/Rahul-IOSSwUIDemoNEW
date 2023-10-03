@@ -9,6 +9,8 @@ import SwiftUI
 
 struct TextFieldDemo4: View {
     
+    @Environment(\.dismiss) private var dismiss
+    @Environment(\.presentationMode) private var presentationMode
     @State private var name = ""
     @State private var mobNo = ""
     @State private var age = ""
@@ -40,6 +42,8 @@ struct TextFieldDemo4: View {
                                 d[.firstTextBaseline]
                             }
                     }
+                    .border(.red)
+                    
                     
                     HStack{
                         Text("Name :")
@@ -176,7 +180,7 @@ struct TextFieldDemo4: View {
                 
                 Button("Cancel") {
                     print("Cancel")
-                   // handleDismissAll()
+                    handleDismissAll()
                 }
             }
             
@@ -184,10 +188,26 @@ struct TextFieldDemo4: View {
     }
           
     
+
 }
+
 
 struct TextFieldDemo4_Previews: PreviewProvider {
     static var previews: some View {
         TextFieldDemo4()
+    }
+}
+
+
+private extension TextFieldDemo4 {
+    
+    func handleDismissAll(){
+        
+        if #available(iOS 15, *){
+            
+            dismiss()
+        }else{
+            presentationMode.wrappedValue.dismiss()
+        }
     }
 }

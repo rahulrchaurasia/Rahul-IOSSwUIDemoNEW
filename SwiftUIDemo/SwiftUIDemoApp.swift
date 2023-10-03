@@ -41,9 +41,6 @@ struct SwiftUIDemoApp: App {
             .navigationTitle("Main View")
             .navigationBarTitleDisplayMode(.inline)
             
-        
-            
-            
             .environmentObject(listViewModel)
             
             /*************************environmentObject**********************************/
