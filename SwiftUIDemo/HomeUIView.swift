@@ -92,6 +92,32 @@ extension HomeUIView {
         
         Group {
            
+            // Advance Demo
+            NavigationLink {
+                AdvanceDemoView()
+                  
+            } label: {
+                Text("Advance demo")
+                    .padding(12)
+                    .font(.title2)
+                    .foregroundColor(.white)
+                    .background(Color(UIColor.customdarkGreen))
+                    .cornerRadius(15)
+                    
+            }
+           // ClosureDemoMain
+            NavigationLink {
+                ClosureDemoMain()
+                  
+            } label: {
+                Text("Closure demo")
+                    .padding(12)
+                    .font(.title2)
+                    .foregroundColor(.white)
+                    .background(Color(UIColor.customdarkGreen))
+                    .cornerRadius(15)
+                    
+            }
             NavigationLink {
                 PickerDEmo()
                   
@@ -351,6 +377,9 @@ extension HomeUIView {
             }
         }
     }
+    
+    
+
 }
 
 
