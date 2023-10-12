@@ -5,6 +5,11 @@
 //  Created by Rahul Chaurasia on 06/10/23.
 //
 
+/*
+ Table : having wrap content not match parent.
+ Note : If we take List it default behavior is take all space hence we have to use
+   Normal ForEach Loop bec we need no default style
+ */
 import SwiftUI
 
 struct MultiSelectionViewDemo: View {
@@ -21,43 +26,61 @@ struct MultiSelectionViewDemo: View {
          "Item 7","Item 8","Item 9","Item 10"]
     
     var body: some View {
-        
-        ZStack{
-            
-            Color(.systemBackground)
-                .ignoresSafeArea()
-            
-            
+        ScrollView(.vertical, showsIndicators: false) {
             VStack{
-                Text("hi")
-                Button("Demo") {
-                    print("Click work....")
-                }
-              
-                List(selection: $selectedRow ){
-                   
-                    ForEach(0..<items.count, id: \.self) { index in
-                       
-                        
-                        Text(items[index])
-                            .tag(index)
-                    }
-                }.listStyle(.plain)
-                    .frame(maxHeight: 200)
+                ZStack{
                     
-                
-         
-                Text("Selected items: \(vm.selectedMeal?.name ?? "")")
-                
-                Spacer()
+                    Color(.systemBackground)
+                        .ignoresSafeArea()
+                    
+                    
+                    VStack{
+                        Text("hi")
+                        Button("Demo") {
+                            print("Click work....")
+                        }
+                        
+                       
+                            ForEach(0..<items.count, id: \.self) { index in
+                                
+                                
+                                Text(items[index])
+                                    .tag(index)
+                                    .font(.title2)
+                                    .frame(width:UIScreen.main.bounds.width - 20,
+                                           height: 50,
+                                           alignment: .center)
+                                    .background(
+                                        
+                                        Rectangle().stroke(Color.gray.opacity(0.5), lineWidth: 2)
+                                    )
+                                
+                            }
+                        
+                        //.frame(maxHeight: 100)
+                        
+                        
+                        .padding(.horizontal,10)
+                        //listStyle(.inset)
+                        //.frame(maxHeight: 300)
+                        
+                        //.frame(maxHeight: .none)
+                        
+                        Text("Selected items: \(vm.selectedMeal?.name ?? "")")
+                        
+                        Spacer()
+                    }
+                   // .offset(y:100)
+                    .disabled(true)
+                    
+                    .blur(radius: vm.isShowingDetails ? 10 : 0)
+                    if vm.isShowingDetails {
+                        
+                        MultiSelectionAlertView(vm: vm, isShowingDetail: $vm.isShowingDetails)
+                    }
+                }
             }
-            .disabled(true)
-        
-            .blur(radius: vm.isShowingDetails ? 10 : 0)
-            if vm.isShowingDetails {
-
-                MultiSelectionAlertView(vm: vm, isShowingDetail: $vm.isShowingDetails)
-            }
+           
         }
         .navigationTitle("Multi Selection Demo")
         .navigationBarBackButtonHidden(vm.isShowingDetails)

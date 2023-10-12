@@ -5,6 +5,7 @@
 //  Created by Rahul Chaurasia on 21/07/23.
 //
 
+// Note : Used List or ScrollView with LazyVStack
 import SwiftUI
 
 struct ListDemoMain: View {
