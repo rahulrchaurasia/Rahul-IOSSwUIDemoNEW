@@ -49,7 +49,21 @@ struct SubScriberMainDemo: View {
                     //SubscriberDemo()
                     AsyncPublishereDemo()
                 } label: {
-                    Text("Publisher & SubScribers 2")
+                    Text("Publisher & SubScribers 3")
+                        .padding(12)
+                        .font(.title2)
+                        .foregroundColor(.white)
+
+                        .background(CustomColor.skyblue)
+                        .cornerRadius(15)
+                        
+                }
+                
+                NavigationLink {
+                    //SubscriberDemo()
+                    SubScriberDemo4()
+                } label: {
+                    Text("Publisher & SubScribers 4")
                         .padding(12)
                         .font(.title2)
                         .foregroundColor(.white)

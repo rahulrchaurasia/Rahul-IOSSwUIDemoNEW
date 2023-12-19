@@ -10,6 +10,8 @@ import Foundation
 import SwiftUI
 
 extension View {
+    
+    
     func circularText() -> some View {
         self.modifier(CircularText())
     }

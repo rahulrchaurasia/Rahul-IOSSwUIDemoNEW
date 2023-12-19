@@ -10,6 +10,18 @@
  Note : If we take List it default behavior is take all space hence we have to use
    Normal ForEach Loop bec we need no default style
  */
+
+// Symbol(systemName: "heart.fill")
+//.symbolVariant(.fill)
+/*
+ There are several different SymbolVariants values that you can use, including:
+
+ .fill: This fills the symbol with the system color.
+ .circle: This encases the symbol in a circle.
+ .square: This encases the symbol in a square.
+ .rectangle: This encases the symbol in a rectangle.
+
+ */
 import SwiftUI
 
 struct MultiSelectionViewDemo: View {
@@ -36,11 +48,17 @@ struct MultiSelectionViewDemo: View {
                     
                     VStack{
                         Text("hi")
+                            .font(.title2)
                         Button("Demo") {
                             print("Click work....")
                         }
                         
-                       
+                        HStack {
+                            Image(systemName: "heart")
+                            Image(systemName: "star")
+                        }
+                        .symbolVariant(.fill)
+                        
                             ForEach(0..<items.count, id: \.self) { index in
                                 
                                 
@@ -70,6 +88,7 @@ struct MultiSelectionViewDemo: View {
                         
                         Spacer()
                     }
+                  
                    // .offset(y:100)
                     .disabled(true)
                     

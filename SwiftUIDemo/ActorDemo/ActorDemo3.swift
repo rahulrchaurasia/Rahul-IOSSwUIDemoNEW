@@ -7,9 +7,56 @@
 
 import SwiftUI
 
+actor User1 {
+    var score = 10
+
+    func printScore() {
+        print("My score is \(score)")
+    }
+
+    func copyScore(from other: User1) async {
+        score = await other.score
+    }
+}
+
+
+
 struct ActorDemo3: View {
+    
+    let actor1 = User1()
+    let actor2 = User1()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+      
+        VStack{
+            
+            Button(action: {
+                debugPrint("Done")
+                
+                Task{
+                    
+                   
+                    await print(actor1.score)
+                    await actor1.copyScore(from: actor2)
+                    
+                }
+               
+            }, label: {
+              
+                Text("Actor Demo")
+                    .font(.title2)
+                    .foregroundStyle(.white)
+                    .padding()
+                    .padding(.horizontal,20)
+                    .background(Color.accentColor.opacity(0.6))
+                    .clipShape(
+                        .rect(cornerRadius: 20)
+                    )
+                    
+            })
+        }
+        
+        
     }
 }
 

@@ -24,33 +24,49 @@ struct ActorDemo: View {
     var body: some View {
         
         let counter = Counter()
-        Button {
+        
+        VStack{
             
-            DispatchQueue.concurrentPerform(iterations: 20) { i in
+            Text("Title")
+                .font(.customfont(.medium, fontSize: 50))
+                .foregroundStyle(.blue)
+            
+            
+            Text("Sub-Title")
+                .font(.customfont(.medium, fontSize: 20))
+                .foregroundStyle(.gray)
+            Spacer()
+            
+            Button {
                 
-                Task{
+                DispatchQueue.concurrentPerform(iterations: 20) { i in
                     
-                    print(await " Start \(i) Value and Increment is \(counter.increment())")
+                    Task{
+                        
+                        print(await " Start \(i) Value and Increment is \(counter.increment())")
+                    }
+                   
                 }
                
-            }
-           
-        } label: {
-          
-            Text("Counter")
-                .font(.title)
-                .foregroundColor(Color.white)
-                .padding()
-                .padding(.horizontal,20)
-                .background(
-                    CustomColor.skyblue
-                    .cornerRadius(12)
+            } label: {
+              
+                Text("Counter")
+                    .font(.title)
+                    .foregroundColor(Color.white)
+                    .padding()
+                    .padding(.horizontal,20)
+                    .background(
+                        CustomColor.skyblue
+                        .cornerRadius(12)
+                        
+                    )
+                   
                     
-                )
-               
-                
-               
+                   
+            }
+            Spacer()
         }
+        
 
     }
 }
