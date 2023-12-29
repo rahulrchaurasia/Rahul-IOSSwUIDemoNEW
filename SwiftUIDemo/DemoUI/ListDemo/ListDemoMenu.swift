@@ -41,7 +41,43 @@ struct ListDemoMenu: View {
                     .cornerRadius(15)
             }
             
+            NavigationLink(destination:    ListSection()) {
+                Text("ListSection Demo")
+                    .padding(12)
+                    .font(.title2)
+                    .foregroundColor(.white)
+                    .background(.pink.opacity(0.7))
+                    .cornerRadius(15)
+            }
+          
+            NavigationLink(destination:    PinnedViewList()) {
+                Text("Listwith Pinned View Demo")
+                    .padding(12)
+                    .font(.title2)
+                    .foregroundColor(.white)
+                    .background(.blue.opacity(0.7))
+                    .cornerRadius(15)
+            }
             
+            NavigationLink(destination:    ListComplexDemo()) {
+                Text("List Complex Demo")
+                    .padding(12)
+                    .font(.title2)
+                    .foregroundColor(.white)
+                    .background(.blue.opacity(0.7))
+                    .cornerRadius(15)
+            }
+            
+            NavigationLink(destination:    StickyMainView()) {
+                Text("List Sticky View Demo")
+                    .padding(12)
+                    .font(.title2)
+                    .foregroundColor(.white)
+                    .background(.black.opacity(0.7))
+                    .cornerRadius(15)
+            }
+            //ListComplexDemo
+            //StickyMainView
             Spacer()
         }
       

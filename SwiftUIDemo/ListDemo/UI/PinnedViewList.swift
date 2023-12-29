@@ -28,7 +28,7 @@ struct PinnedViewList: View {
                             
                            SweetProductItem(product: product)
                             
-                            
+                           
                         }
                     } header: {
                         Text("Title")

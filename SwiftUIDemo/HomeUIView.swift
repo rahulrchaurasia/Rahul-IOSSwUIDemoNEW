@@ -62,6 +62,7 @@ struct HomeUIView: View {
 
         }
         .navigationTitle("Home")
+        .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .confirmationAction) {
                 Button {

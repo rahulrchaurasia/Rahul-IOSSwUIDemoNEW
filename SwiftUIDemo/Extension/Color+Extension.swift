@@ -14,6 +14,8 @@ extension Color {
    
     static let bg = Color("bg")
     static let skyblue = Color("skyblue")
+    static let appblack = Color("ptextcolor")
+    static let appBackground = Color("stextcolor")
 }
 
 extension UIColor {

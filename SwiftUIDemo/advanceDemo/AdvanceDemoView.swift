@@ -37,17 +37,17 @@ struct AdvanceDemoView: View {
 
             }
             
-//            NavigationLink {
-//                ClosureDemo3()
-//            } label: {
-//                Text("Closure With Param2")
-//                    .padding(12)
-//                    .font(.title2)
-//                    .foregroundColor(.white)
-//                    .background(Color.purple.opacity(0.7))
-//                    .cornerRadius(15)
-//
-//            }
+            NavigationLink {
+                GeometryReaderMain()
+            } label: {
+                Text(" Geometry Reader Demo")
+                    .padding(12)
+                    .font(.title2)
+                    .foregroundColor(.white)
+                    .background(Color.purple.opacity(0.7))
+                    .cornerRadius(15)
+
+            }
             
 //            NavigationLink {
 //                ClosureDemo4()
