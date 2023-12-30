@@ -78,6 +78,16 @@ struct ListDemoMenu: View {
             }
             //ListComplexDemo
             //StickyMainView
+            
+            NavigationLink(destination:     ListParallexDemo()) {
+                Text("List Parallex Demo")
+                    .padding(15)
+                    .font(.title2)
+                    .foregroundColor(.white)
+                    .background(.mint.opacity(0.7))
+                    .cornerRadius(15)
+            }
+           
             Spacer()
         }
       

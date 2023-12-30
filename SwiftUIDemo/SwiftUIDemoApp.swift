@@ -12,6 +12,8 @@ struct SwiftUIDemoApp: App {
     
    @StateObject   var listViewModel: ListViewModel = ListViewModel()
     
+      
+    @StateObject var homeData = HomeViewModel()
     @StateObject var router = Router(initial: AppRoute.Dashboard)
       
     var body: some Scene {
@@ -42,7 +44,7 @@ struct SwiftUIDemoApp: App {
             .navigationBarTitleDisplayMode(.inline)
             
             .environmentObject(listViewModel)
-            
+            .environmentObject(homeData)
             /*************************environmentObject**********************************/
             // Note : environmentObject hold all the data which it get
             // and carry till NavigationView hirearchy exist.

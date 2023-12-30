@@ -269,7 +269,7 @@ extension HomeUIView {
         Group {
             
             NavigationLink {
-                SwiftUIDemo.TabViewDemo()
+                SwiftUIDemo.TabViewMain()
             } label: {
                 Text("TabView Demo")
                     .padding(12)

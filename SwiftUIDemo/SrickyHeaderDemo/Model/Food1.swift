@@ -26,7 +26,7 @@ struct Food1 : Identifiable {
 }
 
 //Food List
-var foods = [
+var foods1 = [
 
     Food1(title: "Choclate", description: "Choclate description dcnkwjnckwndck nwkdcnw cw", price: "300Rs", image: "cherry"),
     

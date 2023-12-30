@@ -9,7 +9,7 @@ import SwiftUI
 
 struct StickyCardView: View {
     
-    var food : Food
+    var food : Food1
     var body: some View {
         
         //Text(food.title)
@@ -45,7 +45,7 @@ struct StickyCardView: View {
 struct StickyCardView_Previews: PreviewProvider {
     static var previews: some View {
         
-        let food = Food(title: "Cookies", description: "Cookies desc", price: "300RS", image: "citrus")
+        let food = Food1(title: "Cookies", description: "Cookies desc", price: "300RS", image: "citrus")
         StickyCardView(food: food)
     }
 }
