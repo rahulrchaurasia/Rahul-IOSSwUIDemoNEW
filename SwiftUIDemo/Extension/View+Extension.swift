@@ -11,9 +11,22 @@ import SwiftUI
 
 extension View {
     
+    var getWidth: CGFloat {
+            UIScreen.main.bounds.width
+        }
     
     func circularText() -> some View {
         self.modifier(CircularText())
+    }
+    
+    
+    //added :05otp
+    func disableWithOpacity(_ condition : Bool) -> some View {
+        
+        self
+            .disabled(condition)
+            .opacity(condition ? 0.6 : 1)
+        
     }
     
     func underlineTextField() -> some View {
@@ -31,11 +44,28 @@ extension View {
         self.modifier(CustomTextViewModifier(roundedCornes: roundedCornes, textColor: textColor))
     }
     
+    func customTextWithIconViewModifier(roundedCornes: CGFloat, textColor: Color) -> some View {
+        self.modifier(CustomTextWithIconViewModifier(roundedCornes: roundedCornes, textColor: textColor))
+      }
    
     
     
     func hideKeyboard() {
            UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+       }
+    
+/***********************************************************************/
+       // Using  @ViewBuilder
+/***********************************************************************/
+    @ViewBuilder
+   func formattedText(_ text: String, backgroundColor: Color, foregroundColor: Color = .black) -> some View {
+           Text(text)
+               .font(.largeTitle)
+               .frame(width: 250, height: 250)
+               .padding()
+               .background(backgroundColor)
+               .foregroundColor(foregroundColor)
+               .cornerRadius(15)
        }
 
 }

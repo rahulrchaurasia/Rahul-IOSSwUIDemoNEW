@@ -34,6 +34,7 @@ struct OTPView: View {
            .cornerRadius(8)
            .overlay(
                RoundedRectangle(cornerRadius: 8)
+               
                    .stroke(Color.gray, lineWidth: 1)
            )
            .onReceive(NotificationCenter.default.publisher(for: UITextField.textDidChangeNotification)) { notification in

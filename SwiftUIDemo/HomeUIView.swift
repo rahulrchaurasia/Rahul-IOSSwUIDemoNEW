@@ -101,8 +101,27 @@ extension HomeUIView {
     var PickerDemo: some View  {
         
         Group {
+            
+            if #available(iOS 16.0, *) {
+                NavigationStack{
+                    
+                        NavigationLink(value: 1) {
+                            Text("Nav Stack demo")
+                                .padding(12)
+                                .font(.title2)
+                                .foregroundColor(.white)
+                                .background(Color(UIColor.customdarkGreen))
+                                .cornerRadius(15)
+                        }
+                    
+                }
+            }
+            
+            
+        
            
             // Advance Demo
+    
             NavigationLink {
                 AdvanceDemoView()
                   
@@ -137,6 +156,34 @@ extension HomeUIView {
                     .font(.title2)
                     .foregroundColor(.white)
                     .background(.red)
+                    .cornerRadius(15)
+                    
+            }
+            
+            NavigationLink {
+                PickerDEmo()
+                  
+            } label: {
+                Text("Picker demo")
+                    .padding(12)
+                    .font(.title2)
+                    .foregroundColor(.white)
+                    .background(.blue)
+                    .cornerRadius(15)
+                    
+            }
+            
+            NavigationLink {
+                //MainTabbedView()
+              //  MainPageNavDrawerHome()
+                SlideMenuCustom1()
+                  
+            } label: {
+                Text("Navigation Drawer demo")
+                    .padding(12)
+                    .font(.title2)
+                    .foregroundColor(.white)
+                    .background(.primary.opacity(0.7))
                     .cornerRadius(15)
                     
             }
@@ -196,7 +243,7 @@ extension HomeUIView {
                     .padding(12)
                     .font(.title2)
                     .foregroundColor(.white)
-                    .background(.red)
+                    .background(.brown)
                     .cornerRadius(15)
                 
             }
@@ -237,7 +284,9 @@ extension HomeUIView {
         Group{
             
             NavigationLink {
-                SwiftUIDemo.ViewBuilderDemo()
+            
+                
+                ViewBuilderDemo2()
                     .navigationTitle("View Builder Demo")
             } label: {
                 Text("ViewBuilder Demo")
@@ -290,7 +339,9 @@ extension HomeUIView {
        
         Group{
             NavigationLink {
-                SwiftUIDemo.SheetDemoView()
+               // SwiftUIDemo.SheetDemoView()
+                
+                SheetDemo()
             } label: {
                 Text("Sheets Demo")
                     .padding(12)

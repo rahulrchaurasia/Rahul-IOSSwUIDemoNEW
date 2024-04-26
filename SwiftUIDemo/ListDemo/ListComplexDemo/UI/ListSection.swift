@@ -21,7 +21,9 @@ struct ListSection: View {
         ZStack{
             VStack{
                 HeaderView
+                   
                     .overlay(alignment: .topLeading) {
+                      
                         Button {
                            dismiss()
                         } label: {
@@ -44,6 +46,7 @@ struct ListSection: View {
                 ListViewData
             }
             .padding(.top, .topInsets)
+            .padding(.bottom,.bottomInsets)
            
             
            

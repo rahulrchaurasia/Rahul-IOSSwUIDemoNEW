@@ -61,10 +61,33 @@ struct ClosureDemoMain: View {
                     
             }
             
+            
+            NavigationLink {
+                SingleSelectionViewDemo2()
+            } label: {
+                Text("Single Slection 2 - Demo2")
+                    .padding(12)
+                    .font(.title2)
+                    .foregroundColor(.white)
+                    .background(Color.red.opacity(0.7))
+                    .cornerRadius(15)
+                    
+            }
+            NavigationLink {
+                MultiSelectionViewDemo2()
+            } label: {
+                Text("MultiSlected Best - Demo")
+                    .padding(12)
+                    .font(.title2)
+                    .foregroundColor(.white)
+                    .background(Color.orange.opacity(0.7))
+                    .cornerRadius(15)
+                    
+            }
             NavigationLink {
                 MultiSelectionViewDemo()
             } label: {
-                Text("MultiSlected - Data")
+                Text("Multi Slection - Demo1")
                     .padding(12)
                     .font(.title2)
                     .foregroundColor(.white)

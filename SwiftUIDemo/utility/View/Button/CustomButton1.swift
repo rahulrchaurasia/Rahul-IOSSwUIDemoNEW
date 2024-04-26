@@ -10,7 +10,7 @@ import SwiftUI
 
 struct CustomButton1: View {
     let name: String
-    let imgName: String? // Now an optional
+    var imgName: String? // Now an optional
     let action: () -> Void
 
     var body: some View {
@@ -22,6 +22,7 @@ struct CustomButton1: View {
                     Image(systemName: systemImageName)
                 }
                 Text(name)
+                    .font(.title3)
             }
             .multilineTextAlignment(.center) // Center text within available space
         }

@@ -15,6 +15,14 @@ class CounterViewModel : ObservableObject {
         
         count += 1
     }
+    func decreasedCount(){
+        
+        if count > 0 {
+            
+            count -= 1
+        }
+       
+    }
     
     init(){
        print("Debug Did init..")

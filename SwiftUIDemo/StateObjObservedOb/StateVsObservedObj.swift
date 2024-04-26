@@ -39,6 +39,11 @@ struct ChildView1:  View {
         VStack{
             
             Text("2x Count : \(vm.count * 2)")
+            
+            Button("Decrease Count") {
+                
+                vm.decreasedCount()
+            }
         }
     }
     

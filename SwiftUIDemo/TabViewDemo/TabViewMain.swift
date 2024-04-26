@@ -23,49 +23,42 @@ struct TabViewMain: View {
                     
             }
             
-            NavigationLink(destination:  SlidingTabDemo()) {
-                Text("Slider Tab Demo2")
+           
+            NavigationLink(destination:  SimpleTabViewDemo()) {
+                Text("Simple TabView Demo ")
                     .padding(12)
                     .font(.title2)
                     .foregroundColor(.white)
-                    .background(.purple.opacity(0.7))
+                    .background(.orange.opacity(0.7))
                     .cornerRadius(15)
             }
-//            NavigationLink(destination:  ScrollViewReaderDemo()) {
-//                Text("ScrollViewReaderDemo List")
-//                    .padding(12)
-//                    .font(.title2)
-//                    .foregroundColor(.white)
-//                    .background(.orange.opacity(0.7))
-//                    .cornerRadius(15)
-//            }
-//            
-//            NavigationLink(destination:    ListSection()) {
-//                Text("ListSection Demo")
-//                    .padding(12)
-//                    .font(.title2)
-//                    .foregroundColor(.white)
-//                    .background(.pink.opacity(0.7))
-//                    .cornerRadius(15)
-//            }
-//          
-//            NavigationLink(destination:    PinnedViewList()) {
-//                Text("Listwith Pinned View Demo")
-//                    .padding(12)
-//                    .font(.title2)
-//                    .foregroundColor(.white)
-//                    .background(.blue.opacity(0.7))
-//                    .cornerRadius(15)
-//            }
-//            
-//            NavigationLink(destination:    ListComplexDemo()) {
-//                Text("List Complex Demo")
-//                    .padding(12)
-//                    .font(.title2)
-//                    .foregroundColor(.white)
-//                    .background(.blue.opacity(0.7))
-//                    .cornerRadius(15)
-//            }
+            
+            NavigationLink(destination:    PagingIndexViewTab()) {
+                Text("Paging IndexView Tab")
+                    .padding(12)
+                    .font(.title2)
+                    .foregroundColor(.white)
+                    .background(.pink.opacity(0.7))
+                    .cornerRadius(15)
+            }
+          
+            NavigationLink(destination:    AnimatedPageIndicator()) {
+                Text("Animated Page Indicator Demo")
+                    .padding(12)
+                    .font(.title2)
+                    .foregroundColor(.white)
+                    .background(.blue.opacity(0.7))
+                    .cornerRadius(15)
+            }
+            
+            NavigationLink(destination:    CustomSlidingTab()) {
+                Text("Custom Sliding Demo")
+                    .padding(12)
+                    .font(.title2)
+                    .foregroundColor(.white)
+                    .background(.primary.opacity(0.7))
+                    .cornerRadius(15)
+            }
 //            
 //            NavigationLink(destination:    StickyMainView()) {
 //                Text("List Sticky View Demo")

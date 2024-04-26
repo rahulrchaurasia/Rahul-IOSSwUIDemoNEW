@@ -16,7 +16,7 @@ struct XDismissButton: View {
                 .opacity(0.6)
             
             Image(systemName: "xmark")
-                .imageScale(.medium)
+                .imageScale(.large)
                 .frame(width: 54, height: 54)
                 .foregroundColor(.black)
                 

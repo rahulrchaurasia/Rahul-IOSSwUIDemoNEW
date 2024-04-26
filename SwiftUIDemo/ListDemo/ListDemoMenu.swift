@@ -79,7 +79,11 @@ struct ListDemoMenu: View {
             //ListComplexDemo
             //StickyMainView
             
-            NavigationLink(destination:     ListParallexDemo()) {
+            NavigationLink(destination:     ListParallexDemo()
+                .navigationBarHidden(true)
+                .navigationBarBackButtonHidden(true)
+            )
+            {
                 Text("List Parallex Demo")
                     .padding(15)
                     .font(.title2)
@@ -88,6 +92,33 @@ struct ListDemoMenu: View {
                     .cornerRadius(15)
             }
            
+            NavigationLink(destination: NestedListDemo()
+                .navigationBarHidden(true)
+                .navigationBarBackButtonHidden(true)
+            )
+            {
+                Text("Nested List Demo")
+                    .padding(15)
+                    .font(.title2)
+                    .foregroundColor(.white)
+                    .background(.cyan.opacity(0.7))
+                    .cornerRadius(15)
+            }
+            
+            NavigationLink(destination: Nested2ListDemo()
+                .navigationBarHidden(true)
+                .navigationBarBackButtonHidden(true)
+            )
+            {
+                Text("Nested List custom Demo")
+                    .padding(15)
+                    .font(.title2)
+                    .foregroundColor(.white)
+                    .background(.brown.opacity(0.7))
+                    .cornerRadius(15)
+            }
+            //Nested2ListDemo
+            //NestedListDemo
             Spacer()
         }
       

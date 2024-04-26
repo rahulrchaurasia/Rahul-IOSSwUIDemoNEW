@@ -16,27 +16,29 @@ struct OTPTextField: UIViewRepresentable {
 
     func makeUIView(context: Context) -> UITextField {
         let textField = UITextField()
-        textField.delegate = context.coordinator
-        textField.keyboardType = .numberPad
-        textField.textAlignment = .center
-        textField.layer.cornerRadius = 8
-        textField.layer.borderWidth = 1
-        textField.layer.borderColor = UIColor.gray.cgColor
-        textField.backgroundColor = isFocused ? .lightGray : .white
+//        textField.delegate = context.coordinator
+//        textField.keyboardType = .numberPad
+//        textField.textAlignment = .center
+//        textField.layer.cornerRadius = 8
+//        textField.layer.borderWidth = 1
+//        textField.layer.borderColor = UIColor.gray.cgColor
+//        textField.backgroundColor = isFocused ? .lightGray : .white
         return textField
     }
 
     func updateUIView(_ uiView: UITextField, context: Context) {
-        uiView.text = text
-        uiView.isUserInteractionEnabled = !text.isEmpty
-        uiView.layer.borderColor = isFocused ? UIColor.blue.cgColor : UIColor.gray.cgColor
+//        uiView.text = text
+//        uiView.isUserInteractionEnabled = !text.isEmpty
+//        uiView.layer.borderColor = isFocused ? UIColor.blue.cgColor : UIColor.gray.cgColor
     }
 
-    func makeCoordinator() -> Coordinator {
-        Coordinator(self)
-    }
+//    func makeCoordinator() -> Coordinator {
+//        Coordinator1(self)
+//        
+//       
+//    }
 
-    class Coordinator: NSObject, UITextFieldDelegate {
+    class Coordinator1: NSObject, UITextFieldDelegate {
         let parent: OTPTextField
 
         init(_ parent: OTPTextField) {

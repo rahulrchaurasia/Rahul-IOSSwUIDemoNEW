@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct MealData : Identifiable {
+struct MealData : Identifiable,Hashable {
     
     var id : Int
     var name: String

@@ -8,11 +8,25 @@
 import SwiftUI
 
 struct DrawerMenuItemView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+    var icon: String
+        var title: String
+
+        var body: some View {
+            HStack {
+                Image(systemName: icon)
+                    .frame(width: 25, height: 25)
+                    .foregroundColor(.blue)
+
+                Text(title)
+                    .foregroundColor(.black)
+                    .padding(.leading, 8)
+
+                Spacer()
+            }
+            .padding()
+        }
 }
 
 #Preview {
-    DrawerMenuItemView()
+    DrawerMenuItemView(icon: "person.fill", title: "Profile")
 }

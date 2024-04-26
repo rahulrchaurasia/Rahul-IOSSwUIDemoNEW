@@ -9,10 +9,36 @@ import SwiftUI
 
 struct AutoOTP: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        OTPVerificationView()
+            .navigationTitle("")
+            .navigationBarHidden(true)
+            .navigationBarBackButtonHidden(true)
+        //        if #available(iOS 15, *){
+        //
+        //            NavigationView{
+        //                OTPVerificationView()
+        //                    .navigationTitle("")
+        //                    .navigationBarTitleDisplayMode(.inline)
+        //                    .navigationBarHidden(true)
+        //
+        //
+        //            }
+        //
+        //        }else{
+        //
+        //            NavigationStack{
+        //
+        //                OTPVerificationView()
+        //                    .navigationBarTitleDisplayMode(.inline)
+        //                    .toolbar(.hidden,for: .navigationBar)
+        //            }
+        //
+        //        }
+        //    }
     }
 }
 
-#Preview {
-    AutoOTP()
-}
+//#Preview {
+//    AutoOTP()
+//}

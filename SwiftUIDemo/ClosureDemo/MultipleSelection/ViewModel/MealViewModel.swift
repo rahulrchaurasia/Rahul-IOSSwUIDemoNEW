@@ -14,16 +14,44 @@ import Foundation
     
     @Published var mealData : [MealData] = []
     
-    @Published var selectedMeal : MealData?
+    //@Published var selectedMeal : MealData?
+    @Published private(set) var selectedMeal: MealData?
     
     @Published var isShowingDetails = false
     
+    @Published  var errorAlert = false
+    
+    var alertTitle : String = ""
     //@Published  var selectedItems = Set<String>()
+    
    
+    //Here we store are Selected Item
+    @Published var selectedItems: Set<Int> = [] // Use Set to store selected meal IDs
+
     
     init(){
         
         print("Init is Called...")
+    }
+    
+    func handleDetailAlert(){
+        
+        
+        if(getSlectedMultiSelectMeals().count == 0){
+            
+            errorAlert.toggle()
+            alertTitle = "Required Atleast one List is selected"
+            
+            isShowingDetails = false
+            
+        }else{
+            
+            isShowingDetails = true
+        }
+        
+        
+        
+        
     }
     
     func getMeals(){
@@ -66,6 +94,7 @@ import Foundation
         }
     
     
+    //donot Use this
     func selectMeal(_ meal: MealData) {
         
 
@@ -88,6 +117,7 @@ import Foundation
         
         selectedMeal = meal
         mealData =  mealData.map {
+            //if id same than reverse the selection
                    if $0.id == meal.id {
                        return MealData(id: $0.id, name: $0.name,
                                                    description: $0.description,
@@ -95,6 +125,7 @@ import Foundation
                                        isSelected: !meal.isSelected)
 
                    } else {
+                       // rest list by default  select uncheck
                        return MealData(id: $0.id, name: $0.name,
                                        description: $0.description,
                                        price: $0.price, imageUrl: $0.imageUrl,
@@ -105,6 +136,98 @@ import Foundation
     }
     
     
+//    func toggleSelection(_ meal : MealData){
+//        
+//      //  meal.isSelected = meal.isSelected.toggle()
+//        if let selectedMeal = selectedMeal,selectedMeal.id == meal.id{
+//            
+//            self.selectedMeal = nil
+//        
+//        }else{
+//            
+//            self.selectedMeal = meal
+//            
+//        }
+//        
+//    }
+//    
+    
+    
+    // Use this
+    //Mark :For Single Selection
+    func toggleSelection(_ meal : MealData) {
+        objectWillChange.send()  //// Trigger UI update before modifying data
+            // Iterate through all meals
+
+       
+        mealData.indices.forEach { index in
+              if mealData[index].id == meal.id {
+                mealData[index].isSelected.toggle()
+                  
+              } else {
+                mealData[index].isSelected = false // Ensure only one selection
+              }
+            }
+        }
+    
+    
+    // Use this
+    //Mark :For Multiple - Selection
+    func toggleMultiSelection(_ meal : MealData){
+        
+        
+        objectWillChange.send() // Trigger UI update before modifying data
+        
+       
+       
+//       
+//        if(selectedItems.contains(meal.id)){
+//
+//            selectedItems.remove(meal.id)
+//            
+//        }else{
+//            // Select the meal
+//            selectedItems.insert(meal.id)
+//          
+//        }
+        // Update isSelected within mealData (optional)
+        
+        if let index = mealData.firstIndex(where: { $0.id == meal.id}){
+            
+            mealData[index].isSelected.toggle()
+        }
+        
+        
+        
+        
+    }
+    
+    
+    // Non-isolated method for background tasks, explicitly marked
+    
+    func getSlectedMultiSelectMeals()-> [MealData] {
+        
+        return mealData.filter{$0.isSelected}
+        
+    
+    }
+    
+    func getSlectedMultiMealsId()-> [MealData] {
+        
+        return mealData.filter { selectedItems.contains($0.id) }
+        
+       
+    }
+    
+    // Mark : Not USed
+    //For Learning Enumerator
+    func updateIsSelected() {
+        
+        for (index, meal) in mealData.enumerated() {
+          mealData[index].isSelected = selectedItems.contains(meal.id)
+        }
+        
+      }
     
     
 }

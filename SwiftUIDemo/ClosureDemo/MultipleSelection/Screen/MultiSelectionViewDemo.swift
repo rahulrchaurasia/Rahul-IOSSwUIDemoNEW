@@ -7,7 +7,7 @@
 
 /*
  Table : having wrap content not match parent.
- Note : If we take List it default behavior is take all space hence we have to use
+ Note : If we take List it default behavior is take 'all space' hence we have to use
    Normal ForEach Loop bec we need no default style
  */
 
@@ -20,6 +20,10 @@
  .circle: This encases the symbol in a circle.
  .square: This encases the symbol in a square.
  .rectangle: This encases the symbol in a rectangle.
+ 
+ 
+ //Note : scrollIndicators(ScrollIndicatorVisibility.hidden)
+ // For Hiding ScrollIndicator in List
 
  */
 import SwiftUI
@@ -31,7 +35,7 @@ struct MultiSelectionViewDemo: View {
     //@State private var selectedItems: [MealData] = []
 
    
-    @State var isShowingDetails = false
+    @State var isShowingDetails = false // not in used we Used vm
     
     @State private var selectedRow: Int? = nil
     @State private var items = ["Item 1", "Item 2", "Item 3","Item 4","Item 5","Item 6",
@@ -93,15 +97,20 @@ struct MultiSelectionViewDemo: View {
                     .disabled(true)
                     
                     .blur(radius: vm.isShowingDetails ? 10 : 0)
+                    
+                    
+                    
+                    
                     if vm.isShowingDetails {
                         
+                        //here we pass ObservedObject View Model bec MultiSelectionAlertView decalre it like that
                         MultiSelectionAlertView(vm: vm, isShowingDetail: $vm.isShowingDetails)
                     }
                 }
             }
            
         }
-        .navigationTitle("Multi Selection Demo")
+        .navigationTitle("Single Selection Demo 1")
         .navigationBarBackButtonHidden(vm.isShowingDetails)
         .toolbar {
             ToolbarItem(placement: .confirmationAction) {

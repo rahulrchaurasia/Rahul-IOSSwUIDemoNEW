@@ -60,6 +60,21 @@ extension CGFloat {
         return screenHeight * per
     }
     
+    
+    static func getSafeArea() -> UIEdgeInsets {
+        
+        guard let screen = UIApplication.shared.connectedScenes.first as?
+                UIWindowScene else {
+            return .zero
+        }
+        
+        guard let safeArea = screen.windows.first?.safeAreaInsets else {
+            return .zero
+        }
+        
+        return safeArea
+        
+    }
    
     static var topInsets: Double {
         if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
@@ -98,6 +113,11 @@ extension CGFloat {
 
 extension Color {
     
+    //#673AB7
+    
+    static var toolBar: Color {
+        return Color(hex: "#283593")
+    }
     static var primaryApp: Color {
         return Color(hex: "53B175")
     }

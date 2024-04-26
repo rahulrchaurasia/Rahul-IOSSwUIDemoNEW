@@ -59,6 +59,7 @@ private extension ListParallexDemo {
             // Parallax header
             GeometryReader { reader -> AnyView in
                 let offset = reader.frame(in: .global).minY
+               // print("offset \(offset)")
                 if -offset > 0 {
                     DispatchQueue.main.async {
                         self.homeData.offset = -offset
@@ -102,6 +103,11 @@ private extension ListParallexDemo {
                 
                 handleDismissAll()
             }) {
+                /*
+                // Note : We have List which have
+               // Tab(tab: "Order Again", foods: foods.shuffled()),
+                 title and regarsding List Items
+                 */
                 // Tabs with content
                 ForEach(tabsItems) { tab in
                     VStack(alignment: .leading, spacing: 15, content: {
@@ -118,16 +124,23 @@ private extension ListParallexDemo {
                         Divider()
                             .padding(.top)
                     })
-                    .tag(tab.tab)
+                    .tag(tab.tab)  //VIP:here we attache Tab
+                
+                    
                     .overlay(
                         GeometryReader { reader -> Text in
                             // Calculate tab
                             let offset = reader.frame(in: .global).minY
+                           
                             // Top area plus header size 100
+                            
+                            // height : of HeaderView is fixed ie 100
                             let height = UIApplication.shared.windows.first!.safeAreaInsets.top + 100
+                           // print("offset Tab \(offset) Height \(height)")
                             if offset < height && offset > 50 && homeData.selectedTab != tab.tab {
                                 DispatchQueue.main.async {
                                     self.homeData.selectedTab = tab.tab
+                                    print("selectedTab  Applied...")
                                 }
                             }
                             return Text("")
@@ -138,6 +151,17 @@ private extension ListParallexDemo {
         })
     }
 }
-#Preview {
-    ListParallexDemo()
+//#Preview {
+//    ListParallexDemo()
+//}
+
+struct ListParallexDemo_Previews: PreviewProvider {
+    static var previews: some View {
+        // Create an instance of the EnvironmentObject
+        let homeData = HomeViewModel()
+
+        // Inject the object into the preview using `environmentObject`
+        return ListParallexDemo()
+            .environmentObject(homeData)
+    }
 }

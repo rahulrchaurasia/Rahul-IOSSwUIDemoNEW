@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-
+//@ObservedObject : refresh ie set to initial value when mainView is change
 
 struct RandomNumberView : View {
     
@@ -24,6 +24,7 @@ struct RandomNumberView : View {
                 
                 randNumber = (0...1000).randomElement()!
             }
+            
             
             /// STate vs Object
          

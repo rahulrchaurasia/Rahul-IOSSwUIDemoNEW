@@ -78,7 +78,9 @@ struct ContactsDetails: View {
             
         }
         .padding()
-        .background(.gray.opacity(0.1),in : RoundedRectangle(cornerRadius: 12, style: .continuous))
+        .background(
+            .gray.opacity(0.1),in : RoundedRectangle(cornerRadius: 12, style: .continuous)
+        )
 
         
     }

@@ -125,6 +125,15 @@
         "revision" : "07f7f26ded8df9645c072f220378879c4642e063",
         "version" : "1.25.1"
       }
+    },
+    {
+      "identity" : "ttgsnackbar",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/zekunyan/TTGSnackbar.git",
+      "state" : {
+        "revision" : "2edfc948a75ba2d8eaae3ee6031988cacfefa96e",
+        "version" : "1.11.1"
+      }
     }
   ],
   "version" : 2

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AdvanceDemoView: View {
+    
     var body: some View {
         VStack(alignment: .center, spacing: 20) {
           
@@ -48,30 +49,40 @@ struct AdvanceDemoView: View {
                     .cornerRadius(15)
 
             }
+            NavigationLink {
+               AutoOTP()
+            } label: {
+                Text("Auto Otp Demo")
+                    .padding(12)
+                    .font(.title2)
+                    .foregroundColor(.white)
+                    .background(Color.orange.opacity(0.7))
+                    .cornerRadius(15)
+
+            }
+            NavigationLink {
+                OTPMainDemo()
+            } label: {
+                Text("Otp Demo")
+                    .padding(12)
+                    .font(.title2)
+                    .foregroundColor(.white)
+                    .background(Color.black.opacity(0.7))
+                    .cornerRadius(15)
+
+            }
             
-//            NavigationLink {
-//                ClosureDemo4()
-//            } label: {
-//                Text("Get Child List Slected Data")
-//                    .padding(12)
-//                    .font(.title2)
-//                    .foregroundColor(.white)
-//                    .background(Color.black.opacity(0.7))
-//                    .cornerRadius(15)
-//
-//            }
-            
-//            NavigationLink {
-//                MultiSelectionViewDemo()
-//            } label: {
-//                Text("MultiSlected - Data")
-//                    .padding(12)
-//                    .font(.title2)
-//                    .foregroundColor(.white)
-//                    .background(Color.orange.opacity(0.7))
-//                    .cornerRadius(15)
-//
-//            }
+            NavigationLink {
+                CustomDialogDemo()
+            } label: {
+                Text("Custom Dialog Demo")
+                    .padding(12)
+                    .font(.title2)
+                    .foregroundColor(.white)
+                    .background(Color.red.opacity(0.7))
+                    .cornerRadius(15)
+
+            }
           
             
             
@@ -79,6 +90,8 @@ struct AdvanceDemoView: View {
         }.padding(.top,10)
     }
 }
+
+
 
 struct AdvanceDemoView_Previews: PreviewProvider {
     static var previews: some View {

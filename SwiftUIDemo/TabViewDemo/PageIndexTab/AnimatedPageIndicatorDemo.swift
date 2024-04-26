@@ -8,8 +8,28 @@
 import SwiftUI
 
 struct AnimatedPageIndicatorDemo: View {
+    
+    var colors : [Color]  = [.red,.yellow,.green,.blue]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            //paging View
+            ScrollView(.horizontal) {
+                
+                LazyHStack(spacing :0 ){
+                  
+                    ForEach(colors, id: \.self){ color in
+                        
+                        RoundedRectangle(cornerRadius: 25)
+                            .fill(color)
+                            .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    }
+                }
+            }
+          
+           
+        }
+     
     }
 }
 

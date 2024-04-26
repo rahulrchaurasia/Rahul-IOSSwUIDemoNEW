@@ -18,7 +18,7 @@ struct ScrollViewReaderDemo: View {
                 Button {
                     print("cdcd")
                     
-                    proxy.scrollTo(100)
+                    proxy.scrollTo(100,anchor: .top)
                     
                 } label: {
                     Text("Scroll to 100")

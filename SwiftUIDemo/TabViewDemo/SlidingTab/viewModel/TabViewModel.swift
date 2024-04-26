@@ -16,12 +16,7 @@ class TabViewModel : ObservableObject {
         return Segment.allCases.map { $0.rawValue}
     }
    // var selectedSegment: String = Segment.open.rawValue // Track selected segment
-    @Published var selectedSegment: Segment = .open
+   // @Published var selectedSegment: Segment = .open
 }
 
-enum Segment: String, CaseIterable {
-    case open = "OPEN"
-    case completed = "COMPLETED"
-    case cancelled = "CANCELLED"
-    case all = "ALL"
-}
+

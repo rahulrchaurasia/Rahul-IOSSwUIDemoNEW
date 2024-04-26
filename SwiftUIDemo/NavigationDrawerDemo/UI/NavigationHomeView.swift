@@ -8,11 +8,29 @@
 import SwiftUI
 
 struct NavigationHomeView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+    @Binding var presentSideMenu: Bool
+     
+     var body: some View {
+         VStack{
+             HStack{
+                 Button{
+                     presentSideMenu.toggle()
+                 } label: {
+                     Image("menu")
+                         .resizable()
+                         .frame(width: 32, height: 32)
+                 }
+                 Spacer()
+             }
+             
+             Spacer()
+             Text("Home View")
+             Spacer()
+         }
+         .padding(.horizontal, 24)
+     }
 }
 
 #Preview {
-    NavigationHomeView()
+    NavigationHomeView(presentSideMenu: .constant(false))
 }

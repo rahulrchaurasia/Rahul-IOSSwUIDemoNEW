@@ -47,11 +47,7 @@ struct SegmentedView: View {
     }
 }
 
-//#Preview {
-//    
-//    let segments: [String] = ["OPEN", "COMPLETED", "CANCELLED", "ALL"]
-//    SegmentedView(selectedSegment: .constant("OPEN"), segments: segments)
-//}
+
 
 struct SegmentedView_Previews: PreviewProvider {
     static var previews: some View {

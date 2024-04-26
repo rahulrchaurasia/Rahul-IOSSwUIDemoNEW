@@ -18,8 +18,10 @@ struct CustomTextViewModifier: ViewModifier {
               .cornerRadius(roundedCornes)
               .padding(2)
               .foregroundColor(textColor)
-              .overlay(RoundedRectangle(cornerRadius: roundedCornes)
-                .stroke( lineWidth: 1.5) .foregroundColor(Color.gray.opacity(0.7)))
+              .overlay(
+                RoundedRectangle(cornerRadius: roundedCornes)
+                .stroke( lineWidth: 1) 
+                .foregroundColor(Color.gray.opacity(0.7)))
               .font(.custom("Open Sans", size: 17))
 
               .shadow(radius: 10)

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FloatingTextField: View {
+struct FloatingTextField1: View {
     
     @Binding var text: String
     var placeholder: String
@@ -53,6 +53,6 @@ struct FloatingTextField: View {
 
 struct FloatingTextField_Previews: PreviewProvider {
     static var previews: some View {
-        FloatingTextField(text: .constant(""), placeholder: "Enter Name", label: "Enter Data")
+        FloatingTextField1(text: .constant(""), placeholder: "Enter Name", label: "Enter Data")
     }
 }
