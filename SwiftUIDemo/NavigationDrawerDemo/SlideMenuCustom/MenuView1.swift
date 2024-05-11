@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MenuView: View {
+struct MenuView1: View {
     
     let width: CGFloat
 
@@ -60,5 +60,5 @@ struct MenuView: View {
 }
 
 #Preview {
-    MenuView(width: 200)
+    MenuView1(width: 200)
 }
