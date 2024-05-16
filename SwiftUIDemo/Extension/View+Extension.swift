@@ -54,6 +54,11 @@ extension View {
            UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
        }
     
+    
+    func scrollIndicatorsCustomModifier() -> some View {
+            modifier(ConditionalScrollIndicatorsModifier())
+        }
+    
 /***********************************************************************/
        // Using  @ViewBuilder
 /***********************************************************************/
@@ -68,4 +73,11 @@ extension View {
                .cornerRadius(15)
        }
 
+    
+    
+   
 }
+
+
+
+

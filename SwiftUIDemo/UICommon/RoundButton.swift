@@ -20,7 +20,7 @@ struct RoundButton: View {
                 .foregroundColor(.white)
                 .multilineTextAlignment(.center)
         }
-        .frame( minWidth: 0, maxWidth: .infinity, minHeight: 60, maxHeight: 60 )
+        .frame( minWidth: 0, maxWidth: .infinity, minHeight: 50, maxHeight: 50 )
         .background( Color.primaryApp)
         .cornerRadius(20)
     }

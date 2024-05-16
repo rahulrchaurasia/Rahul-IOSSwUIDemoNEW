@@ -27,7 +27,7 @@ case  test
     }
 }
 
-struct Configuration {
+struct ConfigurationEnv {
     
     lazy var environment : AppEnvironment = {
         

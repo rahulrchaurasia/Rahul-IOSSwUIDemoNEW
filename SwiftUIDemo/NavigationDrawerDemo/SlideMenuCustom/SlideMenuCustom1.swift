@@ -15,7 +15,7 @@ struct SlideMenuCustom1: View {
             GeometryReader { geometry in
                 ZStack(alignment: .leading) {
                     // Menu
-                    MenuView(width: geometry.size.width / 2)
+                    MenuView1(width: geometry.size.width / 2)
                         .offset(x: isMenuOpen ? 0 : -geometry.size.width / 2 + menuDragOffset)
                         .opacity(isMenuOpen ? 1 : 0)
                         .animation(.easeInOut, value: isMenuOpen)

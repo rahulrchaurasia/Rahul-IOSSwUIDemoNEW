@@ -134,6 +134,20 @@ extension HomeUIView {
                     .cornerRadius(15)
                     
             }
+            // Advance Demo2
+            NavigationLink {
+                AdvanceDemo2View()
+                  
+            } label: {
+                Text("Advance demo")
+                    .padding(12)
+                    .font(.title2)
+                    .foregroundColor(.white)
+                
+                    .background(Color(UIColor.blue).opacity(0.7))
+                    .cornerRadius(15)
+                    
+            }
            // ClosureDemoMain
             NavigationLink {
                 ClosureDemoMain()
@@ -143,7 +157,8 @@ extension HomeUIView {
                     .padding(12)
                     .font(.title2)
                     .foregroundColor(.white)
-                    .background(Color(UIColor.customdarkGreen))
+                    .background(Color.yellow)
+                
                     .cornerRadius(15)
                     
             }

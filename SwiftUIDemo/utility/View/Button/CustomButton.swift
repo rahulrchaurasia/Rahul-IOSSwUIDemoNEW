@@ -16,7 +16,7 @@ struct CustomButton: View {
         
         Button(action: action) {
                     Text(title)
-                .font(.system(size: 23,weight: .semibold))
+                .font(.system(size: 20,weight: .semibold))
                         .foregroundColor(.white)
                         .frame(maxWidth: .infinity, minHeight: 50)
                         .background(

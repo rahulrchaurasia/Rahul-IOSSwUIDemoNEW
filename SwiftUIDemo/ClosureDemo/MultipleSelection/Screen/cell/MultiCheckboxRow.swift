@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MultiCheckboxRow: View {
     
-    let meal: MealData
+      let meal: MealData
       let viewModel: MealViewModel // Inject the view model instance
 
     var body: some View {

@@ -22,6 +22,30 @@ extension Color {
     
     static let statusBar = Color("blue")
     
+
+    static var secondaryApp: Color {
+        return Color(hex: "3369FF")
+    }
+    
+    static var redApp: Color {
+        return Color(hex: "F4586C")
+    }
+    
+    
+    static var primaryTextW: Color {
+        return Color.white
+    }
+    
+    
+    static var lightGray: Color {
+        return Color(hex: "DADEE3")
+    }
+    
+    static var lightWhite: Color {
+        return Color(hex: "EFEFEF")
+    }
+    
+   
     //blue
     
     

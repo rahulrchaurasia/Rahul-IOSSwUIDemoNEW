@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+protocol LoginRepositoryProtocol {
+    func fetchUserData(email: String) async throws -> UserResponse?
+}

@@ -58,10 +58,11 @@ struct MultiSelectionViewDemo2: View {
                         
                         
                     }
-                }.scrollIndicators(ScrollIndicatorVisibility.hidden)
-            
+                }
+                    //                      .scrollIndicators(ScrollIndicatorVisibility.hidden)
                 .listStyle(.plain)
-                // Hide indicators here
+                .scrollIndicatorsCustomModifier()
+                
                 
             }
             .padding(.top, .topInsets)
@@ -71,6 +72,7 @@ struct MultiSelectionViewDemo2: View {
             .overlay(alignment: .top) {
                 
                 Color.statusBar
+                    .foregroundStyle(Color.white)
                     .frame(height: .topInsets)
                     .ignoresSafeArea()
             }

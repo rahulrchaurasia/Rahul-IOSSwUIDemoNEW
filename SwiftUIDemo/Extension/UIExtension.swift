@@ -28,12 +28,26 @@ enum Gilroy: String {
     case medium = "Gilroy-Medium"
     case semibold = "Gilroy-SemiBold"
     case bold = "Gilroy-Bold"
+    
+   
+    
+}
+
+enum NunitoSans: String {
+    case regular = "NunitoSans10pt-Regular"
+    case medium = "NunitoSans10pt-Medium"
+    case semibold = "NunitoSans10pt-SemiBold"
+    case bold = "NunitoSans10pt-Bold"
+    case extraBold = "NunitoSans10pt-ExtraBold"
 }
 
 
 extension Font {
     
-    static func customfont(_ font: Gilroy, fontSize: CGFloat) -> Font {
+    static func customfont(_ font: NunitoSans, fontSize: CGFloat) -> Font {
+        custom(font.rawValue, size: fontSize)
+    }
+    static func customfont1(_ font: Gilroy, fontSize: CGFloat) -> Font {
         custom(font.rawValue, size: fontSize)
     }
     
@@ -142,9 +156,9 @@ extension Color {
     static var darkGray: Color {
         return Color(hex: "4C4F4D")
     }
-    static var primary: Color {
-        return Color(hex: "5E00F5")
-    }
+//    static var primary: Color {
+//        return Color(hex: "5E00F5")
+//    }
     static var primary500: Color {
         return Color(hex: "7722FF")
     }

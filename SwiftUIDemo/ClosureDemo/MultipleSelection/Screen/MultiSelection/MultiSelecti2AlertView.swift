@@ -32,7 +32,9 @@ struct MultiSelecti2AlertView: View {
             
             List{
                 
-                ForEach(selectedList){   meal in
+                //selectedList
+                //  ForEach(selectedList)
+                ForEach(vm.getSlectedMultiSelectMeals()){   meal in
                     
                     
                     MealDetailsModel(mealData: meal)
@@ -79,7 +81,9 @@ struct MultiSelecti2AlertView_Previews: PreviewProvider {
 
         let vm: MealViewModel = MealViewModel()
         var mealData : [MealData] = [
-               MealData(id: 101, name: "Butter Chicken", description: "Butter with spicy masla, kce cecje", price: 450, imageUrl: "https://seanallen-course-backend.herokuapp.com/images/appetizers/asian-flank-steak.jpg")
+               MealData(id: 101, name: "Butter Chicken", description: "Butter with spicy masla, kce cecje", price: 450, imageUrl: "https://seanallen-course-backend.herokuapp.com/images/appetizers/asian-flank-steak.jpg"),
+               
+               MealData(id: 102, name: "Tandoor Chicken", description: "Butter with spicy masla, kce cecje", price: 720, imageUrl: "https://seanallen-course-backend.herokuapp.com/images/appetizers/asian-flank-steak.jpg")
         ]
 
     

@@ -7,6 +7,9 @@
 
 import Foundation
 
+
+//Validation On the Basis of ViewModel
+
 final class ContactViewModel : ObservableObject {
     
     @Published var newConatct : NewContact = .empty

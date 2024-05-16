@@ -6,3 +6,20 @@
 //
 
 import Foundation
+
+class CustomDashBoardViewModel : ObservableObject {
+    
+    
+    static var shared = CustomDashBoardViewModel()
+    
+    @Published var isOnline = false
+    
+    
+    
+    func actionGoOnline(){
+        
+        isOnline = !isOnline
+       
+        
+    }
+}

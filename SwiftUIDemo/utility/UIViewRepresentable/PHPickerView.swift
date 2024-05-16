@@ -12,13 +12,14 @@ import PhotosUI
 
 struct PHPickerView : UIViewControllerRepresentable {
     
-    @Binding var selectedImages: UIImage
+    @Binding var selectedImage: UIImage?
     
     
     func makeUIViewController(context: Context) -> PHPickerViewController {
-            var configuration = PHPickerConfiguration()
+        var configuration = PHPickerConfiguration(photoLibrary: PHPhotoLibrary.shared())
             configuration.filter = .images
-            configuration.selectionLimit = 1 // Set the maximum number of photos allowed to be selected
+            configuration.selectionLimit = 1 // Limit selection to one image
+
             let picker = PHPickerViewController(configuration: configuration)
             picker.delegate = context.coordinator
             return picker
@@ -29,7 +30,6 @@ struct PHPickerView : UIViewControllerRepresentable {
         func makeCoordinator() -> Coordinator {
             return Coordinator(parent: self)
         }
-    
     
    
     class Coordinator: NSObject, PHPickerViewControllerDelegate {
@@ -49,7 +49,7 @@ struct PHPickerView : UIViewControllerRepresentable {
                 result.itemProvider.loadObject(ofClass: UIImage.self) { (image, error) in
                     if let image = image as? UIImage {
                         DispatchQueue.main.async {
-                            parent.selectedImage = image
+                            self.parent.selectedImage = image
                         }
                     }
                 }

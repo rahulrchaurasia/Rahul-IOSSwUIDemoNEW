@@ -8,11 +8,15 @@
 		<string>inter_semibold.ttf</string>
 		<string>inter_regular.ttf</string>
 		<string>bungee.ttf</string>
-        
-        <string>Gilroy-Medium.ttf</string>
-        <string>Gilroy-Regular.ttf</string>
-        <string>Gilroy-Bold.ttf</string>
-        <string>Gilroy-SemiBold.ttf</string>
+		<string>Gilroy-Medium.ttf</string>
+		<string>Gilroy-Regular.ttf</string>
+		<string>Gilroy-Bold.ttf</string>
+		<string>Gilroy-SemiBold.ttf</string>
+		<string>NunitoSans-SemiBold.ttf</string>
+		<string>NunitoSans-Bold.ttf</string>
+		<string>NunitoSans-ExtraBold.ttf</string>
+		<string>NunitoSans-Medium.ttf</string>
+		<string>NunitoSans-Regular.ttf</string>
 	</array>
 </dict>
 </plist>

@@ -26,6 +26,8 @@ struct SupportUserView: View {
                     HStack{
                         Button(action: {
                             mode.wrappedValue.dismiss()
+                            
+                            //sVM.showMessage = true
                         }, label: {
                             Image("back")
                                 .resizable()
@@ -53,14 +55,17 @@ struct SupportUserView: View {
                 ScrollView {
                     
                     LazyVStack( content: {
-                        ForEach($sVM.userArr, id: \.id) { user in
-                            
-                           
+                        ForEach(sVM.userArr, id: \.id) { user in
+                        
                             
                             Button(action: {
                                // sVM.selectSupportUser = uObj
+                                sVM.showError = true
+                                
+                                sVM.errorMessage = "Show Data"
+                                
                             }, label: {
-                                ExtractedView()
+                                SupportProfile(user: user)
                             })
                             
                             
@@ -72,20 +77,23 @@ struct SupportUserView: View {
                     
                 }
                 .background( Color.lightWhite )
+                
+                .alert(isPresented: $sVM.showError, content: {
+                    
+                    Alert(title: Text("Driver App"), message: Text(sVM.errorMessage), dismissButton: .default(Text("OK")) {
+                        
+                    } )
+                })
             })
         }
         .onAppear(){
             //sVM.supportUserApi()
+            sVM.addUser()
         }
         .background( NavigationLink(destination: CamGalleryUIDemo(), isActive: $sVM.showMessage , label: {
             EmptyView()
         }))
-        .alert(isPresented: $sVM.showError, content: {
-            
-            Alert(title: Text("Driver App"), message: Text(sVM.errorMessage), dismissButton: .default(Text("OK")) {
-                
-            } )
-        })
+        
         .navigationTitle("")
         .navigationBarBackButtonHidden()
         .navigationBarHidden(true)
@@ -93,61 +101,16 @@ struct SupportUserView: View {
     }
 }
 
-#Preview {
-    SupportUserView()
-}
+//#Preview {
+//    SupportUserView()
+//}
 
 
-struct ExtractedView: View {
-    var body: some View {
-        HStack {
-            
-            Image("u1")
-                .resizable()
-                .scaledToFill()
-                .cornerRadius(25)
-                .frame(width: 50, height: 50)
-                .clipped()
-            
-            VStack( spacing: 0) {
-                
-                HStack {
-                    Text(user.name)
-                        .font(.customfont(.bold, fontSize: 17))
-                        .foregroundColor(.primaryText )
-                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
-                    Text(user.id.string)
-                        .font(.customfont(.regular, fontSize: 13))
-                        .foregroundColor(.secondaryText)
-                    
-                }
-                
-                HStack {
-                    Text(user.message)
-                        .font(.customfont(.regular, fontSize: 15))
-                        .foregroundColor(.secondaryText )
-                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
-                    
-                    if( user.baseCount > 0 ) {
-                        Text( "\( user.baseCount )" )
-                            .font(.customfont(.semiBold, fontSize: 11))
-                            .foregroundColor(.white)
-                            .frame(minWidth: 15)
-                            .padding(4)
-                            .background( Color.primaryApp)
-                            .cornerRadius(20)
-                    }
-                    
-                    
-                }
-                
-            }
-            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
-        }
-        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
-        .padding()
-        .background(Color.white)
-        
-        .cornerRadius(10)
+
+struct SupportUserView_Previews: PreviewProvider {
+    static var previews: some View {
+
+        let user = UserProfile(id: 1, name: "Rahul",message: "Android Developer",baseCount: "34000Rs", createdDate: "2-Jan-2021")
+        SupportUserView()
     }
 }
