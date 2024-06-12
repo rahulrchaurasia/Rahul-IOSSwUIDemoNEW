@@ -15,11 +15,9 @@ struct LineTextField: View {
     var keyboardType: UIKeyboardType = .default
     
 
-   // State  var isError: String = ""
     var isError: Bool
     var errorMessage: String?
    
-   // @Binding var isFocused: Bool
     
     var body: some View {
         VStack(spacing:4){
