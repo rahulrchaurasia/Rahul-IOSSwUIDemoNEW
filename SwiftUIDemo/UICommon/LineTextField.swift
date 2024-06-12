@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//Mark : Handling Error Message and Error stroke
 struct LineTextField: View {
     
     var title: String = "Title"
@@ -14,7 +15,6 @@ struct LineTextField: View {
     @Binding var txt: String
     var keyboardType: UIKeyboardType = .default
     
-
     var isError: Bool
     var errorMessage: String?
    
@@ -47,7 +47,7 @@ struct LineTextField: View {
                                 .padding(.leading,6)
                                 .padding(.top,3)
                         }
-           
+
         }
     }
 }
