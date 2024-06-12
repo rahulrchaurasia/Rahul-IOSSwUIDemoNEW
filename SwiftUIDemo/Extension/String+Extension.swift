@@ -25,7 +25,22 @@ extension String
     
     
     
-    func toDateString( inputDateFormat inputFormat  : String,  ouputDateFormat outputFormat  : String ) -> String
+    func toDateString(inputDateFormat inputFormat: String, outputDateFormat outputFormat: String) -> String? {
+            let dateFormatter = DateFormatter()
+            
+            // Set the input date format
+            dateFormatter.dateFormat = inputFormat
+            guard let date = dateFormatter.date(from: self) else {
+                // If the date conversion fails, return nil
+                return nil
+            }
+            
+            // Set the output date format
+            dateFormatter.dateFormat = outputFormat
+            return dateFormatter.string(from: date)
+        }
+    
+    func toDateString1( inputDateFormat inputFormat  : String,  ouputDateFormat outputFormat  : String ) -> String
     {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = inputFormat
@@ -48,6 +63,20 @@ extension String
     
     var digitOnly: String { filter { ("0"..."9").contains($0) } }
     
+    var isValidPhoneNumber: Bool {
+        // Refine phone number validation using a robust regular expression or library
+        let pattern = "^\\d{10}$" // Check for 10-digit Indian phone number format
+        let predicate = NSPredicate(format: "SELF MATCHES %@", pattern)
+        return predicate.evaluate(with: self)
+    }
+
+    var maskedPhoneNumber: String {
+        // Improve masking to handle different lengths and country codes
+        let firstPart = String(self.prefix(6))
+        let maskedPart = String(repeating: "*", count: 4)
+        let lastPart = String(self.suffix(4))
+        return "\(firstPart)\(maskedPart)\(lastPart)"
+    }
     
     /* **********************************
     // let myString = "Hello, world!"

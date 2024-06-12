@@ -176,18 +176,20 @@ extension HomeUIView {
             }
             
             NavigationLink {
-                PickerDEmo()
+                DropDownDemo()
                   
             } label: {
-                Text("Picker demo")
+                Text("DropDown demo")
                     .padding(12)
                     .font(.title2)
                     .foregroundColor(.white)
-                    .background(.blue)
+                    .background(.orange)
                     .cornerRadius(15)
                     
             }
             
+          
+        
             NavigationLink {
                 //MainTabbedView()
               //  MainPageNavDrawerHome()

@@ -73,8 +73,14 @@ extension View {
                .cornerRadius(15)
        }
 
-    
-    
+   
+/***********************************************************************/
+    // Using  Keyboard Handling  
+    //Move TextField up when the keyboard has appeared in SwiftUI
+/***********************************************************************/
+    func adaptsToKeyboard() -> some View {
+           return modifier(AdaptsToKeyboard())
+       }
    
 }
 

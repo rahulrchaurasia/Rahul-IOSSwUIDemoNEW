@@ -28,8 +28,7 @@ import Foundation
     @Published var showError = false
     @Published var errorMessage = ""
     
-   
-    @Published var showMessage = false
+       @Published var showMessage = false
     
     
     

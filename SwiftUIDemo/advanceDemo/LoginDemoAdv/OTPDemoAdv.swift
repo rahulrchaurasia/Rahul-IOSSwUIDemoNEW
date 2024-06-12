@@ -26,7 +26,8 @@ struct OTPDemoAdv: View {
                     HStack{
                         
                         Button(action: {
-                            isShowingAlert = true
+                         
+                            dismiss()
                         }, label: {
                            
                             Image("back")

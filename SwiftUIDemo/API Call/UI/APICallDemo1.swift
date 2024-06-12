@@ -28,11 +28,13 @@ struct APICallDemo1: View {
                 
                 
                 // Both Same
-                CustomHeaderWithMenu(title: "Cam Gallery Demo",
+                CustomHeaderWithMenu(title: "API Call Demo1",
                                      dismissAction : { dismiss()
                       },
-                                     menuAction: nil
-                                     ,homeAction: nil)
+                    menuAction: {
+                    dismiss()
+                    }
+                    ,homeAction: nil)
                 
                 VStack{
                     

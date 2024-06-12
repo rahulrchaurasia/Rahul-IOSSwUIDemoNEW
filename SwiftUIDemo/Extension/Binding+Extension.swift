@@ -9,8 +9,13 @@ import Foundation
 import SwiftUI
 
 
+
 extension Binding where Value == String {
     
+    /* **********************************************************
+    //  For Limit the TextField character size
+     ************************************************************/
+ 
     // added :05otp
     func limit(_ length : Int) -> Self {
         

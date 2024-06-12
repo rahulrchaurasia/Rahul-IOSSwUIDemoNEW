@@ -62,9 +62,9 @@ struct MenuView: View {
                     })
                     .frame(maxWidth: .infinity, alignment: .center)
                     
-                    Button(action: {
-                        
-                    }, label: {
+                    NavigationLink {
+                        EditProfileView()
+                    } label: {
                         VStack{
                             
                             ZStack(alignment: .bottom){
@@ -97,9 +97,12 @@ struct MenuView: View {
                                 .font(.customfont(.regular, fontSize: 16))
                                 .foregroundColor(.white)
                         }
-                    })
+                        
+                    }
                     .frame(maxWidth: .infinity, alignment: .center)
+ 
                     
+                                       
                     
                     
                     Button(action: {

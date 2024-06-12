@@ -26,6 +26,8 @@
 		CD33610C2BE8E829009CAF62 /* SupportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33610B2BE8E829009CAF62 /* SupportViewModel.swift */; };
 		CD33610F2BE8FC45009CAF62 /* SupportProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33610E2BE8FC45009CAF62 /* SupportProfile.swift */; };
 		CD34DDB12A73EC9A0055791E /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD34DDB02A73EC9A0055791E /* String+Extension.swift */; };
+		CD34E5C32C1080E2005F7662 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD34E5C22C1080E2005F7662 /* ProfileViewModel.swift */; };
+		CD34E5C52C11ED93005F7662 /* DatePickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD34E5C42C11ED93005F7662 /* DatePickerViewModel.swift */; };
 		CD380E2E2AC957F200799977 /* customAlertViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD380E2D2AC957F200799977 /* customAlertViewBuilder.swift */; };
 		CD38A3722BDA834600E91EBC /* MultiSelecti2AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD38A3712BDA834600E91EBC /* MultiSelecti2AlertView.swift */; };
 		CD4ABE8E2ACFCB2B0012770F /* ClosureDemoMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4ABE8D2ACFCB2B0012770F /* ClosureDemoMain.swift */; };
@@ -89,6 +91,10 @@
 		CD6B34912A6129590035C575 /* ContactDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6B34902A6129590035C575 /* ContactDemo.swift */; };
 		CD6B34942A614E5A0035C575 /* NewContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6B34932A614E5A0035C575 /* NewContact.swift */; };
 		CD6B34972A6158970035C575 /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6B34962A6158970035C575 /* ContactViewModel.swift */; };
+		CD6C289A2C06095700730D4C /* dropDownViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6C28992C06095700730D4C /* dropDownViewModel.swift */; };
+		CD6C289C2C060B5100730D4C /* DropDownDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6C289B2C060B5100730D4C /* DropDownDemo.swift */; };
+		CD6C289F2C0615D500730D4C /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6C289E2C0615D500730D4C /* EditProfileView.swift */; };
+		CD6C28A12C06196900730D4C /* LineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6C28A02C06196900730D4C /* LineTextField.swift */; };
 		CD6D3BBF2A189B89007589E3 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = CD6D3BBE2A189B89007589E3 /* KeychainAccess */; };
 		CD6ED4CC2A6A57F50063409D /* ListDemoMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6ED4CB2A6A57F50063409D /* ListDemoMain.swift */; };
 		CD6ED4CE2A6A586C0063409D /* ListDemoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6ED4CD2A6A586C0063409D /* ListDemoItem.swift */; };
@@ -229,6 +235,10 @@
 		CDDAAED12AD52AAB00997E37 /* CounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDAAED02AD52AAB00997E37 /* CounterViewModel.swift */; };
 		CDDAAED42AD52E4100997E37 /* AdvanceDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDAAED32AD52E4100997E37 /* AdvanceDemoView.swift */; };
 		CDDAAED62AD54CEA00997E37 /* StateVsObservedObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDAAED52AD54CEA00997E37 /* StateVsObservedObj.swift */; };
+		CDDB77A82C17124A002F6EEA /* NumbersOnly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB77A72C17124A002F6EEA /* NumbersOnly.swift */; };
+		CDDB77AA2C171B93002F6EEA /* TextFieldLimitModifer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB77A92C171B93002F6EEA /* TextFieldLimitModifer.swift */; };
+		CDDB77AC2C172D2B002F6EEA /* DigitLimitModifer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB77AB2C172D2B002F6EEA /* DigitLimitModifer.swift */; };
+		CDDB77B02C18541F002F6EEA /* LineTextField1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB77AF2C18541F002F6EEA /* LineTextField1.swift */; };
 		CDDB8FD42B68D200001B1EF3 /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB8FD32B68D200001B1EF3 /* OTPView.swift */; };
 		CDDB8FD62B68D236001B1EF3 /* OTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB8FD52B68D236001B1EF3 /* OTPTextField.swift */; };
 		CDDB8FDA2B68D42E001B1EF3 /* OTPFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB8FD92B68D42E001B1EF3 /* OTPFormView.swift */; };
@@ -241,6 +251,7 @@
 		CDEF9A492A66B08600BA8294 /* ContactMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEF9A482A66B08600BA8294 /* ContactMainViewModel.swift */; };
 		CDF09EDA2BDFCFD100EE9FA5 /* PHPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF09ED92BDFCFD100EE9FA5 /* PHPickerView.swift */; };
 		CDF09EDC2BDFD67000EE9FA5 /* CamGalleryDem2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF09EDB2BDFD67000EE9FA5 /* CamGalleryDem2.swift */; };
+		CDF42DBF2C15F4F7005A4964 /* AdaptsToKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF42DBE2C15F4F6005A4964 /* AdaptsToKeyboard.swift */; };
 		CDF5028E2A502FA300D64A24 /* SubscriberDemo2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF5028D2A502FA300D64A24 /* SubscriberDemo2.swift */; };
 		CDF650672AFE27970040228D /* ActorDemo3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF650662AFE27970040228D /* ActorDemo3.swift */; };
 		CDF6538D2BF0C37E0024188A /* WalletRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF6538C2BF0C37E0024188A /* WalletRow.swift */; };
@@ -270,6 +281,8 @@
 		CD33610B2BE8E829009CAF62 /* SupportViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportViewModel.swift; sourceTree = "<group>"; };
 		CD33610E2BE8FC45009CAF62 /* SupportProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportProfile.swift; sourceTree = "<group>"; };
 		CD34DDB02A73EC9A0055791E /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		CD34E5C22C1080E2005F7662 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		CD34E5C42C11ED93005F7662 /* DatePickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewModel.swift; sourceTree = "<group>"; };
 		CD380E2D2AC957F200799977 /* customAlertViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customAlertViewBuilder.swift; sourceTree = "<group>"; };
 		CD38A3712BDA834600E91EBC /* MultiSelecti2AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiSelecti2AlertView.swift; sourceTree = "<group>"; };
 		CD4ABE8D2ACFCB2B0012770F /* ClosureDemoMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureDemoMain.swift; sourceTree = "<group>"; };
@@ -331,6 +344,10 @@
 		CD6B34902A6129590035C575 /* ContactDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDemo.swift; sourceTree = "<group>"; };
 		CD6B34932A614E5A0035C575 /* NewContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewContact.swift; sourceTree = "<group>"; };
 		CD6B34962A6158970035C575 /* ContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewModel.swift; sourceTree = "<group>"; };
+		CD6C28992C06095700730D4C /* dropDownViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dropDownViewModel.swift; sourceTree = "<group>"; };
+		CD6C289B2C060B5100730D4C /* DropDownDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownDemo.swift; sourceTree = "<group>"; };
+		CD6C289E2C0615D500730D4C /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		CD6C28A02C06196900730D4C /* LineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineTextField.swift; sourceTree = "<group>"; };
 		CD6ED4CB2A6A57F50063409D /* ListDemoMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDemoMain.swift; sourceTree = "<group>"; };
 		CD6ED4CD2A6A586C0063409D /* ListDemoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDemoItem.swift; sourceTree = "<group>"; };
 		CD6ED4CF2A6A64430063409D /* ListMainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMainModel.swift; sourceTree = "<group>"; };
@@ -469,6 +486,10 @@
 		CDDAAED02AD52AAB00997E37 /* CounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewModel.swift; sourceTree = "<group>"; };
 		CDDAAED32AD52E4100997E37 /* AdvanceDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvanceDemoView.swift; sourceTree = "<group>"; };
 		CDDAAED52AD54CEA00997E37 /* StateVsObservedObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateVsObservedObj.swift; sourceTree = "<group>"; };
+		CDDB77A72C17124A002F6EEA /* NumbersOnly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersOnly.swift; sourceTree = "<group>"; };
+		CDDB77A92C171B93002F6EEA /* TextFieldLimitModifer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldLimitModifer.swift; sourceTree = "<group>"; };
+		CDDB77AB2C172D2B002F6EEA /* DigitLimitModifer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitLimitModifer.swift; sourceTree = "<group>"; };
+		CDDB77AF2C18541F002F6EEA /* LineTextField1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineTextField1.swift; sourceTree = "<group>"; };
 		CDDB8FD32B68D200001B1EF3 /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
 		CDDB8FD52B68D236001B1EF3 /* OTPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTextField.swift; sourceTree = "<group>"; };
 		CDDB8FD92B68D42E001B1EF3 /* OTPFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPFormView.swift; sourceTree = "<group>"; };
@@ -485,6 +506,7 @@
 		CDEF9A482A66B08600BA8294 /* ContactMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactMainViewModel.swift; sourceTree = "<group>"; };
 		CDF09ED92BDFCFD100EE9FA5 /* PHPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPickerView.swift; sourceTree = "<group>"; };
 		CDF09EDB2BDFD67000EE9FA5 /* CamGalleryDem2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamGalleryDem2.swift; sourceTree = "<group>"; };
+		CDF42DBE2C15F4F6005A4964 /* AdaptsToKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptsToKeyboard.swift; sourceTree = "<group>"; };
 		CDF5028D2A502FA300D64A24 /* SubscriberDemo2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriberDemo2.swift; sourceTree = "<group>"; };
 		CDF650662AFE27970040228D /* ActorDemo3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorDemo3.swift; sourceTree = "<group>"; };
 		CDF6538C2BF0C37E0024188A /* WalletRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletRow.swift; sourceTree = "<group>"; };
@@ -885,6 +907,16 @@
 			path = viewModel;
 			sourceTree = "<group>";
 		};
+		CD6C289D2C0615B300730D4C /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				CD6C289E2C0615D500730D4C /* EditProfileView.swift */,
+				CD34E5C22C1080E2005F7662 /* ProfileViewModel.swift */,
+				CD34E5C42C11ED93005F7662 /* DatePickerViewModel.swift */,
+			);
+			path = EditProfile;
+			sourceTree = "<group>";
+		};
 		CD6ED4CA2A6A57DC0063409D /* ListDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -1239,6 +1271,8 @@
 				CDB56C492BF21BC1002BD56C /* RectangleBorderView.swift */,
 				CDB56C4B2BF23F34002BD56C /* VehicleDocumentRow.swift */,
 				CDC987882BF4C86900674BB5 /* OTPTextFieldView.swift */,
+				CD6C28A02C06196900730D4C /* LineTextField.swift */,
+				CDDB77AF2C18541F002F6EEA /* LineTextField1.swift */,
 			);
 			path = UICommon;
 			sourceTree = "<group>";
@@ -1455,6 +1489,8 @@
 				CDAE00772A60027D00F760A7 /* CustomTextViewModifier.swift */,
 				CD830C082AC85980000FFA64 /* CommonNavigationBarModifier.swift */,
 				CDD8D5762BDF9E7900F9BE4F /* ConditionalScrollIndicatorsModifier.swift */,
+				CDDB77A92C171B93002F6EEA /* TextFieldLimitModifer.swift */,
+				CDDB77AB2C172D2B002F6EEA /* DigitLimitModifer.swift */,
 			);
 			path = ViewModifier;
 			sourceTree = "<group>";
@@ -1580,6 +1616,7 @@
 		CDDAAED22AD52E1D00997E37 /* advanceDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CD6C289D2C0615B300730D4C /* EditProfile */,
 				CDC9878A2BF4D79D00674BB5 /* LoginDemoAdv */,
 				CDB56C4D2BF23F96002BD56C /* MyVelicleDetailView */,
 				CDF653902BF13E970024188A /* AddMoney */,
@@ -1659,6 +1696,8 @@
 			isa = PBXGroup;
 			children = (
 				CDEBAFCD2AC3FAD2009C793E /* PickerDEmo.swift */,
+				CD6C28992C06095700730D4C /* dropDownViewModel.swift */,
+				CD6C289B2C060B5100730D4C /* DropDownDemo.swift */,
 			);
 			path = PickerDemo;
 			sourceTree = "<group>";
@@ -1721,6 +1760,8 @@
 				CD6A8A732B6CEC3F006F3984 /* MaterialTextFieldView.swift */,
 				CD6A8A772B6CF0E5006F3984 /* FloatingTextFieldView.swift */,
 				CDDA4A5A2B6E5D10003024D3 /* FloatingTextFiledView1.swift */,
+				CDF42DBE2C15F4F6005A4964 /* AdaptsToKeyboard.swift */,
+				CDDB77A72C17124A002F6EEA /* NumbersOnly.swift */,
 			);
 			path = utility;
 			sourceTree = "<group>";
@@ -1881,6 +1922,7 @@
 				CD4ABE8E2ACFCB2B0012770F /* ClosureDemoMain.swift in Sources */,
 				CD0ECA842BE5101400CB18A1 /* UserResponse.swift in Sources */,
 				CDB56C4C2BF23F34002BD56C /* VehicleDocumentRow.swift in Sources */,
+				CDDB77A82C17124A002F6EEA /* NumbersOnly.swift in Sources */,
 				CDAE0CAF2A690BAB00DD643D /* UIApplication+Extension.swift in Sources */,
 				CD725B202A7D0EA30031552A /* ScrollViewReaderDemo.swift in Sources */,
 				CD6629552BE3B52C00563931 /* APIManager.swift in Sources */,
@@ -1914,6 +1956,7 @@
 				CD6ED4D82A6AAAD10063409D /* CircleButtonView.swift in Sources */,
 				CD67F8222B4596E3009B4116 /* AnimatedPageIndicatorDemo.swift in Sources */,
 				CD917FB72A3837F9007BB770 /* CustomLoaderView.swift in Sources */,
+				CD6C289A2C06095700730D4C /* dropDownViewModel.swift in Sources */,
 				CD67F8172B444970009B4116 /* MainTabbedView.swift in Sources */,
 				CDDB8FD62B68D236001B1EF3 /* OTPTextField.swift in Sources */,
 				CD67F7FC2B43E041009B4116 /* ViewBuilderDemo2.swift in Sources */,
@@ -1930,7 +1973,9 @@
 				CD2A43A32A3B446200430C65 /* SwiftUINavigationView.swift in Sources */,
 				CD8459732A72A00A00E85AE6 /* AppRoute.swift in Sources */,
 				CD70A6932B401FE00002EC7C /* SimpleTabViewDemo.swift in Sources */,
+				CD34E5C52C11ED93005F7662 /* DatePickerViewModel.swift in Sources */,
 				CD14D3C62BECF5520027E351 /* CustomDashBoard.swift in Sources */,
+				CDF42DBF2C15F4F7005A4964 /* AdaptsToKeyboard.swift in Sources */,
 				CD1336972A652F0800E5EA40 /* TextFieldDemo4.swift in Sources */,
 				CD6ED4D02A6A64430063409D /* ListMainModel.swift in Sources */,
 				CD67F7F62B43CF6D009B4116 /* PagingIndexViewTab.swift in Sources */,
@@ -1950,6 +1995,7 @@
 				CD8367272B428A66004C4D03 /* NestedRowItem.swift in Sources */,
 				CDC329E22BC179CE00090FF8 /* ProductCardViewModel.swift in Sources */,
 				CDDAAECE2AD528B700997E37 /* StateObjVsObservedobjDemo.swift in Sources */,
+				CDDB77AC2C172D2B002F6EEA /* DigitLimitModifer.swift in Sources */,
 				CDC9920C29DAC3A40061AB6C /* StickyHeaderView.swift in Sources */,
 				CD14D3CE2BECF9D20027E351 /* AdvanceDemo2View.swift in Sources */,
 				CD5218AE2B41B0DF00AB8CD6 /* NestedListDemo.swift in Sources */,
@@ -1962,6 +2008,7 @@
 				CDB56C482BF2172D002BD56C /* AddMoney.swift in Sources */,
 				CDD8D5772BDF9E7900F9BE4F /* ConditionalScrollIndicatorsModifier.swift in Sources */,
 				CD34DDB12A73EC9A0055791E /* String+Extension.swift in Sources */,
+				CD6C28A12C06196900730D4C /* LineTextField.swift in Sources */,
 				CD7686962B3EF7C600B57DD9 /* TabViewMain.swift in Sources */,
 				CD6B34972A6158970035C575 /* ContactViewModel.swift in Sources */,
 				CD74553D2A5295FD00717361 /* ActorDemo.swift in Sources */,
@@ -1988,6 +2035,7 @@
 				CD70A6822B3FD6250002EC7C /* Food.swift in Sources */,
 				CDE8491A29D85B1A0087381A /* StickyCardView.swift in Sources */,
 				CD9E45C029D451AD004D54D5 /* NoItemsView.swift in Sources */,
+				CDDB77B02C18541F002F6EEA /* LineTextField1.swift in Sources */,
 				CDFEBB5129D1D06D00A92BF5 /* Color+Extension.swift in Sources */,
 				CDC9920E29DACAD50061AB6C /* Tab1.swift in Sources */,
 				CD97C7192B6A45800049E2FC /* OTPMainDemo.swift in Sources */,
@@ -2000,6 +2048,7 @@
 				CD4ABE992AD00FC30012770F /* ClosureDemo4Child.swift in Sources */,
 				CDAE0CD22A693C9D00DD643D /* UIViewRepresentableHandling.swift in Sources */,
 				CDF09EDA2BDFCFD100EE9FA5 /* PHPickerView.swift in Sources */,
+				CD6C289F2C0615D500730D4C /* EditProfileView.swift in Sources */,
 				CD88A5382BCA842D00B2B5CB /* testDemo.swift in Sources */,
 				CDB457092BD93A770048E32A /* CustomHeaderWithMenu.swift in Sources */,
 				CD70A6892B3FDC830002EC7C /* HeaderView.swift in Sources */,
@@ -2035,16 +2084,19 @@
 				CD6A8A6A2B6CBC2A006F3984 /* CustomDialogDemo.swift in Sources */,
 				CDA5372D2AC30B900055A08B /* SheetDemoView.swift in Sources */,
 				CD7D55102B88A1D10041DE53 /* Binding+Extension.swift in Sources */,
+				CDDB77AA2C171B93002F6EEA /* TextFieldLimitModifer.swift in Sources */,
 				CD6A8A702B6CE660006F3984 /* CustomButtonWithImage.swift in Sources */,
 				CD6A8A7C2B6D0246006F3984 /* Shape+Extension.swift in Sources */,
 				CD6186492A4EB40D006E1329 /* SubScriberDemo1.swift in Sources */,
 				CD6977292BEB9E9000798EF6 /* MenuView.swift in Sources */,
 				CD4ABE962AD00F890012770F /* ClosureDemo4.swift in Sources */,
+				CD6C289C2C060B5100730D4C /* DropDownDemo.swift in Sources */,
 				CD7EEFEA2A62757D004915E3 /* ContactsDetailView.swift in Sources */,
 				CDCED16D2A3991C800A9EB76 /* View+Extension.swift in Sources */,
 				CD6A8A6C2B6CBC90006F3984 /* OTPAlertView.swift in Sources */,
 				CD4ABEA12AD03B700012770F /* MealData.swift in Sources */,
 				CD67F8002B440DCE009B4116 /* SegmentedView.swift in Sources */,
+				CD34E5C32C1080E2005F7662 /* ProfileViewModel.swift in Sources */,
 				CD9095192BEFB7D30047FD6B /* TitleSubtitleButton.swift in Sources */,
 				CD33610F2BE8FC45009CAF62 /* SupportProfile.swift in Sources */,
 				CD6ED4D22A6A72AF0063409D /* ListDemoMenu.swift in Sources */,

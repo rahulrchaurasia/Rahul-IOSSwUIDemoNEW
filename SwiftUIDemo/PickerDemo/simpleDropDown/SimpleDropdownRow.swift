@@ -7,12 +7,47 @@
 
 import SwiftUI
 
-struct SimpleDropdownRow: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct DropdownOption: Hashable {
+    let key: String
+    let value: String
+
+    public static func == (lhs: DropdownOption, rhs: DropdownOption) -> Bool {
+        return lhs.key == rhs.key
     }
 }
 
-#Preview {
-    SimpleDropdownRow()
+struct SimpleDropdownRow: View {
+        var option: DropdownOption
+        var onOptionSelected: ((_ option: DropdownOption) -> Void)?
+
+        var body: some View {
+            Button(action: {
+                if let onOptionSelected = self.onOptionSelected {
+                    onOptionSelected(self.option)
+                }
+            }) {
+                HStack {
+                    Text(self.option.value)
+                        .font(.system(size: 14))
+                        .foregroundColor(Color.black)
+                    Spacer()
+                }
+            }
+            .padding(.horizontal, 16)
+            .padding(.vertical, 5)
+        }
+}
+
+struct SimpleDropdownRow_Previews: PreviewProvider {
+    static var previews: some View {
+        let options = DropdownOption(key: "1", value: "Sunday")
+
+      return  SimpleDropdownRow(
+            option: DropdownOption(key: "2", value: "Option 1"),
+                    onOptionSelected: { _ in }
+                )
+        .frame(width: .infinity, height: 40) 
+        
+        
+    }
 }

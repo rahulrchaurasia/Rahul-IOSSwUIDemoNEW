@@ -15,9 +15,14 @@ enum Gender: String, CaseIterable, Identifiable {
     
     var id: String { self.rawValue }
 }
+
+
 struct PickerDEmo: View {
     
     @State private var selectedGender : Gender = .male
+    @State private static var address: String = ""
+    
+   
     var body: some View {
         
         VStack
@@ -38,6 +43,10 @@ struct PickerDEmo: View {
             }
             
             Text("Selected Gender: \(selectedGender.id)")
+            
+            
+
+            
         }
         
     }
@@ -48,3 +57,5 @@ struct PickerDEmo_Previews: PreviewProvider {
         PickerDEmo()
     }
 }
+
+
