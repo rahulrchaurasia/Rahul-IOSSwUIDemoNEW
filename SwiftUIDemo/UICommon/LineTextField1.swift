@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+
 struct LineTextField1 : View {
     
     @State var title: String = "Title"
