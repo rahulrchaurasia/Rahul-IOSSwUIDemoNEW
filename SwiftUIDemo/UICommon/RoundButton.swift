@@ -12,17 +12,25 @@ struct RoundButton: View {
     var didTap: (()->())?
     
     var body: some View {
-        Button {
+
+        Button(action: {
             didTap?()
-        } label: {
-            Text(title)
-                .font(.customfont(.semibold, fontSize: 18))
-                .foregroundColor(.white)
-                .multilineTextAlignment(.center)
-        }
+        }, label: {
+            HStack{
+                Spacer()
+                Text(title)
+                    .font(.customfont(.semibold, fontSize: 18))
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
+                Spacer()
+            }
+           
+        })
         .frame( minWidth: 0, maxWidth: .infinity, minHeight: 50, maxHeight: 50 )
         .background( Color.primaryApp)
         .cornerRadius(20)
+        
+       
     }
 }
 #Preview {

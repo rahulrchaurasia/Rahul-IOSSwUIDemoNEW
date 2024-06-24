@@ -36,12 +36,10 @@ struct AdvanceDemo2View: View {
                                 
                         }
                         
-                        
-                        
                     NavigationLink {
-                        OTPDemoAdv()
+                        KeyboardUpwithTextFiedlDemo()
                     } label: {
-                        Text("StateObj/Observed with ViewMode")
+                        Text(" KeyboardUp With TextField Demo")
                             .padding(12)
                             .font(.title2)
                             .foregroundColor(.white)
@@ -49,6 +47,7 @@ struct AdvanceDemo2View: View {
                             .cornerRadius(15)
 
                     }
+                        
                     
                     NavigationLink {
                         GeometryReaderMain()
@@ -80,6 +79,17 @@ struct AdvanceDemo2View: View {
                             .font(.title2)
                             .foregroundColor(.white)
                             .background(Color.black.opacity(0.7))
+                            .cornerRadius(15)
+
+                    }
+                    NavigationLink {
+                        OTPDemoAdv()
+                    } label: {
+                        Text(" OTPDemo with Validation")
+                            .padding(12)
+                            .font(.title2)
+                            .foregroundColor(.white)
+                            .background(Color.skyblue)
                             .cornerRadius(15)
 
                     }

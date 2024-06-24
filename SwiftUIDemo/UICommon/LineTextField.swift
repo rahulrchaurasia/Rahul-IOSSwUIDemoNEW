@@ -15,7 +15,7 @@ struct LineTextField: View {
     @Binding var txt: String
     var keyboardType: UIKeyboardType = .default
     
-    var isError: Bool
+    var isError: Bool = false
     var errorMessage: String?
    
     

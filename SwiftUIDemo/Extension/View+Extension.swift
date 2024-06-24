@@ -81,6 +81,10 @@ extension View {
     func adaptsToKeyboard() -> some View {
            return modifier(AdaptsToKeyboard())
        }
+    
+    func keyboardManagment() -> some View {
+           self.modifier(KeyboardManagment())
+       }
    
 }
 

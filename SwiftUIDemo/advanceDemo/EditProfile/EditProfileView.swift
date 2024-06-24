@@ -50,7 +50,8 @@ struct EditProfileView: View {
                         }
                         
                         .frame(maxHeight: .infinity) // Fill remaining space
-                        .adaptsToKeyboard()
+                        //.adaptsToKeyboard()
+                        .keyboardManagment()
                         //Button
                         customButton
                         .padding(.horizontal,20)
@@ -84,6 +85,7 @@ struct EditProfileView: View {
             .navigationBarHidden(true)
             .navigationBarBackButtonHidden(true) // Hides the default back button
             .ignoresSafeArea()
+            
         
             .onAppear{
                 
