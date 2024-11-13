@@ -10,6 +10,8 @@ import SwiftUI
 //Note : CamGalleryDem2
 struct CamGalleryDem2: View {
     
+    var data : String  = "test" // not used
+    
     @State private var selectedImage: UIImage?
     @State private var isPresentingPicker = false
     
