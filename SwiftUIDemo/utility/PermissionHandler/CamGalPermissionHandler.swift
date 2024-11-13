@@ -58,7 +58,7 @@ class CamGalPermissionHandler: ObservableObject {
     func openGallery() async {
         await checkPhotoLibraryPermission()
         if photoLibraryAuthorizationStatus == .authorized || photoLibraryAuthorizationStatus == .limited {
-            showPhotoPicker = true
+            //showPhotoPicker = true
         }
     }
 }

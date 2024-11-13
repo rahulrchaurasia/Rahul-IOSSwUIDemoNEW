@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//Note : CamGalleryDem2
 struct CamGalleryDem2: View {
     
     @State private var selectedImage: UIImage?

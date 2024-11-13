@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CD00F8A02BDE872C006B1AF6 /* CamGalleryUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD00F89F2BDE872C006B1AF6 /* CamGalleryUIView.swift */; };
 		CD00F8A42BDE9959006B1AF6 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD00F8A32BDE9959006B1AF6 /* ImagePicker.swift */; };
-		CD00F8A62BDEA960006B1AF6 /* CamGalleryUIDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD00F8A52BDEA95F006B1AF6 /* CamGalleryUIDemo.swift */; };
+		CD0654892CDDC0CE00620B90 /* CamGalleryUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0654872CDDC0CE00620B90 /* CamGalleryUIView.swift */; };
+		CD06548A2CDDC0CE00620B90 /* CamGalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0654812CDDC0CE00620B90 /* CamGalleryViewModel.swift */; };
+		CD06548B2CDDC0CE00620B90 /* CamGalleryDem2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0654852CDDC0CE00620B90 /* CamGalleryDem2.swift */; };
+		CD06548C2CDDC0CE00620B90 /* PermissionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0654822CDDC0CE00620B90 /* PermissionViewModel.swift */; };
+		CD06548D2CDDC0CE00620B90 /* CamGalleryAdvanced.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0654842CDDC0CE00620B90 /* CamGalleryAdvanced.swift */; };
+		CD06548E2CDDC0CE00620B90 /* CamGalleryUIDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0654862CDDC0CE00620B90 /* CamGalleryUIDemo.swift */; };
+		CD0654942CDDC89E00620B90 /* PermissionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0654932CDDC89E00620B90 /* PermissionHandler.swift */; };
+		CD0654982CDDCAF200620B90 /* CamGalPermissionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0654952CDDCAF200620B90 /* CamGalPermissionHandler.swift */; };
+		CD0654992CDDCAF200620B90 /* CamGalPermissionHandlerOld.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0654962CDDCAF200620B90 /* CamGalPermissionHandlerOld.swift */; };
+		CD06549B2CDDCD2800620B90 /* ImagePicker2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD06549A2CDDCD2800620B90 /* ImagePicker2.swift */; };
 		CD09DB322BE7D4C600F2984D /* LoginRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD09DB312BE7D4C600F2984D /* LoginRepositoryProtocol.swift */; };
 		CD0ECA812BE50E5300CB18A1 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0ECA802BE50E5300CB18A1 /* LoginViewModel.swift */; };
 		CD0ECA842BE5101400CB18A1 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0ECA832BE5101400CB18A1 /* UserResponse.swift */; };
@@ -135,7 +143,6 @@
 		CD8367272B428A66004C4D03 /* NestedRowItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8367262B428A66004C4D03 /* NestedRowItem.swift */; };
 		CD8367292B42D767004C4D03 /* Nested2ListDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8367282B42D767004C4D03 /* Nested2ListDemo.swift */; };
 		CD83672B2B4326C9004C4D03 /* ObersvedObjectDemo2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD83672A2B4326C9004C4D03 /* ObersvedObjectDemo2.swift */; };
-		CD84234C2BE10321003DE8A8 /* PermissionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84234B2BE10321003DE8A8 /* PermissionViewModel.swift */; };
 		CD8445962B7F98C300A0AD5F /* ApiDemo1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8445952B7F98C300A0AD5F /* ApiDemo1.swift */; };
 		CD8445982B7F98F800A0AD5F /* ApiDemoMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8445972B7F98F800A0AD5F /* ApiDemoMain.swift */; };
 		CD84596D2A727F5500E85AE6 /* TabViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84596C2A727F5500E85AE6 /* TabViewDemo.swift */; };
@@ -252,7 +259,6 @@
 		CDEBDD332B03AA6C0041A485 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEBDD322B03AA6C0041A485 /* UIExtension.swift */; };
 		CDEF9A492A66B08600BA8294 /* ContactMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEF9A482A66B08600BA8294 /* ContactMainViewModel.swift */; };
 		CDF09EDA2BDFCFD100EE9FA5 /* PHPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF09ED92BDFCFD100EE9FA5 /* PHPickerView.swift */; };
-		CDF09EDC2BDFD67000EE9FA5 /* CamGalleryDem2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF09EDB2BDFD67000EE9FA5 /* CamGalleryDem2.swift */; };
 		CDF42DBF2C15F4F7005A4964 /* AdaptsToKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF42DBE2C15F4F6005A4964 /* AdaptsToKeyboard.swift */; };
 		CDF5028E2A502FA300D64A24 /* SubscriberDemo2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF5028D2A502FA300D64A24 /* SubscriberDemo2.swift */; };
 		CDF650672AFE27970040228D /* ActorDemo3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF650662AFE27970040228D /* ActorDemo3.swift */; };
@@ -264,9 +270,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CD00F89F2BDE872C006B1AF6 /* CamGalleryUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamGalleryUIView.swift; sourceTree = "<group>"; };
 		CD00F8A32BDE9959006B1AF6 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
-		CD00F8A52BDEA95F006B1AF6 /* CamGalleryUIDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamGalleryUIDemo.swift; sourceTree = "<group>"; };
+		CD0654812CDDC0CE00620B90 /* CamGalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamGalleryViewModel.swift; sourceTree = "<group>"; };
+		CD0654822CDDC0CE00620B90 /* PermissionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionViewModel.swift; sourceTree = "<group>"; };
+		CD0654842CDDC0CE00620B90 /* CamGalleryAdvanced.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamGalleryAdvanced.swift; sourceTree = "<group>"; };
+		CD0654852CDDC0CE00620B90 /* CamGalleryDem2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamGalleryDem2.swift; sourceTree = "<group>"; };
+		CD0654862CDDC0CE00620B90 /* CamGalleryUIDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamGalleryUIDemo.swift; sourceTree = "<group>"; };
+		CD0654872CDDC0CE00620B90 /* CamGalleryUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamGalleryUIView.swift; sourceTree = "<group>"; };
+		CD0654932CDDC89E00620B90 /* PermissionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionHandler.swift; sourceTree = "<group>"; };
+		CD0654952CDDCAF200620B90 /* CamGalPermissionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamGalPermissionHandler.swift; sourceTree = "<group>"; };
+		CD0654962CDDCAF200620B90 /* CamGalPermissionHandlerOld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamGalPermissionHandlerOld.swift; sourceTree = "<group>"; };
+		CD06549A2CDDCD2800620B90 /* ImagePicker2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker2.swift; sourceTree = "<group>"; };
 		CD09DB312BE7D4C600F2984D /* LoginRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepositoryProtocol.swift; sourceTree = "<group>"; };
 		CD0ECA802BE50E5300CB18A1 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		CD0ECA832BE5101400CB18A1 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
@@ -388,7 +402,6 @@
 		CD8367262B428A66004C4D03 /* NestedRowItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedRowItem.swift; sourceTree = "<group>"; };
 		CD8367282B42D767004C4D03 /* Nested2ListDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nested2ListDemo.swift; sourceTree = "<group>"; };
 		CD83672A2B4326C9004C4D03 /* ObersvedObjectDemo2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObersvedObjectDemo2.swift; sourceTree = "<group>"; };
-		CD84234B2BE10321003DE8A8 /* PermissionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionViewModel.swift; sourceTree = "<group>"; };
 		CD8445952B7F98C300A0AD5F /* ApiDemo1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiDemo1.swift; sourceTree = "<group>"; };
 		CD8445972B7F98F800A0AD5F /* ApiDemoMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiDemoMain.swift; sourceTree = "<group>"; };
 		CD84596C2A727F5500E85AE6 /* TabViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewDemo.swift; sourceTree = "<group>"; };
@@ -509,7 +522,6 @@
 		CDEBDD322B03AA6C0041A485 /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
 		CDEF9A482A66B08600BA8294 /* ContactMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactMainViewModel.swift; sourceTree = "<group>"; };
 		CDF09ED92BDFCFD100EE9FA5 /* PHPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPickerView.swift; sourceTree = "<group>"; };
-		CDF09EDB2BDFD67000EE9FA5 /* CamGalleryDem2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamGalleryDem2.swift; sourceTree = "<group>"; };
 		CDF42DBE2C15F4F6005A4964 /* AdaptsToKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptsToKeyboard.swift; sourceTree = "<group>"; };
 		CDF5028D2A502FA300D64A24 /* SubscriberDemo2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriberDemo2.swift; sourceTree = "<group>"; };
 		CDF650662AFE27970040228D /* ActorDemo3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorDemo3.swift; sourceTree = "<group>"; };
@@ -540,6 +552,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD0654832CDDC0CE00620B90 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CD0654812CDDC0CE00620B90 /* CamGalleryViewModel.swift */,
+				CD0654822CDDC0CE00620B90 /* PermissionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CD0654882CDDC0CE00620B90 /* Camera&Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				CD0654832CDDC0CE00620B90 /* ViewModel */,
+				CD0654842CDDC0CE00620B90 /* CamGalleryAdvanced.swift */,
+				CD0654852CDDC0CE00620B90 /* CamGalleryDem2.swift */,
+				CD0654862CDDC0CE00620B90 /* CamGalleryUIDemo.swift */,
+				CD0654872CDDC0CE00620B90 /* CamGalleryUIView.swift */,
+			);
+			path = "Camera&Gallery";
+			sourceTree = "<group>";
+		};
+		CD0654972CDDCAF200620B90 /* PermissionHandler */ = {
+			isa = PBXGroup;
+			children = (
+				CD0654952CDDCAF200620B90 /* CamGalPermissionHandler.swift */,
+				CD0654962CDDCAF200620B90 /* CamGalPermissionHandlerOld.swift */,
+			);
+			path = PermissionHandler;
+			sourceTree = "<group>";
+		};
 		CD09DB302BE7D49600F2984D /* RepositoryProtocol */ = {
 			isa = PBXGroup;
 			children = (
@@ -931,6 +973,7 @@
 		CD6C289D2C0615B300730D4C /* EditProfile */ = {
 			isa = PBXGroup;
 			children = (
+				CD0654932CDDC89E00620B90 /* PermissionHandler.swift */,
 				CD6C289E2C0615D500730D4C /* EditProfileView.swift */,
 				CD34E5C22C1080E2005F7662 /* ProfileViewModel.swift */,
 				CD34E5C42C11ED93005F7662 /* DatePickerViewModel.swift */,
@@ -945,13 +988,6 @@
 				CDACC4122A7B904700411F30 /* basicDemo */,
 			);
 			path = ListDemo;
-			sourceTree = "<group>";
-		};
-		CD6ED4D52A6AAAA00063409D /* Components */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Components;
 			sourceTree = "<group>";
 		};
 		CD6ED4D62A6AAAB00063409D /* CircleButton */ = {
@@ -1099,14 +1135,6 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
-		CD84234A2BE10304003DE8A8 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				CD84234B2BE10321003DE8A8 /* PermissionViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		CD8445912B7F981D00A0AD5F /* async-await */ = {
 			isa = PBXGroup;
 			children = (
@@ -1178,7 +1206,6 @@
 				CD8445912B7F981D00A0AD5F /* async-await */,
 				CD9CF42C29ADF6490043624D /* Basic */,
 				CD4ABE8C2ACFCB0B0012770F /* ClosureDemo */,
-				CD6ED4D52A6AAAA00063409D /* Components */,
 				CD6A8A682B6CBC0C006F3984 /* Custom Dialog */,
 				CD2A076A2B76574E00CCFB89 /* CustomTextField */,
 				CDFEBB4D29D1BF4300A92BF5 /* DemoUI */,
@@ -1196,7 +1223,6 @@
 				CDDB8FCC2B68C62F001B1EF3 /* OTPDemo */,
 				CDEBAFCC2AC3FAB9009C793E /* PickerDemo */,
 				CD88651229AA2E2B00BA97DD /* Preview Content */,
-				CDF650652AFCE5690040228D /* safeAreaDemo */,
 				CDA5372B2AC30B6C0055A08B /* sheetDemo */,
 				CDE8490F29D846F60087381A /* SrickyHeaderDemo */,
 				CDDAAECC2AD5286500997E37 /* StateObjObservedOb */,
@@ -1376,6 +1402,7 @@
 		CDAE0CD02A6939E000DD643D /* UIViewRepresentable */ = {
 			isa = PBXGroup;
 			children = (
+				CD06549A2CDDCD2800620B90 /* ImagePicker2.swift */,
 				CDAE0CD12A693C9D00DD643D /* UIViewRepresentableHandling.swift */,
 				CD56573C2B711C7C0018C4F1 /* TTGSnackbarRepresentable.swift */,
 				CD2A07682B76491700CCFB89 /* CustomTextWithIconViewModifier.swift */,
@@ -1638,6 +1665,7 @@
 		CDDAAED22AD52E1D00997E37 /* advanceDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CD0654882CDDC0CE00620B90 /* Camera&Gallery */,
 				CD6C289D2C0615B300730D4C /* EditProfile */,
 				CDC9878A2BF4D79D00674BB5 /* LoginDemoAdv */,
 				CDB56C4D2BF23F96002BD56C /* MyVelicleDetailView */,
@@ -1646,13 +1674,9 @@
 				CD90950B2BEF92080047FD6B /* EarningView */,
 				CD14D3CD2BECF9D20027E351 /* AdvanceDemo2View.swift */,
 				CDDAAED32AD52E4100997E37 /* AdvanceDemoView.swift */,
-				CDF09EDB2BDFD67000EE9FA5 /* CamGalleryDem2.swift */,
-				CD00F8A52BDEA95F006B1AF6 /* CamGalleryUIDemo.swift */,
-				CD00F89F2BDE872C006B1AF6 /* CamGalleryUIView.swift */,
 				CD14D3C42BECF52F0027E351 /* CustomDashBoard */,
 				CD6977272BEB9E6300798EF6 /* MenuDemo */,
 				CD3361072BE8E7B1009CAF62 /* Supports */,
-				CD84234A2BE10304003DE8A8 /* ViewModel */,
 			);
 			path = advanceDemo;
 			sourceTree = "<group>";
@@ -1744,13 +1768,6 @@
 			path = font;
 			sourceTree = "<group>";
 		};
-		CDF650652AFCE5690040228D /* safeAreaDemo */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = safeAreaDemo;
-			sourceTree = "<group>";
-		};
 		CDF6538B2BF0C2E00024188A /* WalletView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1770,6 +1787,7 @@
 		CDFEBB4A29D1BAA800A92BF5 /* utility */ = {
 			isa = PBXGroup;
 			children = (
+				CD0654972CDDCAF200620B90 /* PermissionHandler */,
 				CD1C7E842C1C1E6600107FB1 /* keyBoardUpHandling */,
 				CDB63D382AD2ADFB00A0ED42 /* View */,
 				CDAE0CD02A6939E000DD643D /* UIViewRepresentable */,
@@ -1902,6 +1920,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD0654982CDDCAF200620B90 /* CamGalPermissionHandler.swift in Sources */,
+				CD0654992CDDCAF200620B90 /* CamGalPermissionHandlerOld.swift in Sources */,
 				CD1C7E862C1C1E8500107FB1 /* KeyboardManagment.swift in Sources */,
 				CD59C94A2B39C86F00A42651 /* SweetProduct.swift in Sources */,
 				CD6F38572BE665AA001C0459 /* APICallDemo1.swift in Sources */,
@@ -1919,7 +1939,6 @@
 				CDC987892BF4C86A00674BB5 /* OTPTextFieldView.swift in Sources */,
 				CD7C2AD42A5EDB3B004F5950 /* GCDDemo.swift in Sources */,
 				CDD9851E2B59591C001D8DEA /* MainPageNavDrawerHome.swift in Sources */,
-				CD84234C2BE10321003DE8A8 /* PermissionViewModel.swift in Sources */,
 				CD985E1D2A67BE2B00B23633 /* ListSection.swift in Sources */,
 				CD76868C2B3D765700B57DD9 /* SweetProductVM.swift in Sources */,
 				CDB56C512BF23FEA002BD56C /* MyVehicleDetailViewModel.swift in Sources */,
@@ -1956,6 +1975,12 @@
 				CD95724B2B319A6400513780 /* RoundButton.swift in Sources */,
 				CD67F8042B442A17009B4116 /* CustomSlidingTab.swift in Sources */,
 				CDF6538F2BF0D28F0024188A /* WalletView.swift in Sources */,
+				CD0654892CDDC0CE00620B90 /* CamGalleryUIView.swift in Sources */,
+				CD06548A2CDDC0CE00620B90 /* CamGalleryViewModel.swift in Sources */,
+				CD06548B2CDDC0CE00620B90 /* CamGalleryDem2.swift in Sources */,
+				CD06548C2CDDC0CE00620B90 /* PermissionViewModel.swift in Sources */,
+				CD06548D2CDDC0CE00620B90 /* CamGalleryAdvanced.swift in Sources */,
+				CD06548E2CDDC0CE00620B90 /* CamGalleryUIDemo.swift in Sources */,
 				CD6B34912A6129590035C575 /* ContactDemo.swift in Sources */,
 				CD7EEFE72A62681B004915E3 /* ContactsItemDetails.swift in Sources */,
 				CDE8491629D857670087381A /* Food1.swift in Sources */,
@@ -1963,6 +1988,7 @@
 				CD70A68E2B3FE49B0002EC7C /* ListParallexDemo.swift in Sources */,
 				CDDAAED12AD52AAB00997E37 /* CounterViewModel.swift in Sources */,
 				CD67F81A2B444A2A009B4116 /* ChatView.swift in Sources */,
+				CD06549B2CDDCD2800620B90 /* ImagePicker2.swift in Sources */,
 				CD14D3C92BECF70A0027E351 /* IconTitleSubtitleButton.swift in Sources */,
 				CDDA4A5B2B6E5D10003024D3 /* FloatingTextFiledView1.swift in Sources */,
 				CDFEBB4F29D1BF6D00A92BF5 /* TextFieldDemo.swift in Sources */,
@@ -1970,7 +1996,6 @@
 				CD9CF42E29ADF6690043624D /* stickyHeaderUIView.swift in Sources */,
 				CD2A43A52A3B483600430C65 /* NavigateBuilder.swift in Sources */,
 				CDCE885C29D2FDF400B87BF9 /* AddView.swift in Sources */,
-				CD00F8A62BDEA960006B1AF6 /* CamGalleryUIDemo.swift in Sources */,
 				CD4ABEA42AD03BB40012770F /* MealViewModel.swift in Sources */,
 				CD6A8A722B6CE8B6006F3984 /* CustomButton1.swift in Sources */,
 				CD6A8A742B6CEC3F006F3984 /* MaterialTextFieldView.swift in Sources */,
@@ -1984,6 +2009,7 @@
 				CDDB8FD62B68D236001B1EF3 /* OTPTextField.swift in Sources */,
 				CD67F7FC2B43E041009B4116 /* ViewBuilderDemo2.swift in Sources */,
 				CDDB8FDA2B68D42E001B1EF3 /* OTPFormView.swift in Sources */,
+				CD0654942CDDC89E00620B90 /* PermissionHandler.swift in Sources */,
 				CD6ED4CC2A6A57F50063409D /* ListDemoMain.swift in Sources */,
 				CD88650F29AA2E2A00BA97DD /* ListDemoView.swift in Sources */,
 				CD4ABE902ACFCF8D0012770F /* ClosureDemo1.swift in Sources */,
@@ -2049,7 +2075,6 @@
 				CDC9921029DAF0B50061AB6C /* StickyMainViewModel.swift in Sources */,
 				CD67F8022B441074009B4116 /* TabViewModel.swift in Sources */,
 				CD88650D29AA2E2A00BA97DD /* SwiftUIDemoApp.swift in Sources */,
-				CDF09EDC2BDFD67000EE9FA5 /* CamGalleryDem2.swift in Sources */,
 				CDDAAED62AD54CEA00997E37 /* StateVsObservedObj.swift in Sources */,
 				CDAE00762A5FD57100F760A7 /* TextFieldDemo2.swift in Sources */,
 				CDF6538D2BF0C37E0024188A /* WalletRow.swift in Sources */,
@@ -2131,7 +2156,6 @@
 				CD6ED4D42A6AA0430063409D /* Theme.swift in Sources */,
 				CD4ABE922ACFE01E0012770F /* ClosureDemo2.swift in Sources */,
 				CDEF9A492A66B08600BA8294 /* ContactMainViewModel.swift in Sources */,
-				CD00F8A02BDE872C006B1AF6 /* CamGalleryUIView.swift in Sources */,
 				CD8D95872B35777C009B0AA1 /* GeometryDemo3.swift in Sources */,
 				CDEBAFCE2AC3FAD2009C793E /* PickerDEmo.swift in Sources */,
 				CD8C8D222A4C41A500BD0964 /* SubscriberDemo.swift in Sources */,
