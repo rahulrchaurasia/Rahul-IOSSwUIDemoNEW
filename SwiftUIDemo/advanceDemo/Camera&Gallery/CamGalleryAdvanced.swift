@@ -10,7 +10,7 @@ import SwiftUI
  
 struct CamGalleryAdvanced: View {
     
-
+    var data : String  = "test" // not used
     @StateObject private var viewModel = CamGalPermissionHandlerOld() // Use the combined handler
 
     @State private var image: UIImage?

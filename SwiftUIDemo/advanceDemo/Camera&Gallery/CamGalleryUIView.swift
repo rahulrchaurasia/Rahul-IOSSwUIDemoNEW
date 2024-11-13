@@ -10,7 +10,9 @@ import AVFoundation
 import Photos
 
 struct CamGalleryUIView: View {
+
     
+    var data : String  = "test" // not used
     @StateObject private var vm = PermissionViewModel()
    
     @State var profileImage: UIImage = UIImage(systemName: "person.fill")!

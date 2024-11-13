@@ -11,6 +11,7 @@ import UIKit
 
 class CamGalleryViewModel : ObservableObject {
         
+    var data : String  = "test" // not used
     
     @Published var showImagePicker = false
         @Published var showGalleryPicker = false

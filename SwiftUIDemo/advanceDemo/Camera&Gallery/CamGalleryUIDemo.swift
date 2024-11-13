@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CamGalleryUIDemo: View {
     
+    var data : String  = "test" // not used
     @Environment(\.dismiss) private var dismiss
     @Environment(\.presentationMode) private var presentationMode
     

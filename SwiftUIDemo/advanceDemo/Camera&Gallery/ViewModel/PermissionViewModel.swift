@@ -13,6 +13,7 @@ import Photos
 
  class PermissionViewModel : ObservableObject {
     
+     var data : String  = "test" // not used
     @Published var isShowingPhotoPicker = false
     @Published var isShowingCameraPicker = false
        

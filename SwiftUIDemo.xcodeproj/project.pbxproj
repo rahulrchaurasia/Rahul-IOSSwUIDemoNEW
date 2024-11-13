@@ -1138,8 +1138,8 @@
 		CD8445912B7F981D00A0AD5F /* async-await */ = {
 			isa = PBXGroup;
 			children = (
-				CD8445942B7F987F00A0AD5F /* repository */,
-				CD8445932B7F987300A0AD5F /* vm */,
+				CDFE78A22CE481BD00AAD8DC /* repost */,
+				CDFE78A12CE481A500AAD8DC /* ViewModel */,
 				CD8445922B7F985D00A0AD5F /* UI */,
 				CD8445972B7F98F800A0AD5F /* ApiDemoMain.swift */,
 			);
@@ -1152,20 +1152,6 @@
 				CD8445952B7F98C300A0AD5F /* ApiDemo1.swift */,
 			);
 			path = UI;
-			sourceTree = "<group>";
-		};
-		CD8445932B7F987300A0AD5F /* vm */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = vm;
-			sourceTree = "<group>";
-		};
-		CD8445942B7F987F00A0AD5F /* repository */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = repository;
 			sourceTree = "<group>";
 		};
 		CD84596B2A727F3100E85AE6 /* TabViewDemo */ = {
@@ -1782,6 +1768,20 @@
 				CDB56C472BF2172D002BD56C /* AddMoney.swift */,
 			);
 			path = AddMoney;
+			sourceTree = "<group>";
+		};
+		CDFE78A12CE481A500AAD8DC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CDFE78A22CE481BD00AAD8DC /* repost */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = repost;
 			sourceTree = "<group>";
 		};
 		CDFEBB4A29D1BAA800A92BF5 /* utility */ = {
