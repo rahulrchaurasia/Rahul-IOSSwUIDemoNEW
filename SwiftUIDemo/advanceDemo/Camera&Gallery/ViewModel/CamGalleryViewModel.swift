@@ -8,10 +8,10 @@
 import Foundation
 import UIKit
 
-
+// private(set) :Code outside the defining class or struct can read the value of cameraPermissionDenied.
 class CamGalleryViewModel : ObservableObject {
         
-    var data : String  = "test" // not used
+
     
     @Published var showImagePicker = false
         @Published var showGalleryPicker = false
