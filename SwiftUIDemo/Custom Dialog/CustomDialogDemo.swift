@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import TTGSnackbar
+//import TTGSnackbar
 
 struct CustomDialogDemo: View {
     
@@ -102,20 +102,21 @@ struct CustomDialogDemo: View {
         
     }
     
+    //TTGSnackbar : Not Working
     func snackBar(message : String){
         
-        let snackbar = TTGSnackbar(
-            message: message,
-            duration: .middle,
-            actionText: "OK",
-            
-            actionBlock: { (snackbar) in
-                print("Click action!")
-            }
-        )
-        //appIcon
-        snackbar.icon = UIImage(named: "info_icon")
-        snackbar.show()
+//        let snackbar = TTGSnackbar(
+//            message: message,
+//            duration: .middle,
+//            actionText: "OK",
+//            
+//            actionBlock: { (snackbar) in
+//                print("Click action!")
+//            }
+//        )
+//        //appIcon
+//        snackbar.icon = UIImage(named: "info_icon")
+//        snackbar.show()
     }
 }
 

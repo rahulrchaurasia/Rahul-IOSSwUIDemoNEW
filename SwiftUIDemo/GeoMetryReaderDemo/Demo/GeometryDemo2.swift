@@ -10,10 +10,11 @@ import SwiftUI
 struct GeometryDemo2: View {
     var body: some View {
           ZStack {
+              Color(.bg)
               GeometryReader { (geometry : GeometryProxy) in
                   VStack(spacing: 0){
                       
-                      Rectangle()
+                        Rectangle()
                           .fill(Color.red)
                           .frame(width: geometry.size.width, height: geometry.size.height/4)
                       HStack(spacing: 0)
@@ -36,10 +37,22 @@ struct GeometryDemo2: View {
                       }
                       Rectangle()
                           .fill(Color.red)
-                          .frame(width: geometry.size.width, height: geometry.size.height/4)
+                          .frame(width: geometry.size.width, height: geometry.size.height/9)
+                      
+                       
+                      Text("Hello, World!")
+                          .font(.largeTitle)
+                            .position(x: geometry.size.width / 2, y: geometry.size.height / 4)
+                       .rotationEffect(.degrees(90))
+
+                                     
                   }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
               }
+              .background(Color.orange)
           }
+        
+          
+          
       }
 }
 

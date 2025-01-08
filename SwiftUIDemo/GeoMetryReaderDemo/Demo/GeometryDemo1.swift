@@ -30,6 +30,7 @@ struct GeometryDemo1: View {
                           
                             HStack(alignment:.center) {
                             Button("Button 1") {}
+                                    .foregroundStyle(.white)
                                   .frame(width: geometry.size.width * 0.4, height: 50)
                               .background(.orange)
                             Button("Button 2") {}

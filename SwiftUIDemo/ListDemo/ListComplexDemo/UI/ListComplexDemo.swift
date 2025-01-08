@@ -127,9 +127,11 @@ private extension ListComplexDemo {
                     .frame(
                         width: UIScreen.main.bounds.width,
                         height: 250 + (offset > 0 ? offset : 0)
+                        // Adjusts height dynamically
                     )
                     .cornerRadius(2)
                     .offset(y: (offset > 0 ? -offset : 0))
+                    // Moves image upwards during scroll
                     .overlay(
                         HStack {
                             Button(action: {
@@ -158,7 +160,7 @@ private extension ListComplexDemo {
                     )
             )
         }
-        .frame(height: 250)
+        .frame(height: 250) // Sets a fixed frame height for the GeometryReader
     }
 }
 

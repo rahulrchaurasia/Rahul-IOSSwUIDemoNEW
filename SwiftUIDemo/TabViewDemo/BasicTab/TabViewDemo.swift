@@ -58,7 +58,8 @@ struct TabViewDemo: View {
                     }
                     .tag(3)
             }
-            .tint(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+            //.tint(.red)  // or below
+            .accentColor(.red)
             
             Button(action: {
                 selection = (selection + 1) % 4

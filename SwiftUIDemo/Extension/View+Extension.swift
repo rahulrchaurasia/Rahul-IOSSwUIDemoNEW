@@ -83,7 +83,7 @@ extension View {
        }
     
     func keyboardManagment() -> some View {
-           self.modifier(KeyboardManagment())
+           self.modifier(KeyboardManagement())
        }
    
 }

@@ -12,7 +12,7 @@ struct LineTextField: View {
     
     var title: String = "Title"
     var placholder = "Placholder"
-    @Binding var txt: String
+    @Binding var text: String
     var keyboardType: UIKeyboardType = .default
     
     var isError: Bool = false
@@ -26,7 +26,7 @@ struct LineTextField: View {
                 .foregroundColor(.placeholder)
                 .frame(maxWidth: .infinity, alignment: .leading)
             
-            TextField(placholder, text: $txt)
+            TextField(placholder, text: $text)
                 .keyboardType(keyboardType)
                 .autocapitalization(.none)
                 .autocorrectionDisabled()
@@ -53,5 +53,5 @@ struct LineTextField: View {
 }
 
 #Preview {
-    LineTextField( txt: .constant("Enter name"), isError: true,errorMessage: "Enter name")
+    LineTextField( text: .constant("Enter name"), isError: true,errorMessage: "Enter name")
 }

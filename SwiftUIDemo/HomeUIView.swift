@@ -148,6 +148,21 @@ extension HomeUIView {
                     .cornerRadius(15)
                     
             }
+            
+            // ClosureDemoMain
+             NavigationLink {
+                 DrinkListView()
+                   
+             } label: {
+                 Text("Api Call with List")
+                     .padding(12)
+                     .font(.title2)
+                     .foregroundColor(.white)
+                     .background(Color.purple)
+                 
+                     .cornerRadius(15)
+                     
+             }
            // ClosureDemoMain
             NavigationLink {
                 ClosureDemoMain()

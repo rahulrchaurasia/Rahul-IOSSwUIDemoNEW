@@ -166,7 +166,7 @@ struct KeyboardUpwithTextFiedlDemo: View {
                                 .frame(height: 60)
                             VStack{
                                 
-                                LineTextField(title: "Enter Name", placholder: "Please Enter Name", txt: $txtName)
+                                LineTextField(title: "Enter Name", placholder: "Please Enter Name", text: $txtName)
                                 
                                     .limitInputLength(value: $txtName, length: 20)
                                 
@@ -176,7 +176,7 @@ struct KeyboardUpwithTextFiedlDemo: View {
                                     .submitLabel(.next)
                                 
                                     .padding(.bottom,8)
-                                LineTextField(title: "Enter Mobile", placholder: "Please Enter Mobile", txt: $txtMob)
+                                LineTextField(title: "Enter Mobile", placholder: "Please Enter Mobile", text: $txtMob)
                                     .focused($focusedField,equals: .mobile)
                                     .limitInputLength(value: $txtMob, length: 20)
                                 
@@ -186,7 +186,7 @@ struct KeyboardUpwithTextFiedlDemo: View {
                                 
                                     .padding(.bottom,8)
                                 
-                                LineTextField(title: "Enter Address", placholder: "Please Enter Address", txt: $txtAddress)
+                                LineTextField(title: "Enter Address", placholder: "Please Enter Address", text: $txtAddress)
                                     .focused($focusedField,equals: .address)
                                     .limitInputLength(value: $txtAddress, length: 20)
                                 

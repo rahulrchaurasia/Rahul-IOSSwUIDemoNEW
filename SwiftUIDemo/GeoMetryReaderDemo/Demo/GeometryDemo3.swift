@@ -14,8 +14,8 @@ struct GeometryDemo3: View {
          
             VStack {
                             
-                                Color.blue
-                                    .frame(height: reader.size.height * (1/5)) // 2
+                    Color.blue
+                        .frame(height: reader.size.height * (1/5)) // 2
                                     .cornerRadius(10)
                                     .padding()
                             

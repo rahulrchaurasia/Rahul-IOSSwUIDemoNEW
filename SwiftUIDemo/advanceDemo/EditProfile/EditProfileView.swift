@@ -215,7 +215,7 @@ extension EditProfileView{
         VStack(alignment: .leading, spacing: 0, content: {
            
             // we already define submitLabel on LineText Class
-            LineTextField(title: "Enter Name", placholder: "Please Enter Name", txt: $profileVM.txtName,
+            LineTextField(title: "Enter Name", placholder: "Please Enter Name", text: $profileVM.txtName,
                     isError: profileVM.hasError(for: .name),
                           errorMessage: profileVM.errorMessage)
                
@@ -231,7 +231,7 @@ extension EditProfileView{
                 
             
             
-            LineTextField(title: "Email", placholder: "Please Enter Email", txt: $profileVM.txtEmail, keyboardType: .emailAddress , isError: profileVM.hasError(for: .email),
+            LineTextField(title: "Email", placholder: "Please Enter Email", text: $profileVM.txtEmail, keyboardType: .emailAddress , isError: profileVM.hasError(for: .email),
                 errorMessage: profileVM.errorMessage)
                 .limitInputLength(value: $profileVM.txtEmail, length: 20)
                 .padding(.bottom,8)
@@ -244,7 +244,7 @@ extension EditProfileView{
 //                }
             
             
-            LineTextField(title: "Enter Mobile", placholder: "Please Enter Mobile", txt: $profileVM.txtMobile ,keyboardType: .phonePad ,isError: profileVM.hasError(for: .mobileNo))
+            LineTextField(title: "Enter Mobile", placholder: "Please Enter Mobile", text: $profileVM.txtMobile ,keyboardType: .phonePad ,isError: profileVM.hasError(for: .mobileNo))
                   .textContentType(.telephoneNumber)
                   .limitDigitInput(value: $profileVM.txtMobile, length:10)
                 .focused($focusedField, equals: .mobileNo)
@@ -418,7 +418,7 @@ extension EditProfileView{
 
     
             
-            LineTextField(title: "Enter Ref", placholder: "Please Enter Ref", txt: $profileVM.txtRef,
+            LineTextField(title: "Enter Ref", placholder: "Please Enter Ref", text: $profileVM.txtRef,
                           keyboardType: .phonePad,
                           isError: profileVM.hasError(for: .refernce))
                 .focused($focusedField, equals: .refernce)

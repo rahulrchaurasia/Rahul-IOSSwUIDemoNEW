@@ -26,6 +26,7 @@ struct GeometryReaderMain: View {
                     
                     GeometryReaderDemo2
                     
+                    GeometryReaderDemo4
                    
                 }.padding(.top,10)
             }
@@ -99,8 +100,30 @@ extension GeometryReaderMain {
         
     }
     
+    //Geometry Demo
+    var GeometryReaderDemo4: some View  {
+        
+        Group {
+           
+            // Advance Demo
+            NavigationLink {
+                GeometryDemo4()
+                  
+            } label: {
+                Text("Geometry demo 4")
+                    .padding(12)
+                    .font(.title2)
+                    .foregroundColor(.white)
+                    .background(Color(.orange))
+                    .cornerRadius(15)
+                    
+            }
+         
+        }
+        
+    }
     
-
+    
                
 
         

@@ -7,6 +7,11 @@
 
 import Foundation
 
+/*
+ Note : objectWillChange.send()  //  Trigger UI update before modifying data
+     // Iterate through all meals
+ */
+
 //******** Single Selection Logic******/
 
 @MainActor  class MealViewModel :ObservableObject{
