@@ -74,7 +74,7 @@ struct WalletView: View {
             VStack(spacing : 0){
                 
                 ZStack{
-                    
+                   
                     Text("Wallet")
                         .font(.customfont(.extraBold, fontSize: 25))
                         .foregroundStyle(Color.primaryText)
@@ -96,10 +96,11 @@ struct WalletView: View {
                         
                     }
                 }
+               
                 .padding(.horizontal,20)
                 .padding(.bottom,10)
-                .padding(.top,.topInsets)
-               
+                .padding(.top,.topInsets)   // for top default space
+                //.background(Color.red)
                 
                 Divider()
                     
@@ -123,6 +124,7 @@ struct WalletView: View {
                                     Text("$")
                                         .font(.customfont(.extraBold, fontSize: 14))
                                         .foregroundStyle(Color.primaryApp)
+                                       
                                     
                                     Text("156.75")
                                         .font(.customfont(.extraBold, fontSize: 25))
@@ -179,7 +181,7 @@ struct WalletView: View {
                                 ForEach(0...listArr.count - 1, id:\.self){ index in
                                     
                                     
-                                    WalletRow(wObj: listArr[index] as NSDictionary ?? [:])
+                                    WalletRow(wObj: listArr[index] as NSDictionary)
                                     
                                 }
                             }

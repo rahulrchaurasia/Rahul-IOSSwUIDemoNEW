@@ -5,6 +5,57 @@
 //  Created by Rahul Chaurasia on 27/12/23.
 //
 
+/*
+ Note :
+ 1>The height of the header dynamically adjusts based on the offset:
+ If offset > 0: The header expands downward, creating a parallax effect when pulling down.
+ If offset < 0: The header height remains static at 250 points.
+
+ d. Dynamic Position Adjustment
+ .offset(y: (offset > 0 ? -offset : 0))
+
+ The vertical offset adjusts the position of the header:
+ If offset > 0: The header moves upward to counter the downward pull, keeping the top of the header anchored.
+ This creates the parallax effect.
+ 
+ 
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ The GeometryReader is crucial for:
+
+ Measuring and Monitoring Scroll Effects:
+
+ It tracks the offset of the header relative to the global coordinate space.
+ This allows for dynamic height and position adjustments to create a parallax scrolling effect.
+ Dynamic UI Updates:
+
+ The header dynamically resizes and repositions itself based on the user's scrolling behavior.
+ 
+ Parallax Effect in Action
+ The parallax effect creates a visually engaging experience by making the header expand or contract as the user scrolls.
+ The image's size grows or shrinks dynamically, and its position shifts to create depth and interactivity.
+ 
+ 
+ >>>>>>>>>>>>>>>>>.
+ * When you scroll, this offset value changes, allowing you to create dynamic animations
+ 1. Offset Handling:
+
+ if -offset > 0 {
+     DispatchQueue.main.async {
+         self.vm.offset = -offset
+     }
+ }
+
+ Tracks the scroll position and updates the ViewModel
+ The negative offset check determines if you're scrolling up
+
+
+ Image Position Adjustment:
+
+ .offset(y: (offset > 0 ? -offset : 0))
+ * Keeps the image anchored to the top when pulling down
+ * Creates the "stretching" effect by moving the image up half the stretch distance
+
+ */
 import SwiftUI
 
 

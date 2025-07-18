@@ -8,6 +8,8 @@
 import UIKit
 
 
+
+
 class SlideMenuViewController: UIViewController {
     
     // MARK: - Properties
@@ -16,6 +18,7 @@ class SlideMenuViewController: UIViewController {
     private var menuLeadingConstraint: NSLayoutConstraint!
     private let animationDuration = 0.3
     private var initialTouchPoint: CGPoint = .zero
+    private var shouldHandleTap = false
     
     // Public interface for SwiftUI
     var isMenuOpen: Bool {
@@ -103,7 +106,8 @@ class SlideMenuViewController: UIViewController {
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(_:)))
         view.addGestureRecognizer(panGesture)
         
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(closeMenu))
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTapGesture(_:)))
+        tapGesture.delegate = self
         mainContentView.addGestureRecognizer(tapGesture)
     }
     
@@ -118,6 +122,7 @@ class SlideMenuViewController: UIViewController {
             self.view.layoutIfNeeded()
         }
         _isMenuOpen = true
+        shouldHandleTap = true
     }
     
     @objc private func closeMenu() {
@@ -126,6 +131,12 @@ class SlideMenuViewController: UIViewController {
             self.view.layoutIfNeeded()
         }
         _isMenuOpen = false
+        shouldHandleTap = false
+    }
+    
+    @objc private func handleTapGesture(_ recognizer: UITapGestureRecognizer) {
+        guard shouldHandleTap else { return }
+        closeMenu()
     }
     
     @objc private func handlePanGesture(_ recognizer: UIPanGestureRecognizer) {
@@ -166,5 +177,14 @@ class SlideMenuViewController: UIViewController {
         default:
             break
         }
+    }
+}
+
+extension SlideMenuViewController: UIGestureRecognizerDelegate {
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+        if let view = touch.view, view.isDescendant(of: hamburgerButton) {
+            return false
+        }
+        return _isMenuOpen
     }
 }

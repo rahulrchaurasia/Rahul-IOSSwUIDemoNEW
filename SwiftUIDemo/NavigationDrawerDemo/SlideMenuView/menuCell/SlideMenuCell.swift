@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SlideMenuCellView: View {
+struct SlideMenuCell: View {
     @Binding var showMenu: Bool
     
     var body: some View {
@@ -41,6 +41,10 @@ struct SlideMenuCellView: View {
         .offset(x: 0) // Always positioned at the left side
     }
 }
-#Preview {
-    SlideMenuCell()
+
+
+#Preview("Slide Menu") {
+    SlideMenuCell(showMenu: .constant(true))
+        .frame(width: UIScreen.main.bounds.width * 0.6)
+        .background(Color.blue)
 }

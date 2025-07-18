@@ -89,56 +89,6 @@ struct AdvancedCollapsingToolbarView: View {
 
 
 
-// MARK: - Collapsing Header
-//struct CollapsingHeaderView2: View {
-//    let offset: CGFloat
-//    let maxHeight: CGFloat
-//    let minHeight: CGFloat
-//
-//    var body: some View {
-//        GeometryReader { geo in
-//            let minY = geo.frame(in: .named("scroll")).minY
-//
-//            ZStack {
-//                LinearGradient(
-//                    gradient: Gradient(colors: [.blue, .purple, .pink]),
-//                    startPoint: .topLeading,
-//                    endPoint: .bottomTrailing
-//                )
-//                .overlay(
-//                    ZStack {
-//                        Circle()
-//                            .fill(Color.white.opacity(0.1))
-//                            .frame(width: 200, height: 200)
-//                            .offset(x: -50, y: -30)
-//                        Circle()
-//                            .fill(Color.white.opacity(0.05))
-//                            .frame(width: 150, height: 150)
-//                            .offset(x: 100, y: 50)
-//                    }
-//                )
-//
-//                VStack(spacing: 8) {
-//                    Text("Summer Landscape")
-//                        .font(.system(size: 36, weight: .bold))
-//                        .foregroundColor(.white)
-//                        .scaleEffect(1 - offset / 600)
-//
-//                    if offset < 80 {
-//                        Text("Beautiful mountain scenery")
-//                            .font(.subheadline)
-//                            .foregroundColor(.white.opacity(0.9))
-//                            .transition(.opacity)
-//                    }
-//                }
-//                .opacity(max(CGFloat(0), CGFloat(1) - offset / CGFloat(150)))
-//            }
-//            .frame(height: max(minHeight, maxHeight + minY)) // 👈 ADD THIS LINE HERE
-//            
-//            .offset(y: -minY) // 👈 Keeps header fixed at top
-//        }
-//    }
-//}
 
 struct CollapsingHeaderView2: View {
     let offset: CGFloat // You can remove this if switching to minY-based layout
@@ -201,6 +151,70 @@ struct CollapsingHeaderView2: View {
         .frame(height: maxHeight) // Reserve space initially
     }
 }
+
+
+
+//struct CollapsingHeaderView2: View {
+//    let offset: CGFloat
+//    let maxHeight: CGFloat
+//    let minHeight: CGFloat
+//
+//    var body: some View {
+//        GeometryReader { geo in
+//            let minY = geo.frame(in: .global).minY
+//
+//            // ✅ Limit stretch to 20% beyond max height
+//            let stretchLimit = maxHeight * 0.2
+//            let headerHeight = min(maxHeight + stretchLimit, max(minHeight, maxHeight + minY))
+//
+//            // ✅ Fade and scale for title
+//            let titleOpacity = min(1, max(0, (headerHeight - minHeight - 20) / 40))
+//            let titleScale = 1 + (minY / 1000)
+//
+//            ZStack(alignment: .bottom) {
+//                // ✅ Gradient Background
+//                LinearGradient(
+//                    gradient: Gradient(colors: [.blue, .purple, .pink]),
+//                    startPoint: .topLeading,
+//                    endPoint: .bottomTrailing
+//                )
+//                .overlay(
+//                    ZStack {
+//                        Circle()
+//                            .fill(Color.white.opacity(0.1))
+//                            .frame(width: 200, height: 200)
+//                            .offset(x: -50, y: -30)
+//
+//                        Circle()
+//                            .fill(Color.white.opacity(0.05))
+//                            .frame(width: 150, height: 150)
+//                            .offset(x: 100, y: 50)
+//                    }
+//                )
+//                .frame(height: headerHeight)
+//                .clipped()
+//
+//                // ✅ Collapsing Title
+//                VStack(spacing: 8) {
+//                    Text("Summer Landscape")
+//                        .font(.system(size: 36, weight: .bold))
+//                        .foregroundColor(.white)
+//                        .scaleEffect(max(0.9, titleScale))
+//
+//                    Text("Beautiful mountain scenery")
+//                        .font(.subheadline)
+//                        .foregroundColor(.white.opacity(0.9))
+//                        .opacity(titleOpacity)
+//                }
+//                .padding(.bottom, 20)
+//            }
+//            .frame(height: headerHeight)
+//            .offset(y: -minY) // ✅ Keeps header pinned at top
+//        }
+//        .frame(height: maxHeight) // Initial space reservation
+//    }
+//}
+
 
 
 // MARK: - Pinned Header

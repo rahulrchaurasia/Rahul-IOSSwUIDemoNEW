@@ -8,6 +8,28 @@
 import SwiftUI
 
 
+/*
+ Note : 
+ 1. First, let's understand how the HeaderView transitions work based on scroll position:
+ swift
+
+ // Main opacity calculations for content
+ .opacity(homeData.offset > 200 ?
+          (1 - Double((homeData.offset - 200) / 50))  // Fade out main content
+          : 1)                                        // Show full content when below threshold
+
+ // Tab bar opacity (opposite effect)
+ .opacity(homeData.offset > 200 ?
+          Double((homeData.offset - 200) / 50)  // Fade in tabs
+          : 0)                                  // Hide tabs when below threshold
+
+ The key points:
+ * At offset 200: Original header content is fully visible, tabs are hidden
+ * Between 200-250: Transition happens
+ * Above 250: Header content is hidden, tabs are fully visible
+
+
+ */
 struct ListParallexDemo: View {
     
     //@StateObject var homeData = HomeViewModel()
@@ -26,6 +48,7 @@ struct ListParallexDemo: View {
         .navigationTitle("")
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
+        
         .overlay(
             // Only Safe Area
             (scheme == .dark ? Color.black : Color.white)

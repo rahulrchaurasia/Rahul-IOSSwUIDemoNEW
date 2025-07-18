@@ -57,8 +57,8 @@ struct CustomDashBoard: View {
                                 .scaledToFit()
                                 .frame(width: 40, height: 40)
                             
-                                .overlay( RoundedRectangle(cornerRadius: 20)
-                                    .stroke(Color.white, lineWidth: 1.5 ))
+                                .overlay(RoundedRectangle(cornerRadius: 20)
+                                    .stroke(Color.gray, lineWidth: 1.5 ))
                                 .cornerRadius(20)
                                 .clipped()
                             
@@ -145,7 +145,7 @@ struct CustomDashBoard: View {
                         
                         Spacer()
                         
-                        Text("You're \( hVM.isOnline ? "online" : "offiline" )")
+                        Text("You're \( hVM.isOnline ? "online" : "offline" )")
                             .font(.customfont(.bold, fontSize: 18))
                             .foregroundColor(Color.primaryText)
                         Spacer()

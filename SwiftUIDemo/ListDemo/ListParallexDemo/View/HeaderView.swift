@@ -190,7 +190,10 @@ struct HeaderView_Previews: PreviewProvider {
         let homeData = HomeViewModel()
 
         // Inject the object into the preview using `environmentObject`
-        return ListParallexDemo()
+//        return ListParallexDemo()
+//            .environmentObject(homeData)
+        
+        return  HeaderView()
             .environmentObject(homeData)
     }
      

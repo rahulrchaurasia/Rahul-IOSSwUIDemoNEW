@@ -111,6 +111,45 @@ final class LoginRepository : LoginRepositoryProtocol{
     }
     
     
-   
+    //Sample for Regerence ::------>
+    func getUserCallingDetail() async throws -> String {
+        let appVersion = Configuration.appVersion
+        let deviceID = ""
+        let FBAId = ""
+        let SSID = ""
+
+        let params: [String: String] = [
+            "fbaid": FBAId,
+            "ssid": SSID,
+            "app_version": appVersion,
+            "device_code": deviceID
+        ]
+
+        let urlString = Configuration.baseROOTURL + "/Postfm/user-calling"
+        guard let url = URL(string: urlString) else {
+           // throw APIError.custom(message: Constant.InvalidURL)
+            throw APIError.custom(message: "Invalid server response")
+        }
+
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+
+        let jsonData = try JSONSerialization.data(withJSONObject: params)
+        request.httpBody = jsonData
+
+        debugPrint("Request URL: \(urlString)")
+        debugPrint("Request Body: \(String(data: jsonData, encoding: .utf8) ?? "")")
+
+        let (data, response) = try await URLSession.shared.data(for: request)
+
+        guard let httpResponse = response as? HTTPURLResponse, (200...299).contains(httpResponse.statusCode) else {
+            throw APIError.custom(message: "Invalid server response")
+        }
+
+        let userCallingResponse = try JSONDecoder().decode(UserCallingResponse.self, from: data)
+        return userCallingResponse.Status
+    }
+
 
 }

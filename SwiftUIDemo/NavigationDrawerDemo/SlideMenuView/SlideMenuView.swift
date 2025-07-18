@@ -68,12 +68,12 @@ struct SlideMenuView: View {
                 
                 // Slide menu (positioned at left)
                 if showMenu {
-                    SlideMenuCellView(showMenu: $showMenu)
+                    SlideMenuCell(showMenu: $showMenu)
                         .frame(width: UIScreen.main.bounds.width * 0.6)
                         .transition(.move(edge: .leading))
                 }
             }
-            .edgesIgnoringSafeArea(.all)
+            .edgesIgnoringSafeArea(.bottom)
         }
     }
     

@@ -9,7 +9,9 @@ import SwiftUI
 
 struct HomeUIView: View {
     
-    
+    // Declare that you're using the NetworkMonitor
+    @EnvironmentObject var networkMonitor: NetworkMonitor
+
     var body: some View {
         ZStack{
            
@@ -61,6 +63,7 @@ struct HomeUIView: View {
                 .padding(.trailing)
 
         }
+        .withNetworkAlert()  // Now this modifier will work
         .navigationTitle("Home")
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
@@ -212,6 +215,22 @@ extension HomeUIView {
                   
             } label: {
                 Text("Navigation Drawer demo")
+                    .padding(12)
+                    .font(.title2)
+                    .foregroundColor(.white)
+                    .background(.primary.opacity(0.7))
+                    .cornerRadius(15)
+                    
+            }
+            
+            
+            NavigationLink {
+                //MainTabbedView()
+              //  MainPageNavDrawerHome()
+                SlideMenuUsingUIKIT()
+                  
+            } label: {
+                Text("Slide Menu Using UIKIT")
                     .padding(12)
                     .font(.title2)
                     .foregroundColor(.white)
@@ -498,6 +517,9 @@ extension HomeUIView {
 
 struct HomeUIView_Previews: PreviewProvider {
     static var previews: some View {
+        
+        var networkMonitor =  NetworkMonitor()
         HomeUIView()
+            .environmentObject(networkMonitor)
     }
 }

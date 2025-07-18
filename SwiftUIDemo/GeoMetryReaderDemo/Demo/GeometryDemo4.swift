@@ -14,11 +14,15 @@ struct GeometryDemo4: View {
                     Rectangle()
                         .fill(Color.teal)
                         .frame(height: 200) // Push GeometryReader downward
+            
+            
                     
                     GeometryReader { proxy in
                         ZStack {
                             Color.orange.opacity(0.3) // Background to visualize GeometryReader
                             
+                           
+
                             Text("Where I am (Local) Frame \(proxy.frame(in: .local).debugDescription)")
                                     .position(x: proxy.frame(in: .local).midX,
                                               y: proxy.frame(in: .local).midY)

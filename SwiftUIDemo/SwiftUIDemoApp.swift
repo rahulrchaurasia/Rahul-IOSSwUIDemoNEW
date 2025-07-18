@@ -10,11 +10,17 @@ import SwiftUI
 @main
 struct SwiftUIDemoApp: App {
     
+    // Create the NetworkMonitor as a StateObject
+        @StateObject private var networkMonitor = NetworkMonitor()
+
    @StateObject   var listViewModel: ListViewModel = ListViewModel()
     
       
     @StateObject var homeData = HomeViewModel()
     @StateObject var router = Router(initial: AppRoute.Dashboard)
+    
+    
+        
       
     var body: some Scene {
         WindowGroup {
@@ -45,6 +51,8 @@ struct SwiftUIDemoApp: App {
             
             .environmentObject(listViewModel)
             .environmentObject(homeData)
+            .environmentObject(networkMonitor) // Inject it here
+            
             /*************************environmentObject**********************************/
             // Note : environmentObject hold all the data which it get
             // and carry till NavigationView hirearchy exist.

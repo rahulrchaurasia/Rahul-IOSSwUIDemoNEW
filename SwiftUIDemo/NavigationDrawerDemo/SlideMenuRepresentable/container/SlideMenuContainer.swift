@@ -10,8 +10,8 @@ import SwiftUI
 struct SlideMenuContainer<Content: View, MenuContent: View>: View {
     @State private var isMenuOpen = false
     
-    let content: Content
-    let menuContent: MenuContent
+    private let content: Content
+    private let menuContent: MenuContent
     
     init(@ViewBuilder content: () -> Content, @ViewBuilder menuContent: () -> MenuContent) {
         self.content = content()
@@ -19,11 +19,22 @@ struct SlideMenuContainer<Content: View, MenuContent: View>: View {
     }
     
     var body: some View {
-        SlideMenuViewControllerRepresentable(
-            isMenuOpen: $isMenuOpen,
-            content: { content },
-            menuContent: { menuContent }
-        )
-        .edgesIgnoringSafeArea(.all)
+        ZStack {
+            SlideMenuViewControllerRepresentable(
+                isMenuOpen: $isMenuOpen,
+                content: { content },
+                menuContent: { menuContent }
+            )
+            .edgesIgnoringSafeArea(.all)
+            
+            if !isMenuOpen {
+                Button(action: { isMenuOpen.toggle() }) {
+                    Color.clear
+                        .contentShape(Rectangle())
+                        .frame(width: 20)
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+            }
+        }
     }
 }

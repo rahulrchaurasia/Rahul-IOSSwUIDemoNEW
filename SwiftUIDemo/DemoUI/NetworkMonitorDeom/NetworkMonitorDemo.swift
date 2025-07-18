@@ -8,8 +8,26 @@
 import SwiftUI
 
 struct NetworkMonitorDemo: View {
+    
+    @StateObject private var networkMonitor = NetworkMonitor2()
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack{
+            
+            if networkMonitor.isConnected {
+               Text ("connected via\(networkMonitor.connectionType)")
+                    .foregroundStyle(.blue)
+            }else{
+                Text("No Internet Connection")
+                    .foregroundStyle(.red)
+                
+                
+            }
+                
+        }
+        .onAppear(){
+            networkMonitor.startMonitoring()
+        }
     }
 }
 

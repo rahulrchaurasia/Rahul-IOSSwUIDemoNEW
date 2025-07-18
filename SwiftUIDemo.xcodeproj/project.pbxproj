@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,7 @@
 		CD0654992CDDCAF200620B90 /* CamGalPermissionHandlerOld.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0654962CDDCAF200620B90 /* CamGalPermissionHandlerOld.swift */; };
 		CD06549B2CDDCD2800620B90 /* ImagePicker2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD06549A2CDDCD2800620B90 /* ImagePicker2.swift */; };
 		CD09DB322BE7D4C600F2984D /* LoginRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD09DB312BE7D4C600F2984D /* LoginRepositoryProtocol.swift */; };
+		CD0C6A292D30038C00DA389F /* NetworkStatusModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0C6A282D30038C00DA389F /* NetworkStatusModifier.swift */; };
 		CD0ECA812BE50E5300CB18A1 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0ECA802BE50E5300CB18A1 /* LoginViewModel.swift */; };
 		CD0ECA842BE5101400CB18A1 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0ECA832BE5101400CB18A1 /* UserResponse.swift */; };
 		CD1336972A652F0800E5EA40 /* TextFieldDemo4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1336962A652F0800E5EA40 /* TextFieldDemo4.swift */; };
@@ -60,6 +61,8 @@
 		CD59C94A2B39C86F00A42651 /* SweetProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD59C9492B39C86F00A42651 /* SweetProduct.swift */; };
 		CD59C94C2B39CB1400A42651 /* PinnedViewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD59C94B2B39CB1400A42651 /* PinnedViewList.swift */; };
 		CD59C94F2B3AB18200A42651 /* SweetProductItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD59C94E2B3AB18200A42651 /* SweetProductItem.swift */; };
+		CD59D9E22D312AFD00098D30 /* GeometryAnimatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD59D9E12D312AFD00098D30 /* GeometryAnimatedView.swift */; };
+		CD59D9E42D314FC400098D30 /* GeometryParrallexEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD59D9E32D314FC400098D30 /* GeometryParrallexEffect.swift */; };
 		CD5BBCE42BCD5A560057691A /* SingleSelectionViewDemo2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5BBCE32BCD5A560057691A /* SingleSelectionViewDemo2.swift */; };
 		CD5BBCE62BCD5AF70057691A /* CheckboxRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5BBCE52BCD5AF70057691A /* CheckboxRow.swift */; };
 		CD6186492A4EB40D006E1329 /* SubScriberDemo1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6186482A4EB40D006E1329 /* SubScriberDemo1.swift */; };
@@ -137,6 +140,7 @@
 		CD7D550E2B8897150041DE53 /* OTPVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D550D2B8897150041DE53 /* OTPVerificationView.swift */; };
 		CD7D55102B88A1D10041DE53 /* Binding+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D550F2B88A1D10041DE53 /* Binding+Extension.swift */; };
 		CD7D55122B88B4AA0041DE53 /* AutoOTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D55112B88B4AA0041DE53 /* AutoOTP.swift */; };
+		CD7ECE9A2D2EABC400244739 /* SimpleParallaxDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7ECE992D2EABC400244739 /* SimpleParallaxDemo.swift */; };
 		CD7EEFE72A62681B004915E3 /* ContactsItemDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7EEFE62A62681B004915E3 /* ContactsItemDetails.swift */; };
 		CD7EEFEA2A62757D004915E3 /* ContactsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7EEFE92A62757D004915E3 /* ContactsDetailView.swift */; };
 		CD7FCC572B3BF76C00AFD3A1 /* ListComplexDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7FCC562B3BF76C00AFD3A1 /* ListComplexDemo.swift */; };
@@ -250,6 +254,13 @@
 		CDDAAED12AD52AAB00997E37 /* CounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDAAED02AD52AAB00997E37 /* CounterViewModel.swift */; };
 		CDDAAED42AD52E4100997E37 /* AdvanceDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDAAED32AD52E4100997E37 /* AdvanceDemoView.swift */; };
 		CDDAAED62AD54CEA00997E37 /* StateVsObservedObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDAAED52AD54CEA00997E37 /* StateVsObservedObj.swift */; };
+		CDDAC6842D9178D900ECF104 /* SlideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDAC6832D9178D900ECF104 /* SlideMenuView.swift */; };
+		CDDAC6872D9187F400ECF104 /* SlideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDAC6862D9187F400ECF104 /* SlideMenuCell.swift */; };
+		CDDAC6892D91883C00ECF104 /* MenuLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDAC6882D91883C00ECF104 /* MenuLink.swift */; };
+		CDDAC68C2D918C1F00ECF104 /* SlideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDAC68B2D918C1F00ECF104 /* SlideMenuViewController.swift */; };
+		CDDAC68F2D918C6F00ECF104 /* SlideMenuViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDAC68E2D918C6F00ECF104 /* SlideMenuViewControllerRepresentable.swift */; };
+		CDDAC6912D918D4900ECF104 /* SlideMenuContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDAC6902D918D4900ECF104 /* SlideMenuContainer.swift */; };
+		CDDAC6952D918DFF00ECF104 /* SlideMenuUsingUIKIT.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDAC6942D918DFF00ECF104 /* SlideMenuUsingUIKIT.swift */; };
 		CDDB77A82C17124A002F6EEA /* NumbersOnly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB77A72C17124A002F6EEA /* NumbersOnly.swift */; };
 		CDDB77AA2C171B93002F6EEA /* TextFieldLimitModifer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB77A92C171B93002F6EEA /* TextFieldLimitModifer.swift */; };
 		CDDB77AC2C172D2B002F6EEA /* DigitLimitModifer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB77AB2C172D2B002F6EEA /* DigitLimitModifer.swift */; };
@@ -289,6 +300,7 @@
 		CD0654962CDDCAF200620B90 /* CamGalPermissionHandlerOld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamGalPermissionHandlerOld.swift; sourceTree = "<group>"; };
 		CD06549A2CDDCD2800620B90 /* ImagePicker2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker2.swift; sourceTree = "<group>"; };
 		CD09DB312BE7D4C600F2984D /* LoginRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepositoryProtocol.swift; sourceTree = "<group>"; };
+		CD0C6A282D30038C00DA389F /* NetworkStatusModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStatusModifier.swift; sourceTree = "<group>"; };
 		CD0ECA802BE50E5300CB18A1 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		CD0ECA832BE5101400CB18A1 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
 		CD1336962A652F0800E5EA40 /* TextFieldDemo4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDemo4.swift; sourceTree = "<group>"; };
@@ -330,6 +342,8 @@
 		CD59C9492B39C86F00A42651 /* SweetProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweetProduct.swift; sourceTree = "<group>"; };
 		CD59C94B2B39CB1400A42651 /* PinnedViewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinnedViewList.swift; sourceTree = "<group>"; };
 		CD59C94E2B3AB18200A42651 /* SweetProductItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweetProductItem.swift; sourceTree = "<group>"; };
+		CD59D9E12D312AFD00098D30 /* GeometryAnimatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryAnimatedView.swift; sourceTree = "<group>"; };
+		CD59D9E32D314FC400098D30 /* GeometryParrallexEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryParrallexEffect.swift; sourceTree = "<group>"; };
 		CD5BBCE32BCD5A560057691A /* SingleSelectionViewDemo2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSelectionViewDemo2.swift; sourceTree = "<group>"; };
 		CD5BBCE52BCD5AF70057691A /* CheckboxRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxRow.swift; sourceTree = "<group>"; };
 		CD6186482A4EB40D006E1329 /* SubScriberDemo1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubScriberDemo1.swift; sourceTree = "<group>"; };
@@ -407,6 +421,7 @@
 		CD7D550D2B8897150041DE53 /* OTPVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVerificationView.swift; sourceTree = "<group>"; };
 		CD7D550F2B88A1D10041DE53 /* Binding+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+Extension.swift"; sourceTree = "<group>"; };
 		CD7D55112B88B4AA0041DE53 /* AutoOTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoOTP.swift; sourceTree = "<group>"; };
+		CD7ECE992D2EABC400244739 /* SimpleParallaxDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleParallaxDemo.swift; sourceTree = "<group>"; };
 		CD7EEFE62A62681B004915E3 /* ContactsItemDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsItemDetails.swift; sourceTree = "<group>"; };
 		CD7EEFE92A62757D004915E3 /* ContactsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsDetailView.swift; sourceTree = "<group>"; };
 		CD7FCC562B3BF76C00AFD3A1 /* ListComplexDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListComplexDemo.swift; sourceTree = "<group>"; };
@@ -518,6 +533,13 @@
 		CDDAAED02AD52AAB00997E37 /* CounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewModel.swift; sourceTree = "<group>"; };
 		CDDAAED32AD52E4100997E37 /* AdvanceDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvanceDemoView.swift; sourceTree = "<group>"; };
 		CDDAAED52AD54CEA00997E37 /* StateVsObservedObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateVsObservedObj.swift; sourceTree = "<group>"; };
+		CDDAC6832D9178D900ECF104 /* SlideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuView.swift; sourceTree = "<group>"; };
+		CDDAC6862D9187F400ECF104 /* SlideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuCell.swift; sourceTree = "<group>"; };
+		CDDAC6882D91883C00ECF104 /* MenuLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuLink.swift; sourceTree = "<group>"; };
+		CDDAC68B2D918C1F00ECF104 /* SlideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuViewController.swift; sourceTree = "<group>"; };
+		CDDAC68E2D918C6F00ECF104 /* SlideMenuViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuViewControllerRepresentable.swift; sourceTree = "<group>"; };
+		CDDAC6902D918D4900ECF104 /* SlideMenuContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuContainer.swift; sourceTree = "<group>"; };
+		CDDAC6942D918DFF00ECF104 /* SlideMenuUsingUIKIT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuUsingUIKIT.swift; sourceTree = "<group>"; };
 		CDDB77A72C17124A002F6EEA /* NumbersOnly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersOnly.swift; sourceTree = "<group>"; };
 		CDDB77A92C171B93002F6EEA /* TextFieldLimitModifer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldLimitModifer.swift; sourceTree = "<group>"; };
 		CDDB77AB2C172D2B002F6EEA /* DigitLimitModifer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitLimitModifer.swift; sourceTree = "<group>"; };
@@ -547,6 +569,15 @@
 		CDFEBB4E29D1BF6D00A92BF5 /* TextFieldDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDemo.swift; sourceTree = "<group>"; };
 		CDFEBB5029D1D06D00A92BF5 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		CD0707DC2DBBA01500424B04 /* model */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = model; sourceTree = "<group>"; };
+		CD08791D2E2778BF00F71014 /* ScrollOffsetPreferenceKey */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ScrollOffsetPreferenceKey; sourceTree = "<group>"; };
+		CD0C6A1B2D2FF67500DA389F /* NetworkMonitoring */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = NetworkMonitoring; sourceTree = "<group>"; };
+		CD0C6A1E2D2FF7C300DA389F /* NetworkMonitorDeom */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = NetworkMonitorDeom; sourceTree = "<group>"; };
+		CD0C6A232D2FFECF00DA389F /* networkAlert */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = networkAlert; sourceTree = "<group>"; };
+		CD8EA2E82DBE9AAB00EC88D8 /* CollapsingHeaderView */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = CollapsingHeaderView; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CD88650629AA2E2A00BA97DD /* Frameworks */ = {
@@ -607,6 +638,7 @@
 		CD0ECA7E2BE50D5F00CB18A1 /* API Call */ = {
 			isa = PBXGroup;
 			children = (
+				CD0707DC2DBBA01500424B04 /* model */,
 				CD6F38552BE6658A001C0459 /* UI */,
 				CD0ECA852BE5137800CB18A1 /* model */,
 				CD0ECA822BE50FEA00CB18A1 /* response */,
@@ -917,6 +949,8 @@
 		CD67F80E2B444603009B4116 /* NavigationDrawerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CDDAC68A2D918B2B00ECF104 /* SlideMenuRepresentable */,
+				CDDAC6822D9178B300ECF104 /* SlideMenuView */,
 				CDD985262B596169001D8DEA /* SlideMenuCustom */,
 				CDD9851C2B595145001D8DEA /* NavigationCustomDrawer */,
 				CD67F8182B444A17009B4116 /* UI */,
@@ -949,6 +983,7 @@
 		CD6A8A682B6CBC0C006F3984 /* Custom Dialog */ = {
 			isa = PBXGroup;
 			children = (
+				CD0C6A232D2FFECF00DA389F /* networkAlert */,
 				CDDA4A5E2B6E65B1003024D3 /* customDialog */,
 				CDDA4A5D2B6E65A1003024D3 /* sheetDialog */,
 				CDDA4A5C2B6E6579003024D3 /* viewModel OTP */,
@@ -1250,6 +1285,7 @@
 		CD88650B29AA2E2A00BA97DD /* SwiftUIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CD8EA2E82DBE9AAB00EC88D8 /* CollapsingHeaderView */,
 				CD1C7E872C1C209200107FB1 /* KeyboardUpDemo */,
 				CD0ECA7E2BE50D5F00CB18A1 /* API Call */,
 				CD74553B2A5295D600717361 /* ActorDemo */,
@@ -1327,6 +1363,9 @@
 				CD8D95842B35776D009B0AA1 /* GeometryDemo2.swift */,
 				CD8D95862B35777C009B0AA1 /* GeometryDemo3.swift */,
 				CD4AEFB02D2D598000EE84FC /* GeometryDemo4.swift */,
+				CD7ECE992D2EABC400244739 /* SimpleParallaxDemo.swift */,
+				CD59D9E12D312AFD00098D30 /* GeometryAnimatedView.swift */,
+				CD59D9E32D314FC400098D30 /* GeometryParrallexEffect.swift */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -1596,6 +1635,7 @@
 				CDD8D5762BDF9E7900F9BE4F /* ConditionalScrollIndicatorsModifier.swift */,
 				CDDB77A92C171B93002F6EEA /* TextFieldLimitModifer.swift */,
 				CDDB77AB2C172D2B002F6EEA /* DigitLimitModifer.swift */,
+				CD0C6A282D30038C00DA389F /* NetworkStatusModifier.swift */,
 			);
 			path = ViewModifier;
 			sourceTree = "<group>";
@@ -1737,6 +1777,59 @@
 			path = advanceDemo;
 			sourceTree = "<group>";
 		};
+		CDDAC6822D9178B300ECF104 /* SlideMenuView */ = {
+			isa = PBXGroup;
+			children = (
+				CDDAC6852D9187E500ECF104 /* menuCell */,
+				CDDAC6832D9178D900ECF104 /* SlideMenuView.swift */,
+			);
+			path = SlideMenuView;
+			sourceTree = "<group>";
+		};
+		CDDAC6852D9187E500ECF104 /* menuCell */ = {
+			isa = PBXGroup;
+			children = (
+				CDDAC6862D9187F400ECF104 /* SlideMenuCell.swift */,
+				CDDAC6882D91883C00ECF104 /* MenuLink.swift */,
+			);
+			path = menuCell;
+			sourceTree = "<group>";
+		};
+		CDDAC68A2D918B2B00ECF104 /* SlideMenuRepresentable */ = {
+			isa = PBXGroup;
+			children = (
+				CDDAC6932D918DD800ECF104 /* container */,
+				CDDAC6922D918D9800ECF104 /* representable */,
+				CDDAC68D2D918C5600ECF104 /* uikitController */,
+				CDDAC6942D918DFF00ECF104 /* SlideMenuUsingUIKIT.swift */,
+			);
+			path = SlideMenuRepresentable;
+			sourceTree = "<group>";
+		};
+		CDDAC68D2D918C5600ECF104 /* uikitController */ = {
+			isa = PBXGroup;
+			children = (
+				CDDAC68B2D918C1F00ECF104 /* SlideMenuViewController.swift */,
+			);
+			path = uikitController;
+			sourceTree = "<group>";
+		};
+		CDDAC6922D918D9800ECF104 /* representable */ = {
+			isa = PBXGroup;
+			children = (
+				CDDAC68E2D918C6F00ECF104 /* SlideMenuViewControllerRepresentable.swift */,
+			);
+			path = representable;
+			sourceTree = "<group>";
+		};
+		CDDAC6932D918DD800ECF104 /* container */ = {
+			isa = PBXGroup;
+			children = (
+				CDDAC6902D918D4900ECF104 /* SlideMenuContainer.swift */,
+			);
+			path = container;
+			sourceTree = "<group>";
+		};
 		CDDB8FCC2B68C62F001B1EF3 /* OTPDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -1857,6 +1950,8 @@
 		CDFEBB4A29D1BAA800A92BF5 /* utility */ = {
 			isa = PBXGroup;
 			children = (
+				CD08791D2E2778BF00F71014 /* ScrollOffsetPreferenceKey */,
+				CD0C6A1B2D2FF67500DA389F /* NetworkMonitoring */,
 				CD87B8902CE4A12200C81B25 /* MediaPermissionManager */,
 				CD0654972CDDCAF200620B90 /* PermissionHandler */,
 				CD1C7E842C1C1E6600107FB1 /* keyBoardUpHandling */,
@@ -1880,6 +1975,7 @@
 		CDFEBB4D29D1BF4300A92BF5 /* DemoUI */ = {
 			isa = PBXGroup;
 			children = (
+				CD0C6A1E2D2FF7C300DA389F /* NetworkMonitorDeom */,
 				CDD40D2D2A8642F100EA3DF2 /* WrappingHStack */,
 				CD725B1D2A7D0E560031552A /* ScrollView */,
 				CDACC40F2A7B83F800411F30 /* pullToRefresh */,
@@ -1911,6 +2007,14 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CD0707DC2DBBA01500424B04 /* model */,
+				CD08791D2E2778BF00F71014 /* ScrollOffsetPreferenceKey */,
+				CD0C6A1B2D2FF67500DA389F /* NetworkMonitoring */,
+				CD0C6A1E2D2FF7C300DA389F /* NetworkMonitorDeom */,
+				CD0C6A232D2FFECF00DA389F /* networkAlert */,
+				CD8EA2E82DBE9AAB00EC88D8 /* CollapsingHeaderView */,
 			);
 			name = SwiftUIDemo;
 			packageProductDependencies = (
@@ -2008,6 +2112,7 @@
 				CD7C2AD42A5EDB3B004F5950 /* GCDDemo.swift in Sources */,
 				CDD9851E2B59591C001D8DEA /* MainPageNavDrawerHome.swift in Sources */,
 				CD985E1D2A67BE2B00B23633 /* ListSection.swift in Sources */,
+				CD0C6A292D30038C00DA389F /* NetworkStatusModifier.swift in Sources */,
 				CD76868C2B3D765700B57DD9 /* SweetProductVM.swift in Sources */,
 				CDB56C512BF23FEA002BD56C /* MyVehicleDetailViewModel.swift in Sources */,
 				CD70A6912B40103C0002EC7C /* HeaderTestView.swift in Sources */,
@@ -2019,7 +2124,9 @@
 				CD2A07692B76491800CCFB89 /* CustomTextWithIconViewModifier.swift in Sources */,
 				CD67F81C2B4526AF009B4116 /* FavoriteView.swift in Sources */,
 				CD59C94F2B3AB18200A42651 /* SweetProductItem.swift in Sources */,
+				CDDAC68C2D918C1F00ECF104 /* SlideMenuViewController.swift in Sources */,
 				CD76868E2B3D9E2400B57DD9 /* SweetProductTab.swift in Sources */,
+				CDDAC6912D918D4900ECF104 /* SlideMenuContainer.swift in Sources */,
 				CD67F8072B442AA1009B4116 /* CustomSegmentedView.swift in Sources */,
 				CD8445962B7F98C300A0AD5F /* ApiDemo1.swift in Sources */,
 				CDDA4A592B6E3017003024D3 /* OTPSheetView.swift in Sources */,
@@ -2030,6 +2137,7 @@
 				CD380E2E2AC957F200799977 /* customAlertViewBuilder.swift in Sources */,
 				CD70A68C2B3FDD890002EC7C /* HomeViewModel.swift in Sources */,
 				CD4ABE8E2ACFCB2B0012770F /* ClosureDemoMain.swift in Sources */,
+				CDDAC6872D9187F400ECF104 /* SlideMenuCell.swift in Sources */,
 				CD0ECA842BE5101400CB18A1 /* UserResponse.swift in Sources */,
 				CDB56C4C2BF23F34002BD56C /* VehicleDocumentRow.swift in Sources */,
 				CDDB77A82C17124A002F6EEA /* NumbersOnly.swift in Sources */,
@@ -2135,6 +2243,7 @@
 				CD7686962B3EF7C600B57DD9 /* TabViewMain.swift in Sources */,
 				CD6B34972A6158970035C575 /* ContactViewModel.swift in Sources */,
 				CD74553D2A5295FD00717361 /* ActorDemo.swift in Sources */,
+				CDDAC6952D918DFF00ECF104 /* SlideMenuUsingUIKIT.swift in Sources */,
 				CD70A6872B3FD75B0002EC7C /* CardView.swift in Sources */,
 				CD84596D2A727F5500E85AE6 /* TabViewDemo.swift in Sources */,
 				CD8D95852B35776D009B0AA1 /* GeometryDemo2.swift in Sources */,
@@ -2158,6 +2267,7 @@
 				CDE8491A29D85B1A0087381A /* StickyCardView.swift in Sources */,
 				CD9E45C029D451AD004D54D5 /* NoItemsView.swift in Sources */,
 				CDDB77B02C18541F002F6EEA /* LineTextField1.swift in Sources */,
+				CDDAC68F2D918C6F00ECF104 /* SlideMenuViewControllerRepresentable.swift in Sources */,
 				CDFEBB5129D1D06D00A92BF5 /* Color+Extension.swift in Sources */,
 				CDC9920E29DACAD50061AB6C /* Tab1.swift in Sources */,
 				CD97C7192B6A45800049E2FC /* OTPMainDemo.swift in Sources */,
@@ -2173,6 +2283,7 @@
 				CD6C289F2C0615D500730D4C /* EditProfileView.swift in Sources */,
 				CD88A5382BCA842D00B2B5CB /* testDemo.swift in Sources */,
 				CDB457092BD93A770048E32A /* CustomHeaderWithMenu.swift in Sources */,
+				CDDAC6842D9178D900ECF104 /* SlideMenuView.swift in Sources */,
 				CD70A6892B3FDC830002EC7C /* HeaderView.swift in Sources */,
 				CD67F8152B4448DA009B4116 /* SideMenu.swift in Sources */,
 				CDAE00722A5FD2E900F760A7 /* FloatingTextField1.swift in Sources */,
@@ -2191,6 +2302,7 @@
 				CD2A076C2B76578300CCFB89 /* CustomTextFieldWithEye.swift in Sources */,
 				CD5BBCE62BCD5AF70057691A /* CheckboxRow.swift in Sources */,
 				CD8F1E412BD67D8600A4F008 /* MultiSelectionViewDemo2.swift in Sources */,
+				CD59D9E42D314FC400098D30 /* GeometryParrallexEffect.swift in Sources */,
 				CD830C092AC85980000FFA64 /* CommonNavigationBarModifier.swift in Sources */,
 				CDB63D422AD2C73C00A0ED42 /* MultiSelectionAlertView.swift in Sources */,
 				CD6629572BE3B8BC00563931 /* LoginRepository.swift in Sources */,
@@ -2209,6 +2321,7 @@
 				CD7D55102B88A1D10041DE53 /* Binding+Extension.swift in Sources */,
 				CDDB77AA2C171B93002F6EEA /* TextFieldLimitModifer.swift in Sources */,
 				CD6A8A702B6CE660006F3984 /* CustomButtonWithImage.swift in Sources */,
+				CDDAC6892D91883C00ECF104 /* MenuLink.swift in Sources */,
 				CD6A8A7C2B6D0246006F3984 /* Shape+Extension.swift in Sources */,
 				CD6186492A4EB40D006E1329 /* SubScriberDemo1.swift in Sources */,
 				CD6977292BEB9E9000798EF6 /* MenuView.swift in Sources */,
@@ -2218,6 +2331,7 @@
 				CDCED16D2A3991C800A9EB76 /* View+Extension.swift in Sources */,
 				CD6A8A6C2B6CBC90006F3984 /* OTPAlertView.swift in Sources */,
 				CD4ABEA12AD03B700012770F /* MealData.swift in Sources */,
+				CD59D9E22D312AFD00098D30 /* GeometryAnimatedView.swift in Sources */,
 				CD67F8002B440DCE009B4116 /* SegmentedView.swift in Sources */,
 				CD34E5C32C1080E2005F7662 /* ProfileViewModel.swift in Sources */,
 				CD9095192BEFB7D30047FD6B /* TitleSubtitleButton.swift in Sources */,
@@ -2235,6 +2349,7 @@
 				CDEF9A492A66B08600BA8294 /* ContactMainViewModel.swift in Sources */,
 				CD8D95872B35777C009B0AA1 /* GeometryDemo3.swift in Sources */,
 				CDEBAFCE2AC3FAD2009C793E /* PickerDEmo.swift in Sources */,
+				CD7ECE9A2D2EABC400244739 /* SimpleParallaxDemo.swift in Sources */,
 				CD8C8D222A4C41A500BD0964 /* SubscriberDemo.swift in Sources */,
 				CD8445982B7F98F800A0AD5F /* ApiDemoMain.swift in Sources */,
 				CDDB8FD42B68D200001B1EF3 /* OTPView.swift in Sources */,

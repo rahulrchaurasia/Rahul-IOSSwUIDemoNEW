@@ -27,6 +27,12 @@ struct GeometryReaderMain: View {
                     GeometryReaderDemo2
                     
                     GeometryReaderDemo4
+                    
+                    GeometryReaderDemo5
+                
+                    GeometryReaderDemo6
+                    
+                    GeometryReaderDemo7
                    
                 }.padding(.top,10)
             }
@@ -123,10 +129,75 @@ extension GeometryReaderMain {
         
     }
     
-    
-               
-
+   
+    //Geometry Demo
+    var GeometryReaderDemo5: some View  {
         
+        Group {
+           
+            // Advance Demo
+            NavigationLink {
+                SimpleParallaxDemo()
+                  
+            } label: {
+                Text("Geometry Using Parallex Demo")
+                    .padding(12)
+                    .font(.title2)
+                    .foregroundColor(.white)
+                    .background(Color(.orange))
+                    .cornerRadius(15)
+                    
+            }
+         
+        }
+        
+    }
+    
+    //Geometry Demo
+    var GeometryReaderDemo6: some View  {
+        
+        Group {
+           
+            // Advance Demo
+            NavigationLink {
+                GeometryAnimatedView()
+                  
+            } label: {
+                Text("Geometry Animated View")
+                    .padding(12)
+                    .font(.title2)
+                    .foregroundColor(.white)
+                    .background(Color(.green))
+                    .cornerRadius(15)
+                    
+            }
+         
+        }
+        
+    }
+    
+    var GeometryReaderDemo7: some View  {
+        
+        Group {
+           
+            // Advance Demo
+            NavigationLink {
+                GeometryParrallexEffect()
+                  
+            } label: {
+                Text("Geometry Animated View")
+                    .padding(12)
+                    .font(.title2)
+                    .foregroundColor(.white)
+                    .background(Color(.systemPink))
+                    .cornerRadius(15)
+                    
+            }
+         
+        }
+        
+    }
+    
 
 }
 

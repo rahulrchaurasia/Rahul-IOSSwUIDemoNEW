@@ -85,6 +85,17 @@ extension View {
     func keyboardManagment() -> some View {
            self.modifier(KeyboardManagement())
        }
+    
+    
+    /***********************************************************************/
+        // Alert View
+        //Verify network and alert popup
+    /***********************************************************************/
+
+    
+    func withNetworkAlert() -> some View {
+           modifier(NetworkStatusModifier())
+       }
    
 }
 
