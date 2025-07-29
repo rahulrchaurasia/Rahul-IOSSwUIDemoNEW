@@ -115,7 +115,8 @@ struct CollapsingHeaderView: View {
                             Divider()
                                 .padding(.leading)
                         }
-                        .background(backgroundColor)
+                        .background(backgroundColor
+                            .clipShape(RoundedRectangle(cornerRadius: 40)))
                     }
                     .padding(.bottom, safeAreaBottom)
                 }

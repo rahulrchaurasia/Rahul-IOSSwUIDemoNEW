@@ -137,6 +137,8 @@
 		CD76868E2B3D9E2400B57DD9 /* SweetProductTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD76868D2B3D9E2400B57DD9 /* SweetProductTab.swift */; };
 		CD7686962B3EF7C600B57DD9 /* TabViewMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7686952B3EF7C600B57DD9 /* TabViewMain.swift */; };
 		CD7C2AD42A5EDB3B004F5950 /* GCDDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7C2AD32A5EDB3B004F5950 /* GCDDemo.swift */; };
+		CD7D31B12E325A0D0001FD8C /* CollapseAnimatedStickyHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D31B02E325A0D0001FD8C /* CollapseAnimatedStickyHeader.swift */; };
+		CD7D31B72E325F5D0001FD8C /* HomeCollapseHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D31B62E325F5D0001FD8C /* HomeCollapseHeaderView.swift */; };
 		CD7D550E2B8897150041DE53 /* OTPVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D550D2B8897150041DE53 /* OTPVerificationView.swift */; };
 		CD7D55102B88A1D10041DE53 /* Binding+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D550F2B88A1D10041DE53 /* Binding+Extension.swift */; };
 		CD7D55122B88B4AA0041DE53 /* AutoOTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D55112B88B4AA0041DE53 /* AutoOTP.swift */; };
@@ -238,6 +240,10 @@
 		CDCED16A2A39917400A9EB76 /* CircularText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCED1692A39917400A9EB76 /* CircularText.swift */; };
 		CDCED16D2A3991C800A9EB76 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCED16C2A3991C800A9EB76 /* View+Extension.swift */; };
 		CDCED1702A39C94500A9EB76 /* ViewBulder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCED16F2A39C94500A9EB76 /* ViewBulder.swift */; };
+		CDD02BE12E3741EF00F739F7 /* HomeCollapseTopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD02BE02E3741EF00F739F7 /* HomeCollapseTopBar.swift */; };
+		CDD02BE32E37442900F739F7 /* OffsetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD02BE22E37442900F739F7 /* OffsetModifier.swift */; };
+		CDD02BE52E37816200F739F7 /* HomeCollapseMessageCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD02BE42E37816200F739F7 /* HomeCollapseMessageCardView.swift */; };
+		CDD02BE82E37822300F739F7 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD02BE72E37822300F739F7 /* Message.swift */; };
 		CDD3F2992D09C6C5001A01F0 /* ReusableDropdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD3F2982D09C6C5001A01F0 /* ReusableDropdown.swift */; };
 		CDD8D5772BDF9E7900F9BE4F /* ConditionalScrollIndicatorsModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD8D5762BDF9E7900F9BE4F /* ConditionalScrollIndicatorsModifier.swift */; };
 		CDD9851E2B59591C001D8DEA /* MainPageNavDrawerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD9851D2B59591C001D8DEA /* MainPageNavDrawerHome.swift */; };
@@ -274,6 +280,7 @@
 		CDEBAFCE2AC3FAD2009C793E /* PickerDEmo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEBAFCD2AC3FAD2009C793E /* PickerDEmo.swift */; };
 		CDEBDD312B03A6170041A485 /* bungee.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CDEBDD302B03A6170041A485 /* bungee.ttf */; };
 		CDEBDD332B03AA6C0041A485 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEBDD322B03AA6C0041A485 /* UIExtension.swift */; };
+		CDEE9A1D2E33494600B55876 /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEE9A1C2E33494600B55876 /* CustomCorner.swift */; };
 		CDEF9A492A66B08600BA8294 /* ContactMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEF9A482A66B08600BA8294 /* ContactMainViewModel.swift */; };
 		CDF09EDA2BDFCFD100EE9FA5 /* PHPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF09ED92BDFCFD100EE9FA5 /* PHPickerView.swift */; };
 		CDF42DBF2C15F4F7005A4964 /* AdaptsToKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF42DBE2C15F4F6005A4964 /* AdaptsToKeyboard.swift */; };
@@ -418,6 +425,8 @@
 		CD76868D2B3D9E2400B57DD9 /* SweetProductTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweetProductTab.swift; sourceTree = "<group>"; };
 		CD7686952B3EF7C600B57DD9 /* TabViewMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewMain.swift; sourceTree = "<group>"; };
 		CD7C2AD32A5EDB3B004F5950 /* GCDDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDDemo.swift; sourceTree = "<group>"; };
+		CD7D31B02E325A0D0001FD8C /* CollapseAnimatedStickyHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapseAnimatedStickyHeader.swift; sourceTree = "<group>"; };
+		CD7D31B62E325F5D0001FD8C /* HomeCollapseHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollapseHeaderView.swift; sourceTree = "<group>"; };
 		CD7D550D2B8897150041DE53 /* OTPVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVerificationView.swift; sourceTree = "<group>"; };
 		CD7D550F2B88A1D10041DE53 /* Binding+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+Extension.swift"; sourceTree = "<group>"; };
 		CD7D55112B88B4AA0041DE53 /* AutoOTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoOTP.swift; sourceTree = "<group>"; };
@@ -517,6 +526,10 @@
 		CDCED1692A39917400A9EB76 /* CircularText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularText.swift; sourceTree = "<group>"; };
 		CDCED16C2A3991C800A9EB76 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		CDCED16F2A39C94500A9EB76 /* ViewBulder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBulder.swift; sourceTree = "<group>"; };
+		CDD02BE02E3741EF00F739F7 /* HomeCollapseTopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollapseTopBar.swift; sourceTree = "<group>"; };
+		CDD02BE22E37442900F739F7 /* OffsetModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetModifier.swift; sourceTree = "<group>"; };
+		CDD02BE42E37816200F739F7 /* HomeCollapseMessageCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollapseMessageCardView.swift; sourceTree = "<group>"; };
+		CDD02BE72E37822300F739F7 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		CDD3F2982D09C6C5001A01F0 /* ReusableDropdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableDropdown.swift; sourceTree = "<group>"; };
 		CDD8D5762BDF9E7900F9BE4F /* ConditionalScrollIndicatorsModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalScrollIndicatorsModifier.swift; sourceTree = "<group>"; };
 		CDD9851D2B59591C001D8DEA /* MainPageNavDrawerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageNavDrawerHome.swift; sourceTree = "<group>"; };
@@ -557,6 +570,7 @@
 		CDEBDD2F2B03A60A0041A485 /* inter_regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = inter_regular.ttf; sourceTree = "<group>"; };
 		CDEBDD302B03A6170041A485 /* bungee.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bungee.ttf; sourceTree = "<group>"; };
 		CDEBDD322B03AA6C0041A485 /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
+		CDEE9A1C2E33494600B55876 /* CustomCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
 		CDEF9A482A66B08600BA8294 /* ContactMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactMainViewModel.swift; sourceTree = "<group>"; };
 		CDF09ED92BDFCFD100EE9FA5 /* PHPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPickerView.swift; sourceTree = "<group>"; };
 		CDF42DBE2C15F4F6005A4964 /* AdaptsToKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptsToKeyboard.swift; sourceTree = "<group>"; };
@@ -1192,6 +1206,26 @@
 			path = GCDDemo;
 			sourceTree = "<group>";
 		};
+		CD7D31B22E325F150001FD8C /* CollapseAnimatedStickyHeader */ = {
+			isa = PBXGroup;
+			children = (
+				CDD02BE62E37818B00F739F7 /* model */,
+				CD7D31B52E325F3A0001FD8C /* components */,
+				CD7D31B02E325A0D0001FD8C /* CollapseAnimatedStickyHeader.swift */,
+			);
+			path = CollapseAnimatedStickyHeader;
+			sourceTree = "<group>";
+		};
+		CD7D31B52E325F3A0001FD8C /* components */ = {
+			isa = PBXGroup;
+			children = (
+				CDD02BE02E3741EF00F739F7 /* HomeCollapseTopBar.swift */,
+				CD7D31B62E325F5D0001FD8C /* HomeCollapseHeaderView.swift */,
+				CDD02BE42E37816200F739F7 /* HomeCollapseMessageCardView.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
 		CD7D550B2B8896770041DE53 /* OTP_main */ = {
 			isa = PBXGroup;
 			children = (
@@ -1285,6 +1319,7 @@
 		CD88650B29AA2E2A00BA97DD /* SwiftUIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CDB379FC2E30F323000FE6EF /* AdvanceAnimation */,
 				CD8EA2E82DBE9AAB00EC88D8 /* CollapsingHeaderView */,
 				CD1C7E872C1C209200107FB1 /* KeyboardUpDemo */,
 				CD0ECA7E2BE50D5F00CB18A1 /* API Call */,
@@ -1507,6 +1542,14 @@
 			path = UIViewRepresentable;
 			sourceTree = "<group>";
 		};
+		CDB379FC2E30F323000FE6EF /* AdvanceAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				CD7D31B22E325F150001FD8C /* CollapseAnimatedStickyHeader */,
+			);
+			path = AdvanceAnimation;
+			sourceTree = "<group>";
+		};
 		CDB56C4D2BF23F96002BD56C /* MyVelicleDetailView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1519,6 +1562,7 @@
 		CDB63D382AD2ADFB00A0ED42 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CDEE9A1B2E3348F700B55876 /* components */,
 				CD8F1E3D2BD6721700A4F008 /* header */,
 				CDB63D3C2AD2AF6100A0ED42 /* Button */,
 				CDB63D392AD2AE3E00A0ED42 /* Empty States */,
@@ -1636,6 +1680,7 @@
 				CDDB77A92C171B93002F6EEA /* TextFieldLimitModifer.swift */,
 				CDDB77AB2C172D2B002F6EEA /* DigitLimitModifer.swift */,
 				CD0C6A282D30038C00DA389F /* NetworkStatusModifier.swift */,
+				CDD02BE22E37442900F739F7 /* OffsetModifier.swift */,
 			);
 			path = ViewModifier;
 			sourceTree = "<group>";
@@ -1676,6 +1721,14 @@
 				CD67F7FB2B43E041009B4116 /* ViewBuilderDemo2.swift */,
 			);
 			path = ViewBuilderDemo;
+			sourceTree = "<group>";
+		};
+		CDD02BE62E37818B00F739F7 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				CDD02BE72E37822300F739F7 /* Message.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		CDD40D2D2A8642F100EA3DF2 /* WrappingHStack */ = {
@@ -1917,6 +1970,14 @@
 			path = font;
 			sourceTree = "<group>";
 		};
+		CDEE9A1B2E3348F700B55876 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				CDEE9A1C2E33494600B55876 /* CustomCorner.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
 		CDF6538B2BF0C2E00024188A /* WalletView */ = {
 			isa = PBXGroup;
 			children = (
@@ -2152,6 +2213,7 @@
 				CD67F8042B442A17009B4116 /* CustomSlidingTab.swift in Sources */,
 				CDF6538F2BF0D28F0024188A /* WalletView.swift in Sources */,
 				CDFE2FEC2D0C6A250050493F /* Styles.swift in Sources */,
+				CD7D31B72E325F5D0001FD8C /* HomeCollapseHeaderView.swift in Sources */,
 				CD0654892CDDC0CE00620B90 /* CamGalleryUIView.swift in Sources */,
 				CD06548A2CDDC0CE00620B90 /* CamGalleryViewModel.swift in Sources */,
 				CD06548B2CDDC0CE00620B90 /* CamGalleryDem2.swift in Sources */,
@@ -2159,6 +2221,7 @@
 				CD06548D2CDDC0CE00620B90 /* CamGalleryAdvanced.swift in Sources */,
 				CD06548E2CDDC0CE00620B90 /* CamGalleryUIDemo.swift in Sources */,
 				CD6B34912A6129590035C575 /* ContactDemo.swift in Sources */,
+				CDEE9A1D2E33494600B55876 /* CustomCorner.swift in Sources */,
 				CD7EEFE72A62681B004915E3 /* ContactsItemDetails.swift in Sources */,
 				CDE8491629D857670087381A /* Food1.swift in Sources */,
 				CDB56C4F2BF23FA4002BD56C /* MyVelicleDetailView.swift in Sources */,
@@ -2173,7 +2236,9 @@
 				CD9CF42E29ADF6690043624D /* stickyHeaderUIView.swift in Sources */,
 				CD2A43A52A3B483600430C65 /* NavigateBuilder.swift in Sources */,
 				CDCE885C29D2FDF400B87BF9 /* AddView.swift in Sources */,
+				CDD02BE52E37816200F739F7 /* HomeCollapseMessageCardView.swift in Sources */,
 				CD4ABEA42AD03BB40012770F /* MealViewModel.swift in Sources */,
+				CDD02BE32E37442900F739F7 /* OffsetModifier.swift in Sources */,
 				CD75F0E92D12F8EA00ED3908 /* DrinkListViewModel.swift in Sources */,
 				CD6A8A722B6CE8B6006F3984 /* CustomButton1.swift in Sources */,
 				CD6A8A742B6CEC3F006F3984 /* MaterialTextFieldView.swift in Sources */,
@@ -2310,8 +2375,11 @@
 				CDC329DF2BC1762400090FF8 /* ProductCardEntity.swift in Sources */,
 				CDD985232B5959CD001D8DEA /* DrawerHeaderView.swift in Sources */,
 				CD6ED4CE2A6A586C0063409D /* ListDemoItem.swift in Sources */,
+				CDD02BE12E3741EF00F739F7 /* HomeCollapseTopBar.swift in Sources */,
+				CD7D31B12E325A0D0001FD8C /* CollapseAnimatedStickyHeader.swift in Sources */,
 				CD6ACBAC2A6E6D5200D8C680 /* AppEnvironment.swift in Sources */,
 				CD5218AB2B41AF7C00AB8CD6 /* NestedListViewModel.swift in Sources */,
+				CDD02BE82E37822300F739F7 /* Message.swift in Sources */,
 				CD56573D2B711C7C0018C4F1 /* TTGSnackbarRepresentable.swift in Sources */,
 				CD6A8A7E2B6D02A9006F3984 /* demoButton.swift in Sources */,
 				CD83672B2B4326C9004C4D03 /* ObersvedObjectDemo2.swift in Sources */,

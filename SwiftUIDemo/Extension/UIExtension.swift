@@ -132,7 +132,7 @@ extension Color {
     static var toolBar: Color {
         return Color(hex: "#283593")
     }
-    static var primaryApp: Color {
+    static var primaryApp: Color {     //green color code
         return Color(hex: "53B175")
     }
     

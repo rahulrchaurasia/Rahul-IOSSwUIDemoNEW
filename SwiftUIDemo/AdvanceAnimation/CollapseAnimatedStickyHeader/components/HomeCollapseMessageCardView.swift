@@ -8,11 +8,31 @@
 import SwiftUI
 
 struct HomeCollapseMessageCardView: View {
+    
+    var message : Message
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        HStack (spacing: 15){
+            
+            Circle()
+                .fill(Color.blue)
+                .frame(width: 30, height: 30)
+            
+            VStack(alignment: .leading, spacing: 8){
+                
+                Text(message.username)
+                    .font(.title2)
+                    .fontWeight(.bold)
+                
+                Text(message.message)
+            }
+            .foregroundStyle(Color.primaryText)
+            .frame(maxWidth: .infinity, alignment: .leading)
+        }
     }
 }
 
 #Preview {
-    HomeCollapseMessageCardView()
+    HomeCollapseMessageCardView(message: Message.sample)
 }

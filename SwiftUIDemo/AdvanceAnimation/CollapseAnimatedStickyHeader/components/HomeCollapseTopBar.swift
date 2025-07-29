@@ -1,6 +1,19 @@
+//
+//  HomeCollapseTopBar.swift
+//  SwiftUIDemo
+//
+//  Created by Rahul Chaurasia on 28/07/25.
+//
+
+
+import SwiftUI
+
 struct HomeCollapseTopBar: View {
     
     var topEdge : CGFloat
+    @Binding var offset : CGFloat
+    var maxHeight : CGFloat
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 15) {
             
@@ -24,6 +37,22 @@ struct HomeCollapseTopBar: View {
         }
         .padding()
         .padding(.bottom)
+        .opacity(getOpacity())
        
     }
+    
+    func getOpacity() -> CGFloat {
+       
+        let progress = -offset/90
+        
+        let opacity = 1 - progress
+        
+        return offset < 0 ? opacity :  1
+    }
+}
+
+#Preview {
+    //HomeCollapseHeaderView()
+    var offset : CGFloat = 50
+    HomeCollapseTopBar(topEdge: 50, offset: .constant(offset), maxHeight: 80)
 }

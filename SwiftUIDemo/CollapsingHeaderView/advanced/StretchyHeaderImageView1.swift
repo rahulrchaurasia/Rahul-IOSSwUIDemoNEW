@@ -80,11 +80,7 @@ struct StickySampleHeaderView2: View {
     }
 }
 
-// Preview
 
-#Preview {
-    StretchyHeaderImageView()
-}
 
 
 #Preview {

@@ -60,65 +60,18 @@ struct AdvanceDemo2View: View {
                             .cornerRadius(15)
 
                     }
+
                     NavigationLink {
-                       
-                        
-                        CollapsingHeaderView(
-                            title: "Premium Coffee",
-                            subtitle: "Italian Espresso",
-                            rating: "4.9",
-                            details: "Premium Selection",
-                            image: "food", // Replace with your image name
-                            expandedHeight: 260
-                        )
+                        AnimationDemoMain()
                     } label: {
-                        Text("Collapsing HeaderView")
+                        Text("Collapse Animation Demo")
                             .padding(12)
                             .font(.title2)
                             .foregroundColor(.white)
-                            .background(Color.red.opacity(0.7))
+                            .background(Color.yellow.opacity(0.7))
                             .cornerRadius(15)
 
                     }
-                    
-                    NavigationLink {
-                       
-                        CollapsingToolbarView()
-                    } label: {
-                        Text("Collapsing HeaderView 2")
-                            .padding(12)
-                            .font(.title2)
-                            .foregroundColor(.white)
-                            .background(Color.orange.opacity(0.7))
-                            .cornerRadius(15)
-
-                    }
-                    NavigationLink {
-                       
-                        AdvancedCollapsingToolbarView()
-                    } label: {
-                        Text("Collapsing HeaderView 3")
-                            .padding(12)
-                            .font(.title2)
-                            .foregroundColor(.white)
-                            .background(Color.teal)
-                            .cornerRadius(15)
-
-                    }
-                    NavigationLink {
-                       
-                        StretchyHeaderImageView1()
-                    } label: {
-                        Text("Stretchy Header ImageView")
-                            .padding(12)
-                            .font(.title2)
-                            .foregroundColor(.white)
-                            .background(Color.orange)
-                            .cornerRadius(15)
-
-                    }
-                    
-                    
                     NavigationLink {
                         OTPMainDemo()
                     } label: {
@@ -137,7 +90,7 @@ struct AdvanceDemo2View: View {
                             .padding(12)
                             .font(.title2)
                             .foregroundColor(.white)
-                            .background(Color.skyblue)
+                            .background(Color.brown)
                             .cornerRadius(15)
 
                     }
@@ -175,7 +128,7 @@ struct AdvanceDemo2View: View {
                             .padding(12)
                             .font(.title2)
                             .foregroundColor(.white)
-                            .background(Color.skyblue.opacity(0.7))
+                            .background(Color.orange.opacity(0.7))
                             .cornerRadius(15)
 
                     }
