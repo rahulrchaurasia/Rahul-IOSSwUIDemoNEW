@@ -1,8 +1,21 @@
+//
+//  DownloadManager.swift
+//  SwiftUIDemo
+//
+//  Created by Rahul Chaurasia on 08/08/25.
+//
+
+
 import Foundation
 import Combine
 
 @MainActor
 class DownloadManager: NSObject, ObservableObject {
+    
+    // 1. Create a static, shared instance. This is the Singleton pattern.
+        static let shared = DownloadManager()
+      
+    
     @Published var downloadState: DownloadState = .notStarted
     
     // UPDATED URL for the PDF test file
@@ -11,8 +24,16 @@ class DownloadManager: NSObject, ObservableObject {
     private var downloadTask: URLSessionDownloadTask?
     var backgroundCompletionHandler: (() -> Void)?
 
+    // 2. Make the initializer private to ensure no other part of the app can
+        //    create another instance. Everyone MUST use .shared.
+        private override init() {
+            super.init()
+        }
+        
+    
+    //dev.demo.SwiftUIDemo.bg-task-1
     private lazy var urlSession: URLSession = {
-        let config = URLSessionConfiguration.background(withIdentifier: "com.yourapp.pdf.downloader")
+        let config = URLSessionConfiguration.background(withIdentifier: "dev.demo.SwiftUIDemo.downloader")
         config.isDiscretionary = false
         config.sessionSendsLaunchEvents = true
         return URLSession(configuration: config, delegate: self, delegateQueue: nil)

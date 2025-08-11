@@ -36,6 +36,7 @@
 		CD3361092BE8E7C5009CAF62 /* SupportUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3361082BE8E7C5009CAF62 /* SupportUserView.swift */; };
 		CD33610C2BE8E829009CAF62 /* SupportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33610B2BE8E829009CAF62 /* SupportViewModel.swift */; };
 		CD33610F2BE8FC45009CAF62 /* SupportProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33610E2BE8FC45009CAF62 /* SupportProfile.swift */; };
+		CD345C452E46101900F8067E /* QuickLookPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD345C442E46101900F8067E /* QuickLookPreview.swift */; };
 		CD34DDB12A73EC9A0055791E /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD34DDB02A73EC9A0055791E /* String+Extension.swift */; };
 		CD34E5C32C1080E2005F7662 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD34E5C22C1080E2005F7662 /* ProfileViewModel.swift */; };
 		CD34E5C52C11ED93005F7662 /* DatePickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD34E5C42C11ED93005F7662 /* DatePickerViewModel.swift */; };
@@ -274,6 +275,7 @@
 		CDDB8FD42B68D200001B1EF3 /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB8FD32B68D200001B1EF3 /* OTPView.swift */; };
 		CDDB8FD62B68D236001B1EF3 /* OTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB8FD52B68D236001B1EF3 /* OTPTextField.swift */; };
 		CDDB8FDA2B68D42E001B1EF3 /* OTPFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB8FD92B68D42E001B1EF3 /* OTPFormView.swift */; };
+		CDDC69A32E4381E600FDE941 /* CardStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDC69A22E4381E600FDE941 /* CardStyle.swift */; };
 		CDE8491429D84F8F0087381A /* StickyMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE8491329D84F8F0087381A /* StickyMainView.swift */; };
 		CDE8491629D857670087381A /* Food1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE8491529D857670087381A /* Food1.swift */; };
 		CDE8491A29D85B1A0087381A /* StickyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE8491929D85B1A0087381A /* StickyCardView.swift */; };
@@ -283,6 +285,11 @@
 		CDEE9A1D2E33494600B55876 /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEE9A1C2E33494600B55876 /* CustomCorner.swift */; };
 		CDEF9A492A66B08600BA8294 /* ContactMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEF9A482A66B08600BA8294 /* ContactMainViewModel.swift */; };
 		CDF09EDA2BDFCFD100EE9FA5 /* PHPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF09ED92BDFCFD100EE9FA5 /* PHPickerView.swift */; };
+		CDF21BF32E45DA9100251D39 /* PDFDownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF21BF22E45DA9100251D39 /* PDFDownloadView.swift */; };
+		CDF21BFB2E45DB8D00251D39 /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF21BFA2E45DB8D00251D39 /* DownloadManager.swift */; };
+		CDF21BFD2E45DB9600251D39 /* DownloadState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF21BFC2E45DB9600251D39 /* DownloadState.swift */; };
+		CDF21BFF2E45F6B600251D39 /* BackgroundDemoMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF21BFE2E45F6B600251D39 /* BackgroundDemoMain.swift */; };
+		CDF21FD52E45FFBA00251D39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF21FD42E45FFBA00251D39 /* AppDelegate.swift */; };
 		CDF42DBF2C15F4F7005A4964 /* AdaptsToKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF42DBE2C15F4F6005A4964 /* AdaptsToKeyboard.swift */; };
 		CDF5028E2A502FA300D64A24 /* SubscriberDemo2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF5028D2A502FA300D64A24 /* SubscriberDemo2.swift */; };
 		CDF650672AFE27970040228D /* ActorDemo3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF650662AFE27970040228D /* ActorDemo3.swift */; };
@@ -324,6 +331,7 @@
 		CD3361082BE8E7C5009CAF62 /* SupportUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportUserView.swift; sourceTree = "<group>"; };
 		CD33610B2BE8E829009CAF62 /* SupportViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportViewModel.swift; sourceTree = "<group>"; };
 		CD33610E2BE8FC45009CAF62 /* SupportProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportProfile.swift; sourceTree = "<group>"; };
+		CD345C442E46101900F8067E /* QuickLookPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLookPreview.swift; sourceTree = "<group>"; };
 		CD34DDB02A73EC9A0055791E /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		CD34E5C22C1080E2005F7662 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		CD34E5C42C11ED93005F7662 /* DatePickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewModel.swift; sourceTree = "<group>"; };
@@ -560,6 +568,7 @@
 		CDDB8FD32B68D200001B1EF3 /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
 		CDDB8FD52B68D236001B1EF3 /* OTPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTextField.swift; sourceTree = "<group>"; };
 		CDDB8FD92B68D42E001B1EF3 /* OTPFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPFormView.swift; sourceTree = "<group>"; };
+		CDDC69A22E4381E600FDE941 /* CardStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStyle.swift; sourceTree = "<group>"; };
 		CDE8491329D84F8F0087381A /* StickyMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyMainView.swift; sourceTree = "<group>"; };
 		CDE8491529D857670087381A /* Food1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food1.swift; sourceTree = "<group>"; };
 		CDE8491929D85B1A0087381A /* StickyCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyCardView.swift; sourceTree = "<group>"; };
@@ -573,6 +582,11 @@
 		CDEE9A1C2E33494600B55876 /* CustomCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
 		CDEF9A482A66B08600BA8294 /* ContactMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactMainViewModel.swift; sourceTree = "<group>"; };
 		CDF09ED92BDFCFD100EE9FA5 /* PHPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPickerView.swift; sourceTree = "<group>"; };
+		CDF21BF22E45DA9100251D39 /* PDFDownloadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFDownloadView.swift; sourceTree = "<group>"; };
+		CDF21BFA2E45DB8D00251D39 /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
+		CDF21BFC2E45DB9600251D39 /* DownloadState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadState.swift; sourceTree = "<group>"; };
+		CDF21BFE2E45F6B600251D39 /* BackgroundDemoMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundDemoMain.swift; sourceTree = "<group>"; };
+		CDF21FD42E45FFBA00251D39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDF42DBE2C15F4F6005A4964 /* AdaptsToKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptsToKeyboard.swift; sourceTree = "<group>"; };
 		CDF5028D2A502FA300D64A24 /* SubscriberDemo2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriberDemo2.swift; sourceTree = "<group>"; };
 		CDF650662AFE27970040228D /* ActorDemo3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorDemo3.swift; sourceTree = "<group>"; };
@@ -770,6 +784,14 @@
 				CD38A3712BDA834600E91EBC /* MultiSelecti2AlertView.swift */,
 			);
 			path = MultiSelection;
+			sourceTree = "<group>";
+		};
+		CD40B0FB2E49B5AC00C138A8 /* QuickLookPreview */ = {
+			isa = PBXGroup;
+			children = (
+				CD345C442E46101900F8067E /* QuickLookPreview.swift */,
+			);
+			path = QuickLookPreview;
 			sourceTree = "<group>";
 		};
 		CD4ABE8C2ACFCB0B0012770F /* ClosureDemo */ = {
@@ -1319,6 +1341,8 @@
 		CD88650B29AA2E2A00BA97DD /* SwiftUIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CDF21D692E45F99400251D39 /* Main */,
+				CDF21BF12E45DA7800251D39 /* BackGroundTask */,
 				CDB379FC2E30F323000FE6EF /* AdvanceAnimation */,
 				CD8EA2E82DBE9AAB00EC88D8 /* CollapsingHeaderView */,
 				CD1C7E872C1C209200107FB1 /* KeyboardUpDemo */,
@@ -1350,7 +1374,6 @@
 				CDE8490F29D846F60087381A /* SrickyHeaderDemo */,
 				CDDAAECC2AD5286500997E37 /* StateObjObservedOb */,
 				CD8C8D202A4C418200BD0964 /* SubscriberDemo */,
-				CD88650C29AA2E2A00BA97DD /* SwiftUIDemoApp.swift */,
 				CD84596B2A727F3100E85AE6 /* TabViewDemo */,
 				CD9572452B3199D000513780 /* UICommon */,
 				CDFEBB4A29D1BAA800A92BF5 /* utility */,
@@ -1673,6 +1696,7 @@
 		CDCED1682A39915E00A9EB76 /* ViewModifier */ = {
 			isa = PBXGroup;
 			children = (
+				CDDC69A22E4381E600FDE941 /* CardStyle.swift */,
 				CDCED1692A39917400A9EB76 /* CircularText.swift */,
 				CDAE00772A60027D00F760A7 /* CustomTextViewModifier.swift */,
 				CD830C082AC85980000FFA64 /* CommonNavigationBarModifier.swift */,
@@ -1978,6 +2002,43 @@
 			path = components;
 			sourceTree = "<group>";
 		};
+		CDF21BF12E45DA7800251D39 /* BackGroundTask */ = {
+			isa = PBXGroup;
+			children = (
+				CD40B0FB2E49B5AC00C138A8 /* QuickLookPreview */,
+				CDF21BF62E45DB2A00251D39 /* PdfDownloader */,
+				CDF21BFE2E45F6B600251D39 /* BackgroundDemoMain.swift */,
+			);
+			path = BackGroundTask;
+			sourceTree = "<group>";
+		};
+		CDF21BF62E45DB2A00251D39 /* PdfDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				CDF21BF72E45DB4500251D39 /* downloaderHelper */,
+				CDF21BF22E45DA9100251D39 /* PDFDownloadView.swift */,
+			);
+			path = PdfDownloader;
+			sourceTree = "<group>";
+		};
+		CDF21BF72E45DB4500251D39 /* downloaderHelper */ = {
+			isa = PBXGroup;
+			children = (
+				CDF21BFC2E45DB9600251D39 /* DownloadState.swift */,
+				CDF21BFA2E45DB8D00251D39 /* DownloadManager.swift */,
+			);
+			path = downloaderHelper;
+			sourceTree = "<group>";
+		};
+		CDF21D692E45F99400251D39 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CDF21FD42E45FFBA00251D39 /* AppDelegate.swift */,
+				CD88650C29AA2E2A00BA97DD /* SwiftUIDemoApp.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		CDF6538B2BF0C2E00024188A /* WalletView */ = {
 			isa = PBXGroup;
 			children = (
@@ -2171,6 +2232,7 @@
 				CD61864B2A4ED366006E1329 /* SubScriberMainDemo.swift in Sources */,
 				CDC987892BF4C86A00674BB5 /* OTPTextFieldView.swift in Sources */,
 				CD7C2AD42A5EDB3B004F5950 /* GCDDemo.swift in Sources */,
+				CDF21BFF2E45F6B600251D39 /* BackgroundDemoMain.swift in Sources */,
 				CDD9851E2B59591C001D8DEA /* MainPageNavDrawerHome.swift in Sources */,
 				CD985E1D2A67BE2B00B23633 /* ListSection.swift in Sources */,
 				CD0C6A292D30038C00DA389F /* NetworkStatusModifier.swift in Sources */,
@@ -2228,6 +2290,7 @@
 				CD70A68E2B3FE49B0002EC7C /* ListParallexDemo.swift in Sources */,
 				CDDAAED12AD52AAB00997E37 /* CounterViewModel.swift in Sources */,
 				CD67F81A2B444A2A009B4116 /* ChatView.swift in Sources */,
+				CDDC69A32E4381E600FDE941 /* CardStyle.swift in Sources */,
 				CD06549B2CDDCD2800620B90 /* ImagePicker2.swift in Sources */,
 				CD14D3C92BECF70A0027E351 /* IconTitleSubtitleButton.swift in Sources */,
 				CDDA4A5B2B6E5D10003024D3 /* FloatingTextFiledView1.swift in Sources */,
@@ -2268,6 +2331,7 @@
 				CD34E5C52C11ED93005F7662 /* DatePickerViewModel.swift in Sources */,
 				CD14D3C62BECF5520027E351 /* CustomDashBoard.swift in Sources */,
 				CDF42DBF2C15F4F7005A4964 /* AdaptsToKeyboard.swift in Sources */,
+				CDF21BFD2E45DB9600251D39 /* DownloadState.swift in Sources */,
 				CD1336972A652F0800E5EA40 /* TextFieldDemo4.swift in Sources */,
 				CD6ED4D02A6A64430063409D /* ListMainModel.swift in Sources */,
 				CD75F0F22D12FA4E00ED3908 /* DrinkListView.swift in Sources */,
@@ -2360,6 +2424,7 @@
 				CDB63D402AD2AFCB00A0ED42 /* APButton.swift in Sources */,
 				CD6A8A782B6CF0E6006F3984 /* FloatingTextFieldView.swift in Sources */,
 				CD67F7FA2B43DF66009B4116 /* SheetDemo.swift in Sources */,
+				CDF21BFB2E45DB8D00251D39 /* DownloadManager.swift in Sources */,
 				CD97C71B2B6A4A7F0049E2FC /* OneTimeCodeBoxes.swift in Sources */,
 				CDDA4A602B6E65ED003024D3 /* OTPAlertViewDynamic.swift in Sources */,
 				CD5218A82B41ADAD00AB8CD6 /* Item.swift in Sources */,
@@ -2379,7 +2444,9 @@
 				CD7D31B12E325A0D0001FD8C /* CollapseAnimatedStickyHeader.swift in Sources */,
 				CD6ACBAC2A6E6D5200D8C680 /* AppEnvironment.swift in Sources */,
 				CD5218AB2B41AF7C00AB8CD6 /* NestedListViewModel.swift in Sources */,
+				CDF21BF32E45DA9100251D39 /* PDFDownloadView.swift in Sources */,
 				CDD02BE82E37822300F739F7 /* Message.swift in Sources */,
+				CDF21FD52E45FFBA00251D39 /* AppDelegate.swift in Sources */,
 				CD56573D2B711C7C0018C4F1 /* TTGSnackbarRepresentable.swift in Sources */,
 				CD6A8A7E2B6D02A9006F3984 /* demoButton.swift in Sources */,
 				CD83672B2B4326C9004C4D03 /* ObersvedObjectDemo2.swift in Sources */,
@@ -2406,6 +2473,7 @@
 				CD33610F2BE8FC45009CAF62 /* SupportProfile.swift in Sources */,
 				CD6ED4D22A6A72AF0063409D /* ListDemoMenu.swift in Sources */,
 				CD67F80D2B442F4F009B4116 /* OpenView.swift in Sources */,
+				CD345C452E46101900F8067E /* QuickLookPreview.swift in Sources */,
 				CD9E45BE29D42CBE004D54D5 /* Constant.swift in Sources */,
 				CD00F8A42BDE9959006B1AF6 /* ImagePicker.swift in Sources */,
 				CD1C7E892C1C20C300107FB1 /* KeyboardUpwithTextFiedlDemo.swift in Sources */,
@@ -2562,7 +2630,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2597,7 +2665,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

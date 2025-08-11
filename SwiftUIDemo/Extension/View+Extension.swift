@@ -96,6 +96,18 @@ extension View {
     func withNetworkAlert() -> some View {
            modifier(NetworkStatusModifier())
        }
+    
+    
+    /***********************************************************************/
+        
+        //Card Style backbround
+    /***********************************************************************/
+
+    
+    
+    func cardStyle() -> some View {
+            self.modifier(CardStyle())
+        }
    
 }
 

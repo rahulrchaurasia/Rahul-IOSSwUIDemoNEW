@@ -1,3 +1,13 @@
+//
+//  DownloadState.swift
+//  SwiftUIDemo
+//
+//  Created by Rahul Chaurasia on 08/08/25.
+//
+
+import Foundation
+
+
 enum DownloadState: Equatable {
     case notStarted
     case downloading(progress: Double)

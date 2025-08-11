@@ -30,5 +30,22 @@ extension Binding where Value == String {
         
     }
     
+    
+    
+    /*
+     This code creates a custom version of the nil-coalescing operator (??) that works directly on Bindings.
+
+
+     */
+    
+    static func ?? (lhs: Binding< Optional<Value>>, rhs:Value ) -> Binding<Value> {
+        Binding {
+            lhs.wrappedValue ?? rhs
+        } set: {
+            
+            lhs.wrappedValue = $0
+        }
+    }
+    
 }
 

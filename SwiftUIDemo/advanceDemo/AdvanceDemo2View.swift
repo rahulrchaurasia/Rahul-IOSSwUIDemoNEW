@@ -72,6 +72,18 @@ struct AdvanceDemo2View: View {
                             .cornerRadius(15)
 
                     }
+                    
+                    NavigationLink {
+                        BackgroundDemoMain()
+                    } label: {
+                        Text("Background Demo")
+                            .padding(12)
+                            .font(.title2)
+                            .foregroundColor(.white)
+                            .background(Color.mint.opacity(0.7))
+                            .cornerRadius(15)
+
+                    }
                     NavigationLink {
                         OTPMainDemo()
                     } label: {

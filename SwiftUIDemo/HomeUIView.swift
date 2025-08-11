@@ -12,6 +12,8 @@ struct HomeUIView: View {
     // Declare that you're using the NetworkMonitor
     @EnvironmentObject var networkMonitor: NetworkMonitor
 
+   
+    
     var body: some View {
         ZStack{
            

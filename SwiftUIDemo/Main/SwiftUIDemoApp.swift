@@ -20,7 +20,7 @@ struct SwiftUIDemoApp: App {
     @StateObject var router = Router(initial: AppRoute.Dashboard)
     
     
-        
+    @StateObject private var downloadManager = DownloadManager.shared
       
     var body: some Scene {
         WindowGroup {
@@ -62,7 +62,10 @@ struct SwiftUIDemoApp: App {
              get all the ListViewModel data
             /**************************************************************************/ */
              
+            .environmentObject(downloadManager)
+
             .onAppear(perform: UIApplication.shared.addTapGestureRecognizer)
+            
         }
     }
 }
@@ -70,6 +73,14 @@ struct SwiftUIDemoApp: App {
 struct Previews_SwiftUIDemoApp_Previews: PreviewProvider {
     static var previews: some View {
        // /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
-        ContactsDetailView()
+      //  ContactsDetailView()
+        
+        var networkMonitor =  NetworkMonitor()
+        @StateObject  var downloadManager = DownloadManager.shared
+          
+        HomeUIView()
+            .environmentObject(networkMonitor)
+            .environmentObject(downloadManager)
+       
     }
 }

@@ -11,11 +11,15 @@ import FirebaseCore
 
 class AppDelegate : NSObject, UIApplicationDelegate {
     
-    
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+    var downloadManager: DownloadManager?
         
-        FirebaseApp.configure() 
-        return true
-    }
+    
+    // for Background Task
+        func application(_ application: UIApplication, handleEventsForBackgroundURLSession identifier: String, completionHandler: @escaping () -> Void) {
+           
+            // Directly access the single, shared instance. This is much cleaner and safer.
+            DownloadManager.shared.backgroundCompletionHandler = completionHandler
+
+        }
     
   }
