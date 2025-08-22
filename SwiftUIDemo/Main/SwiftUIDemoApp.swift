@@ -20,6 +20,10 @@ struct SwiftUIDemoApp: App {
     @StateObject var router = Router(initial: AppRoute.Dashboard)
     
     
+    //Mark : AppDelegate
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
+    //Mark : Download Manger
     @StateObject private var downloadManager = DownloadManager.shared
       
     var body: some Scene {
@@ -64,10 +68,30 @@ struct SwiftUIDemoApp: App {
              
             .environmentObject(downloadManager)
 
-            .onAppear(perform: UIApplication.shared.addTapGestureRecognizer)
+           // .onAppear(perform: UIApplication.shared.addTapGestureRecognizer)
+            
+            .onAppear{
+                
+                // Call the first function for notification permissions
+                self.requestNotificationPermission()
+                
+                // Call the second function for the tap gesture
+                UIApplication.shared.addTapGestureRecognizer()
+            }
             
         }
     }
+    
+    
+    func requestNotificationPermission() {
+            UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { granted, error in
+                if granted {
+                    print("Notification permission granted.")
+                } else if let error = error {
+                    print("❌ Notification permission error: \(error.localizedDescription)")
+                }
+            }
+        }
 }
 
 struct Previews_SwiftUIDemoApp_Previews: PreviewProvider {

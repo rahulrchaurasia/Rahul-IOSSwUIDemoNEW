@@ -91,14 +91,10 @@ struct AnimationDemoMain: View {
                     NavigationLink {
                         
                         // callback using closure method...
-                        TextFieldDemo3 { contact in
-                            
-                            print("New Contact")
-                            dump(contact)
-                            
-                        }
+                        
+                        DemoScrollTabsView()
                     } label: {
-                        Text("Text demo2")
+                        Text("ScrollView with Tanb Animation")
                             .padding(12)
                             .font(.title2)
                             .foregroundColor(.white)

@@ -33,5 +33,11 @@
 		<string>fetch</string>
 		<string>processing</string>
 	</array>
+    
+    <key>NSAllowsArbitraryLoads</key> <!-- if needed for test URLs -->
+    <true/>
+    <key>NSUserNotificationUsageDescription</key>
+    <string>This app needs to send you notifications about completed downloads.</string>
+    
 </dict>
 </plist>

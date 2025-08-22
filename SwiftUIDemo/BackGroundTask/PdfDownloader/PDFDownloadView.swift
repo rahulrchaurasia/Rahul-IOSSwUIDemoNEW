@@ -7,83 +7,54 @@
 
 import SwiftUI
 
+
+
 struct PDFDownloadView: View {
     
     @EnvironmentObject var downloadManager: DownloadManager
-    
-    
-    var body: some View {
-        NavigationView {
-            VStack(spacing: 25) {
-                Text("PDF Background Downloader")
-                    .font(.largeTitle.bold())
-                
-                switch downloadManager.downloadState {
-                case .notStarted:
-                    Button {
-                        downloadManager.startDownload()
-                    } label: {
-                        Label("Download Test PDF", systemImage: "icloud.and.arrow.down")
-                    }
-                    .buttonStyle(.borderedProminent)
-                    
-                case .downloading(let progress):
-                    ProgressView(value: progress, total: 1.0) {
-                        Text("Downloading PDF...")
-                    } currentValueLabel: {
-                        Text(String(format: "%.0f%%", progress * 100))
-                    }
-                    .progressViewStyle(.circular)
-                    
-                    Button("Cancel") {
-                        downloadManager.cancelDownload()
+        
+        // The array of URLs you wanted to use.
+        let sampleURLs: [URL] = [
+            URL(string: "https://www.orimi.com/pdf-test.pdf")!,
+            URL(string: "https://stsci-opo.org/STScI-01G8G54S2C2V0T8C3J62V13T10.tif")!
+        ]
+        
+        var body: some View {
+            NavigationView {
+                VStack {
+                    Text("Start a New Download")
+                        .font(.headline)
+                    HStack {
+                        Button("PDF") {
+                            
+                            // Create a new asynchronous Task to call our async function
+                            Task {
+                                await downloadManager.startDownload(url: sampleURLs[0])
+                            }
+                            
+                        }
+                        Button("TIF Image") {
+                            
+                            Task {
+                                await downloadManager.startDownload(url: sampleURLs[1])
+                            }
+                        }
                     }
                     .buttonStyle(.bordered)
-                    .tint(.red)
+                    .padding()
                     
-                case .finished(let location):
-                    VStack(spacing: 10) {
-                        Image(systemName: "doc.text.fill")
-                            .font(.largeTitle)
-                            .foregroundColor(.red)
-                        Label("Download Complete!", systemImage: "checkmark.circle.fill")
-                            .font(.headline)
-                            .foregroundColor(.green)
-                        
-                        Text(location.lastPathComponent)
-                            .font(.caption)
-                            .padding(.horizontal)
-                        
-                        Button("Delete & Re-download") {
-                            downloadManager.deleteDownloadedFile()
-                        }
-                        .buttonStyle(.bordered)
-                        .tint(.red)
-                    }
-                    
-                case .failed(let error):
-                    VStack(spacing: 10) {
-                        Label("Download Failed", systemImage: "xmark.octagon.fill")
-                            .font(.headline)
-                            .foregroundColor(.red)
-                        
-                        Text(error)
-                            .font(.caption)
-                        
-                        Button("Try Again") {
-                            downloadManager.startDownload()
-                        }
-                        .buttonStyle(.borderedProminent)
+                    // The list now iterates over all download tasks.
+                    List(Array(downloadManager.downloadTasks.values)) { task in
+                        DownloadRowView(task: task)
                     }
                 }
-            }
-            .padding()
-            .navigationTitle("PDF Transfer")
-            .onAppear {
-                downloadManager.checkInitialState()
+                .navigationTitle("Multi-Downloader")
+//                .onDisappear{
+//                    
+//                    downloadManager.reset()
+//                }
             }
         }
-    }
 }
 
 #Preview {
